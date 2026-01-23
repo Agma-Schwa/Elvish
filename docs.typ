@@ -1,7 +1,16 @@
 #import "base/src/lib.typ" : *
+#let elvish = plugin("plugin/target/wasm32-unknown-unknown/release/elvish.wasm")
 #show : setup
 
-// TODO: Write a Elvish-to-IPA function in Typst.
+#let ipa(s) = {
+    let replaced = str(elvish.ipa_impl(bytes(s)))
+    let out = []
+    for c in replaced {
+        if c == "$" { out += super[ʄ͡ɠ] }
+        else { out += c}
+    }
+    out
+}
 
 = Phonology
 - No lips -> no rounded or labial
@@ -13,13 +22,13 @@
     vlineat(1),
     [            & Alveolar         & Palatovelar         & Uvulo-Glottal ],
     [ Nasal      &                  &                     & ɴˀ ⟨n⟩        ],
-    [ Stop       & d̻ t̻    ⟨d, t⟩    & c͡k ɟ͡g      ⟨c g⟩    & ʔ  ⟨’⟩        ],
+    [ Stop       & d̻ t̻    ⟨d t⟩     & c͡k ɟ͡g      ⟨c g⟩    & ʔ  ⟨’⟩        ],
     [ Fricative  & s̻ s̻ʰ   ⟨s sh⟩    & ç͡x ç͡xʰ     ⟨ch x⟩   &               ],
-    [ Affricate  & t̻͡s̻ t̻͡s̻ʰ ⟨ts, tsh⟩ & c͡k͡ç͡x c͡k͡ç͡xʰ ⟨tch tx⟩ &               ],
+    [ Affricate  & t̻͡s̻ t̻͡s̻ʰ ⟨ts tsh⟩  & c͡k͡ç͡x c͡k͡ç͡xʰ ⟨tch tx⟩ &               ],
     [ Trill      &                  & r̠͡ʀ̟         ⟨r⟩      &               ],
 )
 
-- r̠͡ʀ̟ is a coarticulated palatal-velar trill (yes, Elves can do that)
+- #ipa("r") is a coarticulated palatal-velar trill (yes, Elves can do that)
 
 == Vowel
 
@@ -29,12 +38,12 @@
     hlineat(1),
     vlineat(1),
     [             & Front        & Back         & Click  ],
-    [ Close       & i↓ ɪ↓ ⟨i, í⟩ & ɯ↓ ɯ̽↓ ⟨u, ú⟩ &        ],
-    [ Open        & a↓ ɐ↓ ⟨a, á⟩ &              &        ],
+    [ Close       & i↓ ɪ↓ ⟨i í⟩  & ɯ↓ ɯ̽↓ ⟨u ú⟩  &        ],
+    [ Open        & a↓ ɐ↓ ⟨a á⟩  &              &        ],
     [ Palatovelar &              &              & ᵏǂ ⟨o⟩ ]
 )
 
-- Any vowel can be followed by #super[ʄ͡ɠ] ⟨◌̨⟩, which signifies the ‘velar quality’, e.g. _ų́_ /ɯ̽#super[ʄ͡ɠ]↓/.
+- Any vowel can be followed by #super[ʄ͡ɠ] ⟨◌̨⟩, which signifies the ‘velar quality’, e.g. _ų́_ /#ipa("ų́")/.
 
 == Phonotactics
 #partitle[Classes]
@@ -50,8 +59,7 @@ Q = ̨
 ```
 
 #partitle[Example word]
-// TODO: /#ipa[tshǫ’ǫ]/
-_tshǫ’ǫ _ /ˈt̻͡s̻ʰᵏǂ#super[ʄ͡ɠ]\.ʔᵏǂ#super[ʄ͡ɠ]/
+_tshǫ’ǫ _ /#ipa("tshǫ’ǫ")/
 ‘ribbon’
 
 // TODO: Make the noun (phrase) ‘cellar door’ sound as horrible as possible.
