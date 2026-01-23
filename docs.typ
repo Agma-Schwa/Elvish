@@ -39,16 +39,14 @@
 == Phonotactics
 #partitle[Classes]
 ```
-S = d, t, c, g
-F = s, sh, ch, x
+C = d, t, c, g, s, sh, ch, x, r, n
 A = ts, tsh, tch, tx
-T = r,
 V = i, í, u, ú, a, á, o
 Q = ̨
 ```
 #partitle[Phonotactics]
 ```
-[S|F|A|T]V(Q)([S|F|T|’]V(Q))|V(Q)[S|F|T]V(Q)
+[C|A]V(Q)((n)[C|’]V(Q))|V(Q)[(n)C]V(Q)
 ```
 
 #partitle[Example word]
