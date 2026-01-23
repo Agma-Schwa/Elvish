@@ -15,7 +15,7 @@
     [ Nasal      &                  &                     & ɴˀ ⟨n⟩    ],
     [ Stop       & d̻ t̻    ⟨d, t⟩    & c͡k ɟ͡g      ⟨c g⟩    & ʔ  ⟨’⟩    ], // etc.
     [ Fricative  & s̻ s̻ʰ   ⟨s sh⟩    & ç͡x ç͡xʰ     ⟨ch x⟩   & ],
-    [ Affricate  & t̻͡s̻ t̻͡s̻ʰ ⟨ts, tsh⟩ & c͡kç͡x ɟ͡gç͡xʰ ⟨tch tx⟩ & ],
+    [ Affricate  & t̻͡s̻ t̻͡s̻ʰ ⟨ts, tsh⟩ & c͡k͡ç͡x c͡k͡ç͡xʰ ⟨tch tx⟩ & ],
     [ Trill      &                  & r̠͡ʀ̟         ⟨r⟩      & ],
 )
 
@@ -53,6 +53,7 @@ Q = ̨
 
 #partitle[Example word]
 // TODO: /#ipa[tshǫ’ǫ]/
-_tshǫ’ǫ _ /ˈt̻͡s̻ʰᵏǂ#super[ʄ͡ɠ]\.ʔᵏǂ#super[ʄ͡ɠ]/ ‘ribbon’
+_tshǫ’ǫ _ /ˈt̻͡s̻ʰᵏǂ#super[ʄ͡ɠ]\.ʔᵏǂ#super[ʄ͡ɠ]/
+‘ribbon’
 
 // TODO: Make the noun (phrase) ‘cellar door’ sound as horrible as possible.
