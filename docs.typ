@@ -3,7 +3,7 @@
 #show : setup
 
 #let ipa(s) = {
-    let replaced = str(elvish.ipa_impl(bytes(s)))
+    let replaced = str(elvish.ipa_impl(bytes(s.text)))
     let out = []
     for c in replaced {
         if c == "$" { out += super[ʄ͡ɠ] }
@@ -11,6 +11,8 @@
     }
     out
 }
+
+#let w(s) = { [_#[#s]_ /#ipa(s)/] }
 
 = Phonology
 - No lips -> no rounded or labial
@@ -28,7 +30,7 @@
     [ Trill      &                  & r̠͡ʀ̟         ⟨r⟩      &               ],
 )
 
-- #ipa("r") is a coarticulated palatal-velar trill (yes, Elves can do that)
+- #w[r] is a coarticulated palatal-velar trill (yes, Elves can do that)
 
 == Vowel
 
@@ -43,7 +45,7 @@
     [ Palatovelar &              &              & ᵏǂ ⟨o⟩ ]
 )
 
-- Any vowel can be followed by #super[ʄ͡ɠ] ⟨◌̨⟩, which signifies the ‘velar quality’, e.g. _ų́_ /#ipa("ų́")/.
+- Any vowel can be followed by #super[ʄ͡ɠ] ⟨◌̨⟩, which signifies the ‘velar quality’, e.g. #w[ų́].
 
 == Phonotactics
 #partitle[Classes]
@@ -59,7 +61,6 @@ Q = ̨
 ```
 
 #partitle[Example word]
-_tshǫ’ǫ _ /#ipa("tshǫ’ǫ")/
-‘ribbon’
+#w[tshǫ’ǫ] ‘ribbon’
 
 // TODO: Make the noun (phrase) ‘cellar door’ sound as horrible as possible.
