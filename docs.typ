@@ -12,11 +12,11 @@
     hlineat(1),
     vlineat(1),
     [            & Alveolar         & Palatovelar         & Uvulo-Glottal ],
-    [ Nasal      &                  &                     & ɴˀ ⟨n⟩    ],
-    [ Stop       & d̻ t̻    ⟨d, t⟩    & c͡k ɟ͡g      ⟨c g⟩    & ʔ  ⟨’⟩    ], // etc.
-    [ Fricative  & s̻ s̻ʰ   ⟨s sh⟩    & ç͡x ç͡xʰ     ⟨ch x⟩   & ],
-    [ Affricate  & t̻͡s̻ t̻͡s̻ʰ ⟨ts, tsh⟩ & c͡k͡ç͡x c͡k͡ç͡xʰ ⟨tch tx⟩ & ],
-    [ Trill      &                  & r̠͡ʀ̟         ⟨r⟩      & ],
+    [ Nasal      &                  &                     & ɴˀ ⟨n⟩        ],
+    [ Stop       & d̻ t̻    ⟨d, t⟩    & c͡k ɟ͡g      ⟨c g⟩    & ʔ  ⟨’⟩        ],
+    [ Fricative  & s̻ s̻ʰ   ⟨s sh⟩    & ç͡x ç͡xʰ     ⟨ch x⟩   &               ],
+    [ Affricate  & t̻͡s̻ t̻͡s̻ʰ ⟨ts, tsh⟩ & c͡k͡ç͡x c͡k͡ç͡xʰ ⟨tch tx⟩ &               ],
+    [ Trill      &                  & r̠͡ʀ̟         ⟨r⟩      &               ],
 )
 
 - r̠͡ʀ̟ is a coarticulated palatal-velar trill (yes, Elves can do that)
@@ -28,10 +28,10 @@
 #rowtable(
     hlineat(1),
     vlineat(1),
-    [             & Front      & Center & Back        & Click  ],
-    [ Close       & i↓ ɪ↓ ⟨i, í⟩ &        & ɯ↓ ɯ̽↓ ⟨u, ú⟩  &        ],
-    [ Open        & a↓ ɐ↓ ⟨a, á⟩ &        &             &        ],
-    [ Palatovelar &            &        &             & ᵏǂ ⟨o⟩ ]
+    [             & Front        & Back         & Click  ],
+    [ Close       & i↓ ɪ↓ ⟨i, í⟩ & ɯ↓ ɯ̽↓ ⟨u, ú⟩ &        ],
+    [ Open        & a↓ ɐ↓ ⟨a, á⟩ &              &        ],
+    [ Palatovelar &              &              & ᵏǂ ⟨o⟩ ]
 )
 
 - Any vowel can be followed by #super[ʄ͡ɠ] ⟨◌̨⟩, which signifies the ‘velar quality’, e.g. _ų́_ /ɯ̽#super[ʄ͡ɠ]↓/.
@@ -48,7 +48,7 @@ Q = ̨
 ```
 #partitle[Phonotactics]
 ```
-[S|F|A|T]V(Q)([S|F|’]V(Q))
+[S|F|A|T]V(Q)([S|F|T|’]V(Q))|V(Q)[S|F|T]V(Q)
 ```
 
 #partitle[Example word]
