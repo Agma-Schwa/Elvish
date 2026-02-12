@@ -2,15 +2,10 @@
 #let elvish = plugin("plugin/target/wasm32-unknown-unknown/release/elvish.wasm")
 #show : setup.with(compact: true)
 
-#let ipa(s) = {
-    let replaced = str(elvish.ipa_impl(bytes(s.text)))
-    let out = []
-    for c in replaced {
-        if c == "$" { out += super[ʄ͡ɠ] }
-        else { out += c}
-    }
-    out
-}
+#let ipa(s) = render-dictionary-node(
+    json(elvish.ipa_impl(bytes(s.text))),
+    "<N/A>"
+)
 
 #let w(s) = { [_#[#s]_ /#ipa(s)/] }
 
@@ -188,3 +183,17 @@ For example, $2+2=4$.
 1. The word for 'Elf' literally means 'miner'.
 2. The word for 'to be alive' is the intransitive of 'to mine'.
 3. If an elf dies, they are 'retired' or 'decommissioned'.
+
+= Lore
+== ‘Retirement’
+A central concept in Elvish society is #w[shų́ną] ‘retirement’.
+Elves never stop working; that is, an Elf only ‘retires’ at the moment of their death. In some cases, Elves who have acted out of line or otherwise disrupted the coal mining process—or worse, slighted The Chimney Man—can be ‘decommissioned’, which entails _actively_ ‘retiring’ an Elf. This is also known as ‘dishonourable retirement’.
+
+Elves that retire honourably are given a ‘coal burial’, i.e. they are cremated in such a way as to turn them into coal, thus contributing to Elvish society even after their demise.
+
+= Dictionary
+#dictionary(
+    read("elvish.dict.txt"),
+    elvish,
+    it => text(weight: "semibold", it)
+)
