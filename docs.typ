@@ -3,8 +3,7 @@
 #show : setup.with(compact: true)
 
 #let ipa(s) = render-dictionary-node(
-    json(elvish.ipa_impl(bytes(s.text))),
-    "<N/A>"
+    json(elvish.ipa_impl(bytes(s.text)))
 )
 
 #let w(s) = { [_#[#s]_ /#ipa(s)/] }
@@ -192,8 +191,4 @@ Elves never stop working; that is, an Elf only ‘retires’ at the moment of th
 Elves that retire honourably are given a ‘coal burial’, i.e. they are cremated in such a way as to turn them into coal, thus contributing to Elvish society even after their demise.
 
 = Dictionary
-#dictionary(
-    read("elvish.dict.txt"),
-    elvish,
-    it => text(weight: "semibold", it)
-)
+#dictionary(read("elvish.dict.txt"), elvish)
