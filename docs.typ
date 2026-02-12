@@ -87,8 +87,7 @@ Animacy is vital to determining word order in Elvish. The highest animacy, and t
 
 + Coal \
   Coal is considered the most important aspect of Elvish society and thus placed just below The Chimney Man. It is also considered capable of performing more work
-  than any Elf as it can be burnt to generate energy (even though Elves don’t use
-  it for that and simply hand it off to The Chimney Man instead).
+  than any Elf as it generates a lot of energy when burnt (unlike Elves).
 
 + Master Carbonator \
   The highest social status that an Elf can obtain; the council of Master Carbonators rules over Elvish society and reports directly to The Chimney Man.
