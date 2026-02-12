@@ -1,6 +1,6 @@
 #import "base/src/lib.typ" : *
 #let elvish = plugin("plugin/target/wasm32-unknown-unknown/release/elvish.wasm")
-#show : setup
+#show : setup.with(compact: true)
 
 #let ipa(s) = {
     let replaced = str(elvish.ipa_impl(bytes(s.text)))
@@ -13,6 +13,9 @@
 }
 
 #let w(s) = { [_#[#s]_ /#ipa(s)/] }
+
+#table-of-contents()
+#show : mainmatter
 
 = Phonology
 - No lips -> no rounded or labial
@@ -65,7 +68,7 @@ Q = ̨
 
 // TODO: Make the noun (phrase) ‘cellar door’ sound as horrible as possible.
 
-== Grammar
+= Grammar
 
 vtrbt Q NQ (causative)
 NQ (transitive)
@@ -75,25 +78,39 @@ He (is) an elf.
 
 (essentially recreate a dummy "do" that can also operate as a contextual ellipsis on previosuly stated verbs)
 
-=== Work Orders
+== Work Orders
 
-Animacy is vital to determinign word order in Elvish. The highest animacy, and thus primacy in a clause, goes to that which is working the hardest. This is 'Work Order.' 
+Animacy is vital to determining word order in Elvish. The highest animacy, and thus primacy in a clause, goes to that which is working the hardest. This is 'Work Order.' From highest work order to lowest, the ranks go as follows:
 
-In any circumstance in which The Chimney Man is referenced, He will always have the highest Work Order, for He is always working the Hardest. Except for the day after Christmas. From highest work order to lowest, the ranks go as follows:
++ The Chimney Man \
+  In any circumstance in which The Chimney Man is referenced, He will always have the highest Work Order, for He is always working the Hardest. Except for the day after Christmas.
 
-+ The Chimney Man
-+ Master Carbonator
-+ Hard-Working Elves
-+ Lazier Elves
-+ Canary
-+ Human Coal Miners
-+ Human Adults
-+ Animals
-+ Human Children
++ Master Carbonator \
+  The highest social status that an Elf can obtain; the council of Master Carbonators rules over Elvish society and reports directly to The Chimney Man.
 
-Human Children, while important to Elvish society as the benificiaries of their toils, are deemed the laziest of beings.
++ Collier \
+  Highly experienced Elves that have been working in the coal industry for at least 100 years; these are typically regional overseers.
 
-=== Adjective Hierarchy
++ Head Miner \
+  Elf in charge of a coal mine.
+
++ Canary \
+  Used for both the lowest class of Elves (i.e. the common coal miner) as well as the bird.
+
++ Human Coal Miners \
+  Used for human coal miners.
+
++ Human Adults \
+  Used for any other human adult.
+
++ Animals \
+  Used for any animal.
+
++ Human Children \
+  Used for human children (that are not coal miners). While important to Elvish society as the benificiaries of their toils, they are deemed the laziest of beings.
+
+
+== Adjective Hierarchy
 
 In sequences of adjectives (which Elves are particularly prone to), the following categories of heirarchy of importance determines the order at which they are uttered:
 
@@ -104,17 +121,17 @@ In sequences of adjectives (which Elves are particularly prone to), the followin
 + Humans
 + Rest
 
-=== Nouns at Work
-Nouns are declined for whether or not they perform work. Essentially this marks their position as an agent or patient in any given clause. The verb itself is not declined for voice --- this information is contained exclusively in the noun phrase.
+== Nouns at Work
+Nouns are declined for whether or not they perform work. Essentially this marks their position as an agent or patient in any given clause. The verb itself is not declined for voice---this information is contained exclusively in the noun phrase.
 
-=== Number
+== Number
 The default number is Collective. An unmarked noun is assumed to be collective.
 As Santaa contains no first person, an Elf refers to oneself as "This Elf," with verbs inflected in the third person.
 As opposed to the unmarked "Collective" form, a marking describes a noun as "Non-Collective." This could refer to one individual or a fraction of some whole.
 
 Verbs are not inflected for number, only nouns are.
 
-=== Tense, Aspect, Mood
+== Tense, Aspect, Mood
 Tense follows a paradigm relative to The Chimney Man's typical stage of sleep throughout a given year.
 For example, if the Chimney Man is in REM sleep during April, and it's currently June, the "REM" tense would be used to discuss something in the past.
 
@@ -124,7 +141,7 @@ For example, if the Chimney Man is in REM sleep during April, and it's currently
 + Non-REM Phase 2 (\~August 26th - November 9th)
 + Non-REM Phase 3 (\~November 10th - December 23rd)
 
-As nobody truly knows when _exactly_ when the Chimney Man falls asleep, the few days following Chrismtas are an enigma to Elvish speakers. They cannot, and out of respect and fear for the Chimney Man, will not express anything related to time. During this time, which often spans from December 25th until December 28th, all tense marking is dropped.
+As nobody truly knows when _exactly_ when the Chimney Man falls asleep, the few days following Chrismtas are an enigma to Elvish speakers. They cannot, and out of respect and fear for the Chimney Man, will not express anything related to time. During this time, which often spans from December 25th until December 28th, all tense marking is dropped. This is known as the ‘Temporal Void’.
 
 Reported Speech uses the tense at the time being described in the utterance, not the current time.
 For example, a sentence that was spoken on the 20th of August referring to a past event, the speaker of that utterance would use the REM tense. If reported speech is used to describe or paraphrase that sentence on the 3rd of September, the speaker would use the Non-REM Phase 1 Tense, since that is now a past tense.
@@ -134,7 +151,7 @@ During the Non-REM Phase 3, the Future is the Awake Tense. This wraps ad infinit
 One has to be careful not to confuse tense between direct speeach and reported speech.
 For example, given an utterance that was spoken during Non-REM Phase 1 but _in_ Non-REM Phase 2 Tense, that utterance refers to the future. But if such an utterance were erroneously reported in that same tense during Non-REM Phase 3, it would incorrectly refer to the past. Instead, the Awake Tense should be used to paraphrase.
 
-Note that the tenses are only relative to the point of utterance. 
+Note that the tenses are only relative to the point of utterance.
 For example, during Non-REM Phase 1, if one wanted to refer to an event that took place in November of _last year_, one would use the REM Sleep Tense, since that is the Past Tense. The fact that Non-REM Phase 2 takes place in November does not mean that it is used to describe things that did/will take place in November.
 
 Going back by two tenses creates a pluperfect sense.
@@ -159,3 +176,9 @@ Evidentiality is split into four categories:
 
 Statements of fact use the Chimney man evidentiality.
 For example, $2+2=4$.
+
+
+= Lexicon
+1. The word for 'Elf' literally means 'miner'.
+2. The word for 'to be alive' is the intransitive of 'to mine'.
+3. If an elf dies, they are 'retired' or 'decommissioned'.
