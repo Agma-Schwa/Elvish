@@ -1,2 +1,35 @@
-tshǫ’ǫ|n.||Ribbon
-shų́ną|n.||Retirement \comment See the ‘retirement’ section in the lore.
+tshǫ’ǫ|n. w11||Ribbon
+shų́ną|n. w4||Retirement \comment See the ‘retirement’ section in the lore.
+dį́gá|n. w11||Cane
+są́ntą́|n. w1||The Chimney Man
+
+ną́nrų́|n.||
+    \\\i{w7} Coal miner
+    \\\i{w11} Elf \comment All Elves are coal miners, whence this sense follows naturally.
+        This is the Generic term for an Elf whose social status is unknown; it is
+        never used for Elves whose status is known.
+oncų|adj.||
+    \\ First
+    \\ \i{n. w5} oncų ną́nrų́
+
+natá|||\i{Work Order raising marker; see \ref{work-order-marking}}
+cį́chą|||\i{Work Order raising marker; see \ref{work-order-marking}}
+ų́ncho|||\i{Work Order raising marker; see \ref{work-order-marking}}
+tchixi|||\i{Work Order raising marker; see \ref{work-order-marking}}
+txų́nsha|||\i{Work Order raising marker; see \ref{work-order-marking}}
+xúnną|||\i{Work Order raising marker; see \ref{work-order-marking}}
+txadą́|||\i{Work Order raising marker; see \ref{work-order-marking}}
+xį́ntí|||\i{Work Order raising marker; see \ref{work-order-marking}}
+shį́tǫ|||\i{Work Order raising marker; see \ref{work-order-marking}}
+shindí|||\i{Work Order raising marker; see \ref{work-order-marking}}
+
+tchichą́|||\i{Work order lowering marker; see \ref{work-order-marking}}
+tsąn’o|||\i{Work order lowering marker; see \ref{work-order-marking}}
+tchąn’ų́|||\i{Work order lowering marker; see \ref{work-order-marking}}
+cáru|||\i{Work order lowering marker; see \ref{work-order-marking}}
+shįndų|||\i{Work order lowering marker; see \ref{work-order-marking}}
+xúnrá|||\i{Work order lowering marker; see \ref{work-order-marking}}
+gįncų́|||\i{Work order lowering marker; see \ref{work-order-marking}}
+shatú|||\i{Work order lowering marker; see \ref{work-order-marking}}
+xǫnchų|||\i{Work order lowering marker; see \ref{work-order-marking}}
+oxa|||\i{Work order lowering marker; see \ref{work-order-marking}}

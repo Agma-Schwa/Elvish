@@ -14,7 +14,7 @@ dependencies = [
 [[package]]
 name = "dictgen"
 version = "0.3.0"
-source = "git+https://github.com/Agma-Schwa/dictionary-generator#d86c02191e5b5cbe2dd75f800c341b2e7a22165c"
+source = "git+https://github.com/Agma-Schwa/dictionary-generator#f9ab151506ba96d5859ccccbbd4f20c7d2945f68"
 dependencies = [
  "serde",
  "serde_json",
