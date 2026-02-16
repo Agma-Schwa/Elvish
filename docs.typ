@@ -138,8 +138,8 @@ There are two ways in which work order may be expressed. First, all nouns have a
 For example, forming #i[xúnną dį́gá] has the effect of raising the work order of #i[dį́gá] to #s[w5] (since $11-6=5$); thus, this phrase is suitable for referring to a cane that performs as much work as a Head Miner (whatever that means). There are a few things that one needs to keep in mind here:
 - Attempting to raise/lower the work order of a noun below the minimum (#s[w11]) or maximum (#s[w1]) work order is ungrammatical.
 - The ‘lowest’ work order is 11 and the ‘highest’ is 1, thus ‘raising’ counterintuitively occurs from a larger number to a smaller number, and ‘lowering’ from a smaller number to a larger number, e.g. work order 5 can be ‘raised’ to 4 or ‘lowered’ to 6.
-- Lowering the work order of a noun with default work order #s[w1] is generally done to refer to people who have an inflated self of ego, e.g. a Master Carbonator who starts trying to order around the rest of the council as though it were the Chimney Man Himself may be referred to as an #w[tsąn’o są́ntą́] ‘Master-Carbonator-level Chimney Man’ (lit. ‘Chimney Man’ lowered to work ordre #s[w3]). 
-- Note that in this sense, lowering generally has the effect of expressing disdain, denigrating something, or making something seem less important, whereas raising is typically a form of praise.
+- Lowering the work order of a noun with default work order #s[w1] is generally done to refer to people who have an inflated self of ego, e.g. a Master Carbonator who starts trying to order around the rest of the council as though it were the Chimney Man Himself may be referred to as an #w[tsąn’o są́ntą́] ‘Master Carbonator who acts as though it were The Chimney Man’ (lit. ‘Chimney Man’ lowered to work order #s[w3]).
+- Note that in this sense, lowering generally has the effect of expressing disdain, denigrating something, or making something seem less important or fake, whereas raising is typically a form of praise.
 - The inverse is generally acceptable, e.g. #w[shindí dį́gá] ‘A cane made personally by The Chimney Man’.
 - As we just saw, work order raising/lowering can be used to communicate that an otherwise low-status being or object (or high-status being or object) is in some manner closely associated with something or someone of higher status (or lower status), e.g. #i[xúnną dį́gá] can also refer to a cane that belongs to a Head Miner.
 
@@ -161,16 +161,20 @@ The default number is Collective. An unmarked noun is assumed to be collective. 
 
 Noun markers precede the noun (phrase) they qualify; the following is an exhaustive list of Elvish noun markers:
 - #w[shu] ‘non-collective’ (#s[nc]), e.g. #i[shu ną́nrų́] ‘one or more Elves’.
-- #w[ų́rų́] ‘performs work’ (#s[wrk]); this is used to mark the agent of a verb that denotes an action that is considered to perform work.
-- #w[duntú] ‘does not perform work’ (#s[nwk]); this is used to mark the agent of a verb that denotes a state or an action that is not considered to perform (worthwile) work.
-- #w[tchą́’ų́] ‘has work performed on it’ (#s[wkd]): this is used to mark the theme of a verb
+- #w[tchą́’ų́] ‘performs work’ (#s[wrk] ‘working’); this is used to mark the agent of a verb that denotes an action that is considered to perform work.
+- #w[duntú] ‘does not perform work’ (#s[nwk] ‘not working’); this is used to mark the agent of a verb that denotes a state or an action that is not considered to perform (worthwile) work.
+- #w[ų́rų́] ‘has work performed on it’ (#s[wkd] ‘worked [on]’); this is used to mark the theme of a verb
   whose agent is in the #s[wrk] form.
-- #w[ų́xį́] ‘is being manipulated in some fashion’ (#s[man]): this is used to mark the theme of
-  a verb whose agent is in the #s[nwd].
+- #w[ų́xį́] ‘is being manipulated in some fashion’ (#s[man] ‘manipulated’); this is used to mark the theme of
+  a verb whose agent is in the #s[nwk].
 
 This system naturally gives rise to 2 verb classes:
 - ‘working verbs’, whose agent is in the #s[wrk] case and whose theme is in the #s[wkd] case.
 - ‘lazy verbs’, whose agent is in the #s[nwk] case, and whose theme is in the #s[nwd] case.
+
+There are also a number of contractions:
+- #i[tchą́’ų́ + ų́rų́] $->$ #w[tchą́’ų́rų́]: reflexive form used with working verbs.
+- #i[duntú + ų́xį́] $->$ #w[dunxį́]: reflexive form used with lazy verbs.
 
 The verb itself is only inflected for tense (see @tam).
 
@@ -240,7 +244,7 @@ For example, $2+2=4$.
 3. If an elf dies, they are 'retired' or 'decommissioned'.
 
 = Lore
-== ‘Retirement’
+== ‘Retirement’ <retirement>
 A central concept in Elvish society is #w[shų́ną] ‘retirement’.
 Elves never stop working; that is, an Elf only ‘retires’ at the moment of their death. In some cases, Elves who have acted out of line or otherwise disrupted the coal mining process—or worse, slighted The Chimney Man—can be ‘decommissioned’, which entails _actively_ ‘retiring’ an Elf. This is also known as ‘dishonourable retirement’.
 

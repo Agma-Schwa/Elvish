@@ -1,5 +1,5 @@
 tshǫ’ǫ|n. w11||Ribbon
-shų́ną|n. w4||Retirement \comment See the ‘retirement’ section in the lore.
+shų́ną|n. w4||Retirement \comment See \ref{retirement}.
 dį́gá|n. w11||Cane
 są́ntą́|n. w1||The Chimney Man
 
@@ -11,6 +11,10 @@ ną́nrų́|n.||
 oncų|adj.||
     \\ First
     \\ \i{n. w5} oncų ną́nrų́
+
+ishú|n. w11||
+    \\ Charcoal
+    \\ \i{fig.} Something that is fake or wrong; fraud; impostor
 
 natá|||\i{Work Order raising marker; see \ref{work-order-marking}}
 cį́chą|||\i{Work Order raising marker; see \ref{work-order-marking}}
