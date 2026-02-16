@@ -1,11 +1,12 @@
 use aho_corasick::{AhoCorasick, MatchKind};
-use dictgen::{LanguageOps, Node, Options};
+use dictgen::{LanguageOps, Node, Options, Part};
 use lazy_static::lazy_static;
 use wasm_minimal_protocol::*;
 
 initiate_protocol!();
 
 static PATTERNS: &[&str] = &[
+    "-",
     "n",
     "d", "t", "c", "g", "’",
     "s", "sh", "ch", "x",
@@ -16,6 +17,7 @@ static PATTERNS: &[&str] = &[
 ];
 
 static REPLACEMENTS: &[&str] = &[
+    "",
     "ɴˀ",
     "d̻", "t̻", "c͡k", "ɟ͡g", "ʔ",
     "s̻", "s̻ʰ", "ç͡x", "ç͡xʰ",
@@ -38,11 +40,12 @@ struct ElvishOps;
 impl LanguageOps for ElvishOps {
     fn to_ipa(&self, word: &str) -> dictgen::Result<Option<Node>> {
         const { assert!(PATTERNS.len() == REPLACEMENTS.len()); };
-        let replaced = IPA_TRIE.replace_all(word, REPLACEMENTS);
+        let word = word.to_lowercase();
+        let replaced = IPA_TRIE.replace_all(&word, REPLACEMENTS);
         if replaced.contains('$') {
             let mut nodes = Vec::<Node>::new();
             let mut first = true;
-            for part in IPA_TRIE.replace_all(word, REPLACEMENTS).split('$') {
+            for part in replaced.split('$') {
                 if first {
                     first = false
                 } else {
@@ -58,7 +61,16 @@ impl LanguageOps for ElvishOps {
         } else {
             Ok(Some(Node::text(replaced)))
         }
+    }
 
+    fn preprocess_full_entry(&self, entry: &mut [std::borrow::Cow<'_, str>]) -> dictgen::Result<()> {
+        let etym = &mut entry[Part::Etym as usize];
+        if !etym.is_empty() && !etym.contains(' ') {
+            let wrapped = format!("from \\w{{{}}}", etym.to_owned());
+            *etym.to_mut() = wrapped;
+        }
+
+        Ok(())
     }
 }
 

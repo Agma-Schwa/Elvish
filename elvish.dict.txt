@@ -1,7 +1,37 @@
 tshǫ’ǫ|n. w11||Ribbon
 shų́ną|n. w4||Retirement \comment See \ref{retirement}.
 dį́gá|n. w11||Cane
-są́ntą́|n. w1||The Chimney Man
+Są́ntą́|n. w1||The Chimney Man \comment Always capitalised. This noun is never
+    declined for number as there is, has been, and will only ever be one Chimney Man.
+isi|adj. w11||Red
+xúsų|adj. w11||Black
+txǫncų|n.||Elvish given name
+rǫngi|n. w4||
+    \\ Cloak
+    \comment This specifically refers to a type of cloak worn only
+    by Colliers and Master Carbonators.
+    \\ Bigwig, big shot \comment Colloquial term for Elves at the rank of Collier and above.
+isirǫngi|n. w4|from \w{isi} and \w{rǫngi}|Collier
+    \comment Lit. ‘redcloak’; this is a reference to the red cloaks worn by Colliers.
+xúsųrǫngi|n. w3|from \w{xúsų} and \w{rǫngi}|Master Carbonator
+    \comment Lit. ‘blackcloak’; this is a reference to the cloaks worn by Master Carbonators,
+        which are embroidered with black Coal-like patterns.
+Shǫnxąrǫngi|n. w2|from \w{Shǫnxą} and \w{rǫngi}|Grand Carbonator
+    \comment Lit. ‘coal cloak’; the title of the Grand Carbonator, who wears an entirely black cloak
+    coated with coal.
+Shǫnxąshų́ną|n. w2|from \w{Shǫnxą} and \w{shų́ną}|Coal burial \comment See \ref{retirement}
+tá-|particle||\i{Possessive marker; this is placed directly before a noun (even in a noun phrase) and is always unstressed}
+    \ex \w{tá-Są́ntą́} ‘of The Chimney Man’
+    \ex \w{ríngú isi tá-dį́gá} ‘handles of red canes’
+ríngú|n. w11||Handle
+shúxu|n. w4||Chimney
+rǫsa|v. lz.||To slide
+gan|particle|gantú|Evidentiality marker; see \ref{evidentiality}.
+Są́n|particle|Są́ntą́|Evidentiality marker; see \ref{evidentiality}.
+txą́|particle|txą́cą|Evidentiality marker; see \ref{evidentiality}.
+tsų́n|particle||Evidentiality marker; see \ref{evidentiality}.
+gantú|v.||To see
+txą́cą|n. w3||The North Pole
 
 ną́nrų́|n.||
     \\\i{w7} Coal miner
@@ -15,6 +45,10 @@ oncų|adj.||
 ishú|n. w11||
     \\ Charcoal
     \\ \i{fig.} Something that is fake or wrong; fraud; impostor
+
+Shǫnxą|n. w2||Coal
+    \comment The most important noun in Elvish, second only to The Chimney Man. This word
+    and all words derived from it are always capitalised.
 
 natá|||\i{Work Order raising marker; see \ref{work-order-marking}}
 cį́chą|||\i{Work Order raising marker; see \ref{work-order-marking}}

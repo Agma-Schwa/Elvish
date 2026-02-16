@@ -55,7 +55,7 @@ Q = ̨
 ```
 #partitle[Phonotactics]
 ```
-[C|A]V(Q)((n)[C|’]V(Q))|V(Q)[(n)C]V(Q)
+[C|A]V(Q)((n|r)([C|’]V(Q)))|V(Q)[(n|r)C]V(Q)
 ```
 
 #partitle[Example word]
@@ -81,14 +81,14 @@ Animacy is vital to determining word order in Elvish. The highest animacy, and t
   In any circumstance in which The Chimney Man is referenced, He will always have the highest Work Order, for He is always working the Hardest. Except for the day after Christmas.
 
 + Coal (#s[w2]) \
-  Coal is considered the most important aspect of Elvish society and thus placed just below The Chimney Man. It is also considered capable of performing more work
-  than any Elf as it generates a lot of energy when burnt (unlike Elves).
+  Coal is considered the most important aspect of Elvish society and thus placed just below The Chimney Man. It is also considered capable of performing more work than any Elf as it generates a lot of energy when burnt (unlike Elves).
+  Amongst Elves, only the Grand Carbonator is assigned a work order of 2 (see @carbonators).
 
 + Master Carbonator (#s[w3]) \
-  The highest social status that an Elf can obtain; the council of Master Carbonators rules over Elvish society and reports directly to The Chimney Man.
+  The highest social status that an Elf can obtain; the council of Master Carbonators rules over Elvish society and reports directly to the Grand Carbonator (see @carbonators).
 
 + Collier (#s[w4]) \
-  Highly experienced Elves that have been working in the coal industry for at least 100 years; these are typically regional overseers.
+  Highly experienced Elves that have been working in the coal industry for at least 100 years; these are typically regional overseers. Only Elves at the rank of Collier or above enjoy the privilege of having their names capitalised in writing.
 
 + Head Miner (#s[w5]) \
   Elf in charge of a coal mine.
@@ -143,9 +143,8 @@ For example, forming #i[xúnną dį́gá] has the effect of raising the work or
 - The inverse is generally acceptable, e.g. #w[shindí dį́gá] ‘A cane made personally by The Chimney Man’.
 - As we just saw, work order raising/lowering can be used to communicate that an otherwise low-status being or object (or high-status being or object) is in some manner closely associated with something or someone of higher status (or lower status), e.g. #i[xúnną dį́gá] can also refer to a cane that belongs to a Head Miner.
 
-== Adjective Hierarchy
-
-In sequences of adjectives (which Elves are particularly prone to), the following categories of heirarchy of importance determines the order at which they are uttered:
+== Adjectives
+In sequences of adjectives (which Elves are particularly prone to), the following categories of hierarchy of importance determines the order at which they are uttered:
 
 + Christmas
 + Coal
@@ -154,6 +153,17 @@ In sequences of adjectives (which Elves are particularly prone to), the followin
 + Humans
 + Rest
 
+Adjectives precede the noun they qualify.
+
+=== Standalone Adjective Phrases
+A very common idom in Elvish is to refer to a noun (phrase) in the domain of discourse by an adjective that describes it,
+optionally preceded by a work order marker that agrees with the work order of the noun (phrase); this largely replaces pronouns
+in Elvish.
+
+In writing, it is common for the first mention of a noun phrase to be accompanied by one or more adjectives that may later on be
+used to refer to it.#footnote[This is omitted in spoken language when the noun phrase is something that is clearly visible to
+all interlocutors.] For example, a Master Carbonator with the name of #w[Txǫncų] might be introduced as #i[Txǫncų xúsųrǫngi] ‘Master Carbonator Txǫncų’ (lit. ‘Blackcloak Txǫncų’) and then later on referred to as #w[Xį́ntí Xúsų] (lit. ‘black~#s[+w8]’). Such adjective phrases are capitalised if they refer to a noun that is capitalised.
+
 == Nouns at Work
 Nouns are declined for whether or not they perform work. Essentially this marks their position as an agent or patient in any given clause. The verb itself is not declined for voice---this information is contained exclusively in the noun phrase.
 
@@ -161,8 +171,8 @@ The default number is Collective. An unmarked noun is assumed to be collective. 
 
 Noun markers precede the noun (phrase) they qualify; the following is an exhaustive list of Elvish noun markers:
 - #w[shu] ‘non-collective’ (#s[nc]), e.g. #i[shu ną́nrų́] ‘one or more Elves’.
-- #w[tchą́’ų́] ‘performs work’ (#s[wrk] ‘working’); this is used to mark the agent of a verb that denotes an action that is considered to perform work.
-- #w[duntú] ‘does not perform work’ (#s[nwk] ‘not working’); this is used to mark the agent of a verb that denotes a state or an action that is not considered to perform (worthwile) work.
+- #w[tchą́] ‘performs work’ (#s[wrk] ‘working’); this is used to mark the agent of a verb that denotes an action that is considered to perform work.
+- #w[dun] ‘does not perform work’ (#s[nwk] ‘not working’); this is used to mark the agent of a verb that denotes a state or an action that is not considered to perform (worthwile) work.
 - #w[ų́rų́] ‘has work performed on it’ (#s[wkd] ‘worked [on]’); this is used to mark the theme of a verb
   whose agent is in the #s[wrk] form.
 - #w[ų́xį́] ‘is being manipulated in some fashion’ (#s[man] ‘manipulated’); this is used to mark the theme of
@@ -173,21 +183,22 @@ This system naturally gives rise to 2 verb classes:
 - ‘lazy verbs’, whose agent is in the #s[nwk] case, and whose theme is in the #s[nwd] case.
 
 There are also a number of contractions:
-- #i[tchą́’ų́ + ų́rų́] $->$ #w[tchą́’ų́rų́]: reflexive form used with working verbs.
-- #i[duntú + ų́xį́] $->$ #w[dunxį́]: reflexive form used with lazy verbs.
+- #i[tchą́ + ų́rų́] $->$ #w[tchą́rų́]: reflexive form used with working verbs.
+- #i[dun + ų́xį́] $->$ #w[dunxį́]: reflexive form used with lazy verbs.
 
 The verb itself is only inflected for tense (see @tam).
 
 == Pronouns
 As Santaa contains no first person, an Elf refers to oneself as "This Elf," with verbs inflected in the third person.
 
-Verbs are not inflected for number, only nouns are.
+== Verbs
+Verbs are not inflected for number, only nouns are. In the absence of work order distinction, the default word order is VOS. Verbs generally do not have an associated work order (unless they are derived from a noun) and are generally placed first; the main exception to this is that nouns with work order 1 are always placed first and precede even the verb.
 
 == Tense, Aspect, Mood <tam>
 Tense follows a paradigm relative to The Chimney Man's typical stage of sleep throughout a given year.
 For example, if the Chimney Man is in REM sleep during April, and it's currently June, the "REM" tense would be used to discuss something in the past.
 
-+ Awake (#s[awk]): Christmas Eve~
++ Awake (#s[awk]): Christmas Eve
 + REM sleep (#s[rem]): \~December 29th -- May 3rd
 + Non-REM Phase 1 (#s[nr1]): \~May 4th -- August 25th
 + Non-REM Phase 2 (#s[nr2]): \~August 26th -- November 9th
@@ -208,7 +219,7 @@ For example, a sentence that was spoken on the 20th of August referring to a pas
 
 During the Non-REM Phase 3, the Future is the Awake Tense. This wraps ad infinitum.
 
-One has to be careful not to confuse tense between direct speeach and reported speech.
+One has to be careful not to confuse tense between direct speech and reported speech.
 For example, given an utterance that was spoken during Non-REM Phase 1 but _in_ Non-REM Phase 2 Tense, that utterance refers to the future. But if such an utterance were erroneously reported in that same tense during Non-REM Phase 3, it would incorrectly refer to the past. Instead, the Awake Tense should be used to paraphrase.
 
 Note that the tenses are only relative to the point of utterance.
@@ -227,12 +238,12 @@ Since a sentence in a vacuum without any information as to when it was uttered i
 
 === Moods
 
-=== Evidentiality
+=== Evidentiality <evidentiality>
 Evidentiality is split into four categories:
-- that which is decreed by the Chimney Man (truth)
-- that which is directly observable
-- that which is purported to exist (in the North Pole)
-- that which is purported to exist elsewhere
+- #w[Są́n] (#s[e1]): that which is decreed by the Chimney Man (truth)
+- #w[gan] (#s[e2]): that which is directly observable
+- #w[txą́] (#s[e3]): that which is purported to exist (in the North Pole)
+- #w[tsų́n] (#s[e4]): that which is purported to exist elsewhere
 
 Statements of fact use the Chimney man evidentiality.
 For example, $2+2=4$.
@@ -241,14 +252,41 @@ For example, $2+2=4$.
 = Lexicon
 1. The word for 'Elf' literally means 'miner'.
 2. The word for 'to be alive' is the intransitive of 'to mine'.
-3. If an elf dies, they are 'retired' or 'decommissioned'.
+3. If an Elf dies, it is 'retired' or 'decommissioned'.
+
+= Examples
+#gloss-show-numbers(false)
+It is assumed that the examples below are spoken on 2 February.
+#gloss(`
+Gan nun’a rǫsa shu ų́xį́ shúxu shu dun txǫncų.
+gan nun’a rǫsa shu ų́xį́ shúxu shu dun txǫncų
+{e2} {rem} slide {nc} {man} chimney {nc} {nwk} Txǫncų
+Txǫncų slides down the Chimney (and I see it do so)
+`)
 
 = Lore
+== Gender
+Elves have no concept of gender and are each referred to as ‘it’. They also do not reproduce naturally and are instead all created by The Chimney Man.
+
+== The Carbonators <carbonators>
+At the very top of Elvish society stands the council of Master Carbonators. This council consists of a dozen or so Elves who are assigned a work order of 3.
+
+The council is ruled over by the Grand Carbonator. It is the sole Elf that is assigned a work order of 2, and who is thus considered equally important to the Elves as Coal itself. The Grand Carbonator is effectively the right-hand Elf of The Chimney Man and reports to Him in person every Christmas Eve.
+
+== Elvish Upper Class
+The social classes of Collier and Master Carbonator comprise the upper classes of Elvish society; these Elves are easily identified as only they are entitled to wear #w[rǫngi] ‘cloaks’. These cloaks come in three forms:
+
+- Colliers wear crimson cloaks and are thus commonly referred to as #w[isirǫngi] ‘redcloaks’.
+- Master Carbonators wear crimson cloaks embroidered with black patterns of Coal and are thus commonly referred to as #w[xúsųrǫngi] ‘blackcloaks’.
+- Finally, the Grand Carbonator’s cloak is entirely black and coated with Coal; for this reason, the Grand Carbonator is commonly referred to as #w[Shǫnxąrǫngi] ‘Coal cloak’.
+
+
 == ‘Retirement’ <retirement>
 A central concept in Elvish society is #w[shų́ną] ‘retirement’.
-Elves never stop working; that is, an Elf only ‘retires’ at the moment of their death. In some cases, Elves who have acted out of line or otherwise disrupted the coal mining process—or worse, slighted The Chimney Man—can be ‘decommissioned’, which entails _actively_ ‘retiring’ an Elf. This is also known as ‘dishonourable retirement’.
+Elves never stop working; that is, an Elf only ‘retires’ at the moment of its death. In some cases, Elves who have acted out of line or otherwise disrupted the Coal mining process—or worse, slighted The Chimney Man—can be ‘decommissioned’, which entails _actively_ ‘retiring’ an Elf. This is also known as ‘dishonourable retirement’.
 
-Elves that retire honourably are given a ‘coal burial’, i.e. they are cremated in such a way as to turn them into coal, thus contributing to Elvish society even after their demise.
+Elves that retire honourably are given a #w[Shǫnxąshų́ną] ‘Coal burial’, i.e. they are cremated in such a way as to turn them into coal, thus contributing to Elvish society even after their demise.
 
 = Dictionary
+Lazy verbs are marked with \i{lz}, working verbs with \i{wk}.
 #dictionary(read("elvish.dict.txt"), elvish)
