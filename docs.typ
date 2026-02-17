@@ -13,14 +13,17 @@
 #show : mainmatter
 
 = Phonology
-- No lips -> no rounded or labial
-- Stiff tongue -> no apical sounds; only laminal consonants
+Elvish has no rounded vowels or labial consonants as Elves have no lips. They also have a rather stiff tongue,
+which leads to a lack of apical sounds as well as the palatal and velar places of articulation collapsing together.
+
+All Elvish consonants are egressive, and all vowels are ingressive. This means that the articulation of an Elvish word
+requires the speaker to constantly flip-flop between breathing in and breathing out.
 
 == Consonants
 #rowtable(
     hlineat(1),
     vlineat(1),
-    [            & Alveolar         & Palatovelar         & Uvulo-Glottal ],
+    [            & Alveolar         & Palato-velar        & Uvulo-Glottal ],
     [ Nasal      &                  &                     & ɴˀ ⟨n⟩        ],
     [ Stop       & d̻ t̻    ⟨d t⟩     & c͡k ɟ͡g      ⟨c g⟩    & ʔ  ⟨’⟩        ],
     [ Fricative  & s̻ s̻ʰ   ⟨s sh⟩    & ç͡x ç͡xʰ     ⟨ch x⟩   &               ],
@@ -30,19 +33,17 @@
 
 - #w[r] is a coarticulated palatal-velar trill (yes, Elves can do that)
 
-== Vowel
-
-// the palatal-velar click) is a vowel because clicks are ingressive.
-
+== Vowels
 #rowtable(
     hlineat(1),
     vlineat(1),
-    [             & Front        & Back         & Click  ],
-    [ Close       & i↓ ɪ↓ ⟨i í⟩  & ɯ↓ ɯ̽↓ ⟨u ú⟩  &        ],
-    [ Open        & a↓ ɐ↓ ⟨a á⟩  &              &        ],
-    [ Palatovelar &              &              & ᵏǂ ⟨o⟩ ]
+    [              & Front        & Back         & Click  ],
+    [ Close        & i↓ ɪ↓ ⟨i í⟩  & ɯ↓ ɯ̽↓ ⟨u ú⟩  &        ],
+    [ Open         & a↓ ɐ↓ ⟨a á⟩  &              &        ],
+    [ Palato-velar &              &              & ᵏǂ ⟨o⟩ ]
 )
 
+- Ingressive sounds are considered vowels, and thus, the palatal-velar click is a vowel.
 - Any vowel can be followed by #super[ʄ͡ɠ] ⟨◌̨⟩, which signifies the ‘velar quality’, e.g. #w[ų́].
 
 == Phonotactics
@@ -64,7 +65,6 @@ Q = ̨
 // TODO: Make the noun (phrase) ‘cellar door’ sound as horrible as possible.
 
 = Grammar
-
 vtrbt Q NQ (causative)
 NQ (transitive)
 "Kyle slides (Q/NQ) down the chimney."
@@ -73,8 +73,7 @@ He (is) an elf.
 
 (essentially recreate a dummy "do" that can also operate as a contextual ellipsis on previosuly stated verbs)
 
-== Work Orders
-
+== Work Order
 Animacy is vital to determining word order in Elvish. The highest animacy, and thus primacy in a clause, goes to that which is working the hardest. This is 'Work Order.' From highest work order to lowest, the ranks go as follows:
 
 + The Chimney Man (#s[w1]) \
@@ -85,19 +84,20 @@ Animacy is vital to determining word order in Elvish. The highest animacy, and t
   Amongst Elves, only the Grand Carbonator is assigned a work order of 2 (see @carbonators).
 
 + Master Carbonator (#s[w3]) \
-  The highest social status that an Elf can obtain; the council of Master Carbonators rules over Elvish society and reports directly to the Grand Carbonator (see @carbonators).
+  The highest social status that a normal Elf can obtain; the council of Master Carbonators rules over Elvish society and reports directly to the Grand Carbonator (see @carbonators).
 
 + Collier (#s[w4]) \
-  Highly experienced Elves that have been working in the coal industry for at least 100 years; these are typically regional overseers. Only Elves at the rank of Collier or above enjoy the privilege of having their names capitalised in writing.
+  Highly experienced Elves that have been working in the Coal industry for at least 100 years; these are typically regional overseers. Only Elves at the rank of Collier or above enjoy the privilege of having their names capitalised in writing, and
+  only they are entitled to wear cloaks (see @cloaks).
 
 + Head Miner (#s[w5]) \
-  Elf in charge of a coal mine.
+  Elf in charge of a Coal mine.
 
 + Canary (#s[w6]) \
-  Used for both the lowest class of Elves (i.e. the common coal miner) as well as the bird.
+  Used for both the lowest class of Elves (i.e. the common Coal miner) as well as the bird.
 
 + Human Coal Miners (#s[w7]) \
-  Used for human coal miners.
+  Used for human Coal miners.
 
 + Human Adults (#s[w8]) \
   Used for any other human adult.
@@ -106,16 +106,15 @@ Animacy is vital to determining word order in Elvish. The highest animacy, and t
   Used for any animal.
 
 + Human Children (#s[w10]) \
-  Used for human children (that are not coal miners). While important to Elvish society as the benificiaries of their toils, they are deemed the laziest of beings.
+  Used for human children (that are not Coal miners). While important to Elvish society as the benificiaries of their toils, they are deemed the laziest of beings.
 
 + Everything Else (#s[w11]) \
-  Genreally, any inanimate object other than coal, abstract concepts, etc.
+  Genreally, any inanimate object other than Coal, abstract concepts, etc.
 
 Some words may have work orders that aren’t obvious from their semantics, e.g. the word #w[shų́ną] ‘retirement’ has work order 4 as it is considered a culturally important part of Elvish society.
 
-=== Work Order Marking <work-order-marking>
-
-There are two ways in which work order may be expressed. First, all nouns have an inherent work order, e.g. #w[dį́gá] ‘cane’ always has work order 11. In addition to this, there is also a set of work order markers that may be placed before a noun to raise or lower its default work order. These affixes are as follows:
+== Work Order Marking <work-order-marking>
+There are two ways in which work order may be expressed. First, most lexical words (except verbs) have an inherent work order, e.g. #w[dį́gá] ‘cane’ always has work order 11. In addition to this, there is also a set of work order markers that may be placed before a word to raise or lower its default work order. These affixes are as follows:
 #center-table(
     caption: [Work Order Markers],
     align: (right, left, left),
@@ -164,7 +163,7 @@ In writing, it is common for the first mention of a noun phrase to be accompanie
 used to refer to it.#footnote[This is omitted in spoken language when the noun phrase is something that is clearly visible to
 all interlocutors.] For example, a Master Carbonator with the name of #w[Txǫncų] might be introduced as #i[Txǫncų xúsųrǫngi] ‘Master Carbonator Txǫncų’ (lit. ‘Blackcloak Txǫncų’) and then later on referred to as #w[Xį́ntí Xúsų] (lit. ‘black~#s[+w8]’). Such adjective phrases are capitalised if they refer to a noun that is capitalised.
 
-== Nouns at Work
+== Nouns at Work <nouns-at-work>
 Nouns are declined for whether or not they perform work. Essentially this marks their position as an agent or patient in any given clause. The verb itself is not declined for voice---this information is contained exclusively in the noun phrase.
 
 The default number is Collective. An unmarked noun is assumed to be collective. For concrete nouns, the Collective usually has the meaning of ‘all’ or ‘every’. As opposed to the unmarked "Collective" form, a marking describes a noun as "Non-Collective." This could refer to one individual or a fraction of some whole.
@@ -180,7 +179,7 @@ Noun markers precede the noun (phrase) they qualify; the following is an exhaust
 
 This system naturally gives rise to 2 verb classes:
 - ‘working verbs’, whose agent is in the #s[wrk] case and whose theme is in the #s[wkd] case.
-- ‘lazy verbs’, whose agent is in the #s[nwk] case, and whose theme is in the #s[nwd] case.
+- ‘lazy verbs’, whose agent is in the #s[nwk] case, and whose theme is in the #s[man] case.
 
 There are also a number of contractions:
 - #i[tchą́ + ų́rų́] $->$ #w[tchą́rų́]: reflexive form used with working verbs.
@@ -192,9 +191,9 @@ The verb itself is only inflected for tense (see @tam).
 As Santaa contains no first person, an Elf refers to oneself as "This Elf," with verbs inflected in the third person.
 
 == Verbs
-Verbs are not inflected for number, only nouns are. In the absence of work order distinction, the default word order is VOS. Verbs generally do not have an associated work order (unless they are derived from a noun) and are generally placed first; the main exception to this is that nouns with work order 1 are always placed first and precede even the verb.
+Verbs are either classified as ‘working’ or ‘lazy’ (see @nouns-at-work). Verbs are not inflected for number, only nouns are. In the absence of work order distinction, the default word order is VOS. Verbs generally do not have an associated work order (unless they are derived from a noun) and are generally placed first; the main exception to this is that nouns with work order 1 are always placed first and precede even the verb.
 
-== Tense, Aspect, Mood <tam>
+=== Tense, Aspect, Mood <tam>
 Tense follows a paradigm relative to The Chimney Man's typical stage of sleep throughout a given year.
 For example, if the Chimney Man is in REM sleep during April, and it's currently June, the "REM" tense would be used to discuss something in the past.
 
@@ -235,6 +234,7 @@ Reported Speech that paraphrases an utterance that was uttered during the "tempo
 Since a sentence in a vacuum without any information as to when it was uttered is impossible to extract temporal data from, any Elvish prose, etc. is always accompanied by a date, much like a diary entry would be. The exception to this is information uttered during the temporal void, during which the date is customarily omitted.
 
 === Aspect
+Aspect marking differs between working verbs and lazy verbs. Working verbs are marked for telicity (i.e. whether the work is done or not).
 
 === Moods
 
@@ -248,15 +248,14 @@ Evidentiality is split into four categories:
 Statements of fact use the Chimney man evidentiality.
 For example, $2+2=4$.
 
-
-= Lexicon
-1. The word for 'Elf' literally means 'miner'.
-2. The word for 'to be alive' is the intransitive of 'to mine'.
-3. If an Elf dies, it is 'retired' or 'decommissioned'.
+== Derivation
+=== Vowel Swapping
+A common way to turn a noun into a verb in Elvish that applies solely to disyllabic words is to swap the vowels, e.g.
+#w[ną́nrų́] ‘Coal miner’ becomes #w[nų́nrą́] ‘to mine Coal’.
 
 = Examples
 #gloss-show-numbers(false)
-It is assumed that the examples below are spoken on 2 February.
+It is assumed that the examples below are spoken on 2 February (i.e. during the REM phase).
 #gloss(`
 Gan nun’a rǫsa shu ų́xį́ shúxu shu dun txǫncų.
 gan nun’a rǫsa shu ų́xį́ shúxu shu dun txǫncų
@@ -273,20 +272,21 @@ At the very top of Elvish society stands the council of Master Carbonators. This
 
 The council is ruled over by the Grand Carbonator. It is the sole Elf that is assigned a work order of 2, and who is thus considered equally important to the Elves as Coal itself. The Grand Carbonator is effectively the right-hand Elf of The Chimney Man and reports to Him in person every Christmas Eve.
 
-== Elvish Upper Class
+== Elvish Upper Class <cloaks>
 The social classes of Collier and Master Carbonator comprise the upper classes of Elvish society; these Elves are easily identified as only they are entitled to wear #w[rǫngi] ‘cloaks’. These cloaks come in three forms:
 
 - Colliers wear crimson cloaks and are thus commonly referred to as #w[isirǫngi] ‘redcloaks’.
 - Master Carbonators wear crimson cloaks embroidered with black patterns of Coal and are thus commonly referred to as #w[xúsųrǫngi] ‘blackcloaks’.
 - Finally, the Grand Carbonator’s cloak is entirely black and coated with Coal; for this reason, the Grand Carbonator is commonly referred to as #w[Shǫnxąrǫngi] ‘Coal cloak’.
 
+Low-ranking Elves who pretend to have a higher social rank than they actually do are referred to as #w[ishúrǫngi] ‘fake cloaks’; wearing a cloak that corresponds to a higher class than one’s own is generally punished by decommissioning (see @retirement).
 
 == ‘Retirement’ <retirement>
 A central concept in Elvish society is #w[shų́ną] ‘retirement’.
 Elves never stop working; that is, an Elf only ‘retires’ at the moment of its death. In some cases, Elves who have acted out of line or otherwise disrupted the Coal mining process—or worse, slighted The Chimney Man—can be ‘decommissioned’, which entails _actively_ ‘retiring’ an Elf. This is also known as ‘dishonourable retirement’.
 
-Elves that retire honourably are given a #w[Shǫnxąshų́ną] ‘Coal burial’, i.e. they are cremated in such a way as to turn them into coal, thus contributing to Elvish society even after their demise.
+Elves that retire honourably are given a #w[Shǫnxąshų́ną] ‘Coal burial’, i.e. they are cremated in such a way as to turn them into Coal, thus contributing to Elvish society even after their demise.
 
 = Dictionary
-Lazy verbs are marked with \i{lz}, working verbs with \i{wk}.
+Lazy verbs are marked with #i[lz], working verbs with #i[wk].
 #dictionary(read("elvish.dict.txt"), elvish)

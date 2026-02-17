@@ -12,13 +12,14 @@ rǫngi|n. w4||
     by Colliers and Master Carbonators.
     \\ Bigwig, big shot \comment Colloquial term for Elves at the rank of Collier and above.
 isirǫngi|n. w4|from \w{isi} and \w{rǫngi}|Collier
-    \comment Lit. ‘redcloak’; this is a reference to the red cloaks worn by Colliers.
+    \comment Lit. ‘redcloak’; see \ref{cloaks}
 xúsųrǫngi|n. w3|from \w{xúsų} and \w{rǫngi}|Master Carbonator
-    \comment Lit. ‘blackcloak’; this is a reference to the cloaks worn by Master Carbonators,
+    \comment Lit. ‘blackcloak’; see \ref{cloaks}
         which are embroidered with black Coal-like patterns.
 Shǫnxąrǫngi|n. w2|from \w{Shǫnxą} and \w{rǫngi}|Grand Carbonator
-    \comment Lit. ‘coal cloak’; the title of the Grand Carbonator, who wears an entirely black cloak
-    coated with coal.
+    \comment Lit. ‘coal cloak’; see \ref{cloaks}
+ishúrǫngi|n. w11|from \w{ishú} and \w{rǫngi}|Someone who pretends to have a higher social rank than they actually do
+    \comment Lit. ‘false cloak’; see \ref{cloaks}
 Shǫnxąshų́ną|n. w2|from \w{Shǫnxą} and \w{shų́ną}|Coal burial \comment See \ref{retirement}
 tá-|particle||\i{Possessive marker; this is placed directly before a noun (even in a noun phrase) and is always unstressed}
     \ex \w{tá-Są́ntą́} ‘of The Chimney Man’
@@ -35,9 +36,13 @@ txą́cą|n. w3||The North Pole
 
 ną́nrų́|n.||
     \\\i{w7} Coal miner
-    \\\i{w11} Elf \comment All Elves are coal miners, whence this sense follows naturally.
-        This is the Generic term for an Elf whose social status is unknown; it is
-        never used for Elves whose status is known.
+    \\\i{w6} Elf \comment All Elves are coal miners, whence this sense follows naturally.
+        This is the Generic term for an Elf whose social status is unknown, as well as the
+        term for Canaries.
+nų́nrą́|v. w6|ną́nrų́|
+    \\To mine Coal
+    \\To be alive
+
 oncų|adj.||
     \\ First
     \\ \i{n. w5} oncų ną́nrų́
