@@ -33,6 +33,10 @@ txą́|particle|txą́cą|Evidentiality marker; see \ref{evidentiality}.
 tsų́n|particle||Evidentiality marker; see \ref{evidentiality}.
 gantú|v.||To see
 txą́cą|n. w3||The North Pole
+shų́’i|n. w11||
+    \\ A tunnel in a Coal mine
+    \\ \w{\this ta-xąro} Blood vessel \comment Lit. ‘blood tunnel’
+xąro|n. w11||Blood
 
 ną́nrų́|n.||
     \\\i{w7} Coal miner

@@ -263,7 +263,7 @@ gan nun’a rǫsa shu ų́xį́ shúxu shu dun txǫncų
 Txǫncų slides down the Chimney (and I see it do so)
 `)
 
-= Lore
+= Worldbuilding
 == Gender
 Elves have no concept of gender and are each referred to as ‘it’. They also do not reproduce naturally and are instead all created by The Chimney Man.
 
@@ -286,6 +286,9 @@ A central concept in Elvish society is #w[shų́ną] ‘retirement’.
 Elves never stop working; that is, an Elf only ‘retires’ at the moment of its death. In some cases, Elves who have acted out of line or otherwise disrupted the Coal mining process—or worse, slighted The Chimney Man—can be ‘decommissioned’, which entails _actively_ ‘retiring’ an Elf. This is also known as ‘dishonourable retirement’.
 
 Elves that retire honourably are given a #w[Shǫnxąshų́ną] ‘Coal burial’, i.e. they are cremated in such a way as to turn them into Coal, thus contributing to Elvish society even after their demise.
+
+== Idioms
+Since Coal is the most important aspect of Elvish society, many idioms and phrases in Elvish revolve around Coal and anything involved in the Coal mining process. For example, whereas in English a seam of Coal may be referred to as a ‘coal vein’ in analogy with the veins of the human body, Elvish does the opposite: the term #w[shų́’i ta-xąro] ‘blood vessel’ literally means ‘blood tunnel’ where #i[shų́’i] is the term for a tunnel in a Coal mine.
 
 = Dictionary
 Lazy verbs are marked with #i[lz], working verbs with #i[wk].
