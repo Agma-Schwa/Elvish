@@ -1,8 +1,10 @@
 tshǫ’ǫ|n. w11||Ribbon
 shų́ną|n. w4||Retirement \comment See \ref{retirement}.
 dį́gá|n. w11||Cane
-Są́ntą́|n. w1||The Chimney Man \comment Always capitalised. This noun is never
-    declined for number as there is, has been, and will only ever be one Chimney Man.
+Są́ntą́|n. w1|from \w{są́n} and \w{tą́}; direct borrowing from Santaa|
+    The Chimney Man
+        \comment Always capitalised. This noun is never declined for number as there is,
+        has been, and will only ever be one Chimney Man.
 isi|adj. w11||Red
 xúsų|adj. w11||Black
 txǫncų|n.||Elvish given name
@@ -25,10 +27,11 @@ tá-|particle||\i{Possessive marker; this is placed directly before a noun (even
     \ex \w{tá-Są́ntą́} ‘of The Chimney Man’
     \ex \w{ríngú isi tá-dį́gá} ‘handles of red canes’
 ríngú|n. w11||Handle
-shúxu|n. w4||Chimney
+tą́|n. w4||Chimney
 rǫsa|v. lz.||To slide
 gan|particle|gantú|Evidentiality marker; see \ref{evidentiality}.
-Są́n|particle|Są́ntą́|Evidentiality marker; see \ref{evidentiality}.
+są́n|n. w11||Man
+sán|particle|reduced form of \w{są́n}|Evidentiality marker; see \ref{evidentiality}.
 txą́|particle|txą́cą|Evidentiality marker; see \ref{evidentiality}.
 tsų́n|particle||Evidentiality marker; see \ref{evidentiality}.
 gantú|v.||To see

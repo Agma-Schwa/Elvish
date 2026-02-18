@@ -43,6 +43,7 @@ requires the speaker to constantly flip-flop between breathing in and breathing 
     [ Palato-velar &              &              & ᵏǂ ⟨o⟩ ]
 )
 
+- Tense/lax distinction. Lax vowels are marked with an acute.
 - Ingressive sounds are considered vowels, and thus, the palatal-velar click is a vowel.
 - Any vowel can be followed by #super[ʄ͡ɠ] ⟨◌̨⟩, which signifies the ‘velar quality’, e.g. #w[ų́].
 
@@ -240,7 +241,7 @@ Aspect marking differs between working verbs and lazy verbs. Working verbs are m
 
 === Evidentiality <evidentiality>
 Evidentiality is split into four categories:
-- #w[Są́n] (#s[e1]): that which is decreed by the Chimney Man (truth)
+- #w[sán] (#s[e1]): that which is decreed by the Chimney Man (truth)
 - #w[gan] (#s[e2]): that which is directly observable
 - #w[txą́] (#s[e3]): that which is purported to exist (in the North Pole)
 - #w[tsų́n] (#s[e4]): that which is purported to exist elsewhere
@@ -257,8 +258,8 @@ A common way to turn a noun into a verb in Elvish that applies solely to disylla
 #gloss-show-numbers(false)
 It is assumed that the examples below are spoken on 2 February (i.e. during the REM phase).
 #gloss(`
-Gan nun’a rǫsa shu ų́xį́ shúxu shu dun txǫncų.
-gan nun’a rǫsa shu ų́xį́ shúxu shu dun txǫncų
+Gan nun’a rǫsa shu ų́xį́ tą́ shu dun txǫncų.
+gan nun’a rǫsa shu ų́xį́ tą́ shu dun txǫncų
 {e2} {rem} slide {nc} {man} chimney {nc} {nwk} Txǫncų
 Txǫncų slides down the Chimney (and I see it do so)
 `)
@@ -288,7 +289,7 @@ Elves never stop working; that is, an Elf only ‘retires’ at the moment of it
 Elves that retire honourably are given a #w[Shǫnxąshų́ną] ‘Coal burial’, i.e. they are cremated in such a way as to turn them into Coal, thus contributing to Elvish society even after their demise.
 
 == Idioms
-Since Coal is the most important aspect of Elvish society, many idioms and phrases in Elvish revolve around Coal and anything involved in the Coal mining process. For example, whereas in English a seam of Coal may be referred to as a ‘coal vein’ in analogy with the veins of the human body, Elvish does the opposite: the term #w[shų́’i ta-xąro] ‘blood vessel’ literally means ‘blood tunnel’ where #i[shų́’i] is the term for a tunnel in a Coal mine.
+Since Coal is the most important aspect of Elvish society, many idioms and phrases in Elvish revolve around Coal and anything involved in the Coal mining process. For example, whereas in English a seam of Coal may be referred to as a ‘coal vein’ in analogy with the veins of the human body, Elvish does the opposite: the term #w[shų́’i ta-xąro] ‘blood vessel’ literally means ‘tunnel of blood’, where #i[shų́’i] is the term for a tunnel in a Coal mine.
 
 = Dictionary
 Lazy verbs are marked with #i[lz], working verbs with #i[wk].
