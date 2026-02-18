@@ -136,7 +136,7 @@ There are two ways in which work order may be expressed. First, most lexical wor
 )
 
 For example, forming #i[xúnną dį́gá] has the effect of raising the work order of #i[dį́gá] to #s[w5] (since $11-6=5$); thus, this phrase is suitable for referring to a cane that performs as much work as a Head Miner (whatever that means). There are a few things that one needs to keep in mind here:
-- Attempting to raise/lower the work order of a noun below the minimum (#s[w11]) or maximum (#s[w1]) work order is ungrammatical.
+- Attempting to raise/lower the work order of a noun below the minimum (#s[w11]) above the maximum (#s[w1]) work order is ungrammatical.
 - The ‘lowest’ work order is 11 and the ‘highest’ is 1, thus ‘raising’ counterintuitively occurs from a larger number to a smaller number, and ‘lowering’ from a smaller number to a larger number, e.g. work order 5 can be ‘raised’ to 4 or ‘lowered’ to 6.
 - Lowering the work order of a noun with default work order #s[w1] is generally done to refer to people who have an inflated self of ego, e.g. a Master Carbonator who starts trying to order around the rest of the council as though it were the Chimney Man Himself may be referred to as an #w[tsąn’o są́ntą́] ‘Master Carbonator who acts as though it were The Chimney Man’ (lit. ‘Chimney Man’ lowered to work order #s[w3]).
 - Note that in this sense, lowering generally has the effect of expressing disdain, denigrating something, or making something seem less important or fake (this is known as ‘derogatory lowering’), whereas raising is typically a form of praise.
