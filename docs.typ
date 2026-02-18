@@ -318,8 +318,9 @@ Since Coal is the most important aspect of Elvish society, many idioms and phras
    - Rename ‘general’ and ‘general-2’ to ‘mining’ and ‘mining-2’.
    - Change the server icon to a picture of Coal.
    - Rename the server to ‘Agma’s Coal Mine’.
-   - Rename Agma to ‘The Grand Carbonator’.
-   - Rename Ætérnal to ‘The Master Carbonator’
+   - Rename Agma to ‘The Chimney Man’.
+   - Rename Ætérnal to ‘The Grand Carbonator’
+   - Some of the mods can rename themselves to ‘Master Carbonator’.
    - Change all role colours to shades of grey/black (save the previous colours so they can be restored)
    - Don’t rename the roles to people can still ping them for moderation purposes.
    - Rename the MC channel to ‘coal-mining’
