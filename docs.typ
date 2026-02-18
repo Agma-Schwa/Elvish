@@ -139,7 +139,7 @@ For example, forming #i[xúnną dį́gá] has the effect of raising the work or
 - Attempting to raise/lower the work order of a noun below the minimum (#s[w11]) or maximum (#s[w1]) work order is ungrammatical.
 - The ‘lowest’ work order is 11 and the ‘highest’ is 1, thus ‘raising’ counterintuitively occurs from a larger number to a smaller number, and ‘lowering’ from a smaller number to a larger number, e.g. work order 5 can be ‘raised’ to 4 or ‘lowered’ to 6.
 - Lowering the work order of a noun with default work order #s[w1] is generally done to refer to people who have an inflated self of ego, e.g. a Master Carbonator who starts trying to order around the rest of the council as though it were the Chimney Man Himself may be referred to as an #w[tsąn’o są́ntą́] ‘Master Carbonator who acts as though it were The Chimney Man’ (lit. ‘Chimney Man’ lowered to work order #s[w3]).
-- Note that in this sense, lowering generally has the effect of expressing disdain, denigrating something, or making something seem less important or fake, whereas raising is typically a form of praise.
+- Note that in this sense, lowering generally has the effect of expressing disdain, denigrating something, or making something seem less important or fake (this is known as ‘derogatory lowering’), whereas raising is typically a form of praise.
 - The inverse is generally acceptable, e.g. #w[shindí dį́gá] ‘A cane made personally by The Chimney Man’.
 - As we just saw, work order raising/lowering can be used to communicate that an otherwise low-status being or object (or high-status being or object) is in some manner closely associated with something or someone of higher status (or lower status), e.g. #i[xúnną dį́gá] can also refer to a cane that belongs to a Head Miner.
 
@@ -206,7 +206,7 @@ For example, if the Chimney Man is in REM sleep during April, and it's currently
 
 The markers for the #s[awk] tense follows the verb, all other markers precede the verb. These
 markers are as follows:
-+ Awake tense: #w[są́ntą]
++ Awake tense: #w[sąn]
 + REM sleep tense: #w[nun’a]
 + Non-REM Phase 1 tense: #w[txí]
 + Non-REM Phase 2 tense: #w[ronu]
