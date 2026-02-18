@@ -2,9 +2,19 @@
 #let elvish = plugin("plugin/target/wasm32-unknown-unknown/release/elvish.wasm")
 #show : setup.with(compact: true)
 
-#let ipa(s) = render-dictionary-node(
-    json(elvish.ipa_impl(bytes(s.text)))
-)
+#let ipa(s) = {
+    if s == none { "<NONE>" }
+    else {
+        render-dictionary-node(
+            json(elvish.ipa_impl(bytes(if type(s) == str { s } else { s.text })))
+        )
+    }
+}
+
+#gloss-set-ipa-function(ipa)
+#gloss-set-line-spacing(.6em) // Tie bars and ogoneks may collide, so space this out a bit more.
+#show "↓" : [#h(-.15em)↓]
+// Reduce kerning a bit to save space.
 
 #let w(s) = { [_#[#s]_ #box[/#ipa(s)/]] }
 #let i(s) = { [_#[#s]_] }
@@ -157,7 +167,7 @@ In sequences of adjectives (which Elves are particularly prone to), the followin
 
 Adjectives precede the noun they qualify.
 
-=== Standalone Adjective Phrases
+=== Standalone Adjective Phrases <standalone-adjective-phrases>
 A very common idom in Elvish is to refer to a noun (phrase) in the domain of discourse by an adjective that describes it,
 optionally preceded by a work order marker that agrees with the work order of the noun (phrase); this largely replaces pronouns
 in Elvish.
@@ -166,13 +176,20 @@ In writing, it is common for the first mention of a noun phrase to be accompanie
 used to refer to it.#footnote[This is omitted in spoken language when the noun phrase is something that is clearly visible to
 all interlocutors.] For example, a Master Carbonator with the name of #w[Txǫncų] might be introduced as #i[Txǫncų xúsųrǫngi] ‘Master Carbonator Txǫncų’ (lit. ‘Blackcloak Txǫncų’) and then later on referred to as #w[Xį́ntí Xúsų] (lit. ‘black~#s[+w8]’). Such adjective phrases are capitalised if they refer to a noun that is capitalised.
 
-== Nouns at Work <nouns-at-work>
-Nouns are declined for whether or not they perform work. Essentially this marks their position as an agent or patient in any given clause. The verb itself is not declined for voice---this information is contained exclusively in the noun phrase.
+== Nouns
+Nouns are declined for number and work (see @nouns-at-work); there are also a number of miscellaneous noun markers that are used to express concepts such as possession.
 
 The default number is Collective. An unmarked noun is assumed to be collective. For concrete nouns, the Collective usually has the meaning of ‘all’ or ‘every’. As opposed to the unmarked "Collective" form, a marking describes a noun as "Non-Collective." This could refer to one individual or a fraction of some whole.
 
-Noun markers precede the noun (phrase) they qualify; the following is an exhaustive list of Elvish noun markers:
+The following is a list of Elvish noun markers:
+
 - #w[shu] ‘non-collective’ (#s[nc]), e.g. #i[shu ną́nrų́] ‘one or more Elves’.
+- #w[ta-] (#s[gen]); this is a possessive marker, e.g. #i[ta-ną́nrų́] ‘of the Elves’.
+
+=== Nouns at Work <nouns-at-work>
+Nouns are also declined for whether or not they perform work. Essentially this marks their position as an agent or patient in any given clause. The verb itself is not declined for voice---this information is contained exclusively in the noun phrase.
+
+Noun markers precede the noun (phrase) they qualify; the following is list of Elvish noun work markers:
 - #w[tchą́] ‘performs work’ (#s[wrk] ‘working’); this is used to mark the agent of a verb that denotes an action that is considered to perform work.
 - #w[dun] ‘does not perform work’ (#s[nwk] ‘not working’); this is used to mark the agent of a verb that denotes a state or an action that is not considered to perform (worthwile) work.
 - #w[ų́rų́] ‘has work performed on it’ (#s[wkd] ‘worked [on]’); this is used to mark the theme of a verb
@@ -191,7 +208,42 @@ There are also a number of contractions:
 The verb itself is only inflected for tense (see @tam).
 
 == Pronouns
-As Santaa contains no first person, an Elf refers to oneself as "This Elf," with verbs inflected in the third person.
+=== Demonstrative Pronouns
+There are 5 sets of demonstrative pronouns, each corresponding to a tense (see @tam); as many other things, deixis in Elvish is relative; unlike other languages which employ spatial metaphors to express time, Elvish employs temporal expressions to express relations in space.
+
+That is, the demonstrative pronouns in Elvish is formed by combining the preposition #w[chír] ‘at, in, on’ with one of the tense morphemes:
++ Awake tense: #w[chírsąn]
++ REM sleep tense: #w[chírnu]
++ Non-REM Phase 1 tense: #w[chírtxí]
++ Non-REM Phase 2 tense: #w[chíro]
++ Non-REM Phase 3 tense: #w[chírnų]
+
+The proximal demonstrative pronoun is expressed relative to the _tense_ of the utterance; the medial demonstrative pronoun by the tense following the proximal one, and the distal demonstrative pronoun by the tense following the medial one.
+For example, if the utterance is in the REM sleep tense, we have:
+- #i[chírnu] = ‘this’,
+- #i[chírtxí] = ‘that (medial)’,
+- #w[chíro] ‘that (distal).
+
+In the Non-REM phase 2 tense, we instead have:
+- #i[chíro] = ‘this’,
+- #i[chírnų] = ‘that (medial)’,
+- #w[chírsąn] ‘that (distal).
+
+In reported speech, the direction is reversed, i.e. instead of medial being the tense after proximal and distal being the tense after medial, instead medial is the tense _preceding_ proximal, and distal is the tense _preceding_ medial. E.g. the demonstrative pronouns in reported speech that uses the REM phase 1 tense would be:
+- #i[chírnu] = ‘this’,
+- #i[chírsąn] = ‘that (medial)’,
+- #i[chírnų] = ‘that (distal)’.
+
+Note that it is the _tense_ of the sentence that matters; neither the time of utterance, nor the time at which the utterance is paraphrased, if at all, are relevant here! For example, a sentence that refers to the future that is uttered during the REM sleep phase would use the Non-REM phase 1 tense; in such a sentence, the medial demonstrative pronoun would be #w[chíro], i.e. the
+Non-REM phase 2 form; if such a sentence is then paraphrased during Non-REM phase 3, the corresponding future tense would naturally
+be the awake tense, and the medial pronoun would be the tense _before_ that (recall that the direction is reversed in reported speech), and thus, the correct form would be #w[chírnų], i.e. the Non-REM phase 3 form.
+
+== Personal Pronouns
+The ‘personal pronouns’ of Elvish are formed by combining the demonstrative pronouns with the status-appropriate word for ‘Elf’: The proximal demonstrative is used to express the 1st person, the medial to express the 2nd person, and the distal to express the 3rd person. Naturally, this also means that the exact forms of the personal pronouns depend on the tense of the containing clause (as well as whether direct or reported speech is used).
+
+For example, in a sentence in Non-REM Phase 2 tense spoken by a Master Carbonator, the closest Elvish equivalent to a word for ‘I’ would be #w[chíro xúsųrǫngi], lit. ‘this Master Carbonator’. Similarly, in a sentence paraphrased in Non-REM Phase 3 tense, the word ‘it’ in reference to a Collier would be #w[chírtxí isirǫngi], lit. ‘that (distal) Collier’.
+
+Personal pronouns are only used to refer to Elves. For any other beings, objects, concepts, etc., standalone adjective phrases (see @standalone-adjective-phrases) are used instead, and they often replace the 3rd person pronoun even in reference to an Elf, though never when the Elf that would be so referenced is of higher social status. Lastly, The Chimney Man is always referred to as #w[Są́ntą́] ‘The Chimney Man’ and never by a pronoun or standalone adjective phrase.
 
 == Verbs
 Verbs are either classified as ‘working’ or ‘lazy’ (see @nouns-at-work). Verbs are not inflected for number, only nouns are. In the absence of work order distinction, the default word order is VOS. Verbs generally do not have an associated work order (unless they are derived from a noun) and are generally placed first; the main exception to this is that nouns with work order 1 are always placed first and precede even the verb.
@@ -237,7 +289,12 @@ Reported Speech that paraphrases an utterance that was uttered during the "tempo
 Since a sentence in a vacuum without any information as to when it was uttered is impossible to extract temporal data from, any Elvish prose, etc. is always accompanied by a date, much like a diary entry would be. The exception to this is information uttered during the temporal void, during which the date is customarily omitted.
 
 === Aspect
-Aspect marking differs between working verbs and lazy verbs. Working verbs are marked for telicity (i.e. whether the work is done or not).
+Aspect marking differs between working verbs and lazy verbs. Working verbs are marked for telicity, i.e. whether the work
+is done (#s[tel] ‘telic’) or not (#s[atel] ‘atelic’). Lazy verbs are marked for whether the laziness is continued
+(#s[cont] ‘continuous’), or returning (#s[hab] ‘habitual’). For working verbs, telic is the default, for lazy verbs,
+continuous is the default.
+- #w[tú] (#s[atel]): marks that a working verb is atelic
+- #w[dor] (#s[hab]): marks that a lazy verb is habitual
 
 === Moods
 
@@ -263,7 +320,7 @@ It is assumed that the examples below are spoken on 2 February (i.e. during the 
 Gan nun’a rǫsa shu ų́xį́ tą́ shu dun txǫncų.
 gan nun’a rǫsa shu ų́xį́ tą́ shu dun txǫncų
 {e2} {rem} slide {nc} {man} chimney {nc} {nwk} Txǫncų
-Txǫncų slides down the Chimney (and I see it do so)
+Txǫncų slides down the Chimney (and I see it do so).
 `)
 
 = Worldbuilding
@@ -321,12 +378,12 @@ Since Coal is the most important aspect of Elvish society, many idioms and phras
    - Rename Agma to ‘The Chimney Man’.
    - Rename Ætérnal to ‘The Grand Carbonator’
    - Some of the mods can rename themselves to ‘Master Carbonator’.
-   - Change all role colours to shades of grey/black (save the previous colours so they can be restored)
+   - Change all role colours to shades of grey/black (save the previous colours so they can be restored); only Agma’s role as the Chimney Man should remain red.
    - Don’t rename the roles to people can still ping them for moderation purposes.
    - Rename the MC channel to ‘coal-mining’
    - Give everyone on the server free Coal.
    - Leave everything that way for a week.
-   - Note to Ætérnal: start preparing assets for that; apply all of this when I wake up the day the video comes out. Change my profile picture to Coal.
+   - Note to Ætérnal: start preparing assets for that; apply all of this when I wake up the day the video comes out. Change my profile picture to Coal. Prepare all of this on my test server ahead of time so I can simply copy the settings.
 
 = Dictionary
 Lazy verbs are marked with #i[lz], working verbs with #i[wk].
