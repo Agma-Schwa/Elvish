@@ -325,8 +325,7 @@ Since Coal is the most important aspect of Elvish society, many idioms and phras
    - Rename the MC channel to ‘coal-mining’
    - Give everyone on the server free Coal.
    - Leave everything that way for a week.
-   - Note to Ætérnal: start preparing assets for that.
-   - Ætérnal will apply all of this when he wakes up the day the video comes out.
+   - Note to Ætérnal: start preparing assets for that; apply all of this when I wake up the day the video comes out. Change my profile picture to Coal.
 
 = Dictionary
 Lazy verbs are marked with #i[lz], working verbs with #i[wk].
