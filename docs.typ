@@ -311,10 +311,22 @@ Thus, it should also come as no surprise that The Chimney Man’s hibernating is
 == Idioms
 Since Coal is the most important aspect of Elvish society, many idioms and phrases in Elvish revolve around Coal and anything involved in the Coal mining process. For example, whereas in English a seam of Coal may be referred to as a ‘coal vein’ in analogy with the veins of the human body, Elvish does the opposite: the term #w[shų́’i ta-xąro] ‘blood vessel’ literally means ‘tunnel of blood’, where #i[shų́’i] is the term for a tunnel in a Coal mine.
 
-= Notes for the Video
+= Notes for the Video etc.
 - For the consonants table, only show the spelling at first, and only then the IPA.
 - Rough plan for the video: Intro: 30s–1m synopsis of Tolkien’s life; say we’re presenting ‘Elvish’; show the consonants table w/o the IPA; show the vowel table w/o the IPA; don’t explain why ⟨o⟩ is off to the side somewhere and conspicuously omit the labels on both tables (because ‘palato-velar’ and ‘uvulo-glotal’ is already too obviously horrible); present an example sentence, spelling only; then read the sentence and show IPA at the same time. ‘Now, if you’re a bit confused about my pronunciation just now, that wasn’t because I’m really bad at Sindarin; see, today, we’re not talking about Tolkien’s Elves, but rather Santa’s, or, should I say, _Santaa’s_. Then do a proper intro and revisit the consonants/vowels, this time w/ IPA etc.
-
+- Make some images and emojis etc. for the Discord server. Make it coal-themed.
+   - Rename ‘general’ and ‘general-2’ to ‘mining’ and ‘mining-2’.
+   - Change the server icon to a picture of Coal.
+   - Rename the server to ‘Agma’s Coal Mine’.
+   - Rename Agma to ‘The Grand Carbonator’.
+   - Rename Ætérnal to ‘The Master Carbonator’
+   - Change all role colours to shades of grey/black (save the previous colours so they can be restored)
+   - Don’t rename the roles to people can still ping them for moderation purposes.
+   - Rename the MC channel to ‘coal-mining’
+   - Give everyone on the server free Coal.
+   - Leave everything that way for a week.
+   - Note to Ætérnal: start preparing assets for that.
+   - Ætérnal will apply all of this when he wakes up the day the video comes out.
 
 = Dictionary
 Lazy verbs are marked with #i[lz], working verbs with #i[wk].
