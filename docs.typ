@@ -238,7 +238,7 @@ Note that it is the _tense_ of the sentence that matters; neither the time of ut
 Non-REM phase 2 form; if such a sentence is then paraphrased during Non-REM phase 3, the corresponding future tense would naturally
 be the awake tense, and the medial pronoun would be the tense _before_ that (recall that the direction is reversed in reported speech), and thus, the correct form would be #w[chírnų], i.e. the Non-REM phase 3 form.
 
-== Personal Pronouns
+=== Personal Pronouns
 The ‘personal pronouns’ of Elvish are formed by combining the demonstrative pronouns with the status-appropriate word for ‘Elf’: The proximal demonstrative is used to express the 1st person, the medial to express the 2nd person, and the distal to express the 3rd person. Naturally, this also means that the exact forms of the personal pronouns depend on the tense of the containing clause (as well as whether direct or reported speech is used).
 
 For example, in a sentence in Non-REM Phase 2 tense spoken by a Master Carbonator, the closest Elvish equivalent to a word for ‘I’ would be #w[chíro xúsųrǫngi], lit. ‘this Master Carbonator’. Similarly, in a sentence paraphrased in Non-REM Phase 3 tense, the word ‘it’ in reference to a Collier would be #w[chírtxí isirǫngi], lit. ‘that (distal) Collier’.
@@ -364,6 +364,8 @@ Thus, it should also come as no surprise that The Chimney Man’s hibernating is
 - Elves are closer to Coal golemns than biological creatures.
 - Idea for the Minecraft server: change the copper golem texture to be Coal and rename them to ‘Elves’.
 - The throat and mouth of an Elf is constantly extremely dry due to being coated in Coal dust, which renders their articulation extremely hoarse, strained, and outright grating.
+- The complexion of an Elf is a dark grey, simply because they are always covered in layers upon layers of coal; no-one actually knows what the natural skin colour of an Elf is.
+- Elves are mostly bald; the most hair they have on their bodies is their eye lashes.
 
 == Idioms
 Since Coal is the most important aspect of Elvish society, many idioms and phrases in Elvish revolve around Coal and anything involved in the Coal mining process. For example, whereas in English a seam of Coal may be referred to as a ‘coal vein’ in analogy with the veins of the human body, Elvish does the opposite: the term #w[shų́’i ta-xąro] ‘blood vessel’ literally means ‘tunnel of blood’, where #i[shų́’i] is the term for a tunnel in a Coal mine.
