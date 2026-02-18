@@ -30,7 +30,7 @@ ríngú|n. w11||Handle
 tą́|n. w4||Chimney
 rǫsa|v. lz.||To slide
 gan|particle|gantú|Evidentiality marker; see \ref{evidentiality}.
-są́n|n. w11||Man
+są́n|n. w8||Man
 sán|particle|reduced form of \w{są́n}|Evidentiality marker; see \ref{evidentiality}.
 txą́|particle|txą́cą|Evidentiality marker; see \ref{evidentiality}.
 tsų́n|particle||Evidentiality marker; see \ref{evidentiality}.

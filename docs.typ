@@ -19,6 +19,8 @@ which leads to a lack of apical sounds as well as the palatal and velar places o
 All Elvish consonants are egressive, and all vowels are ingressive. This means that the articulation of an Elvish word
 requires the speaker to constantly flip-flop between breathing in and breathing out.
 
+Due to their extensive and perpetual involvement in and with the Coal mining process, the mouth of an Elf is exceedingly dry and covered in Coal dust, rendering Elvish articulation particularly chalky, grating, and stunted.
+
 == Consonants
 #rowtable(
     hlineat(1),
@@ -288,8 +290,32 @@ Elves never stop working; that is, an Elf only ‘retires’ at the moment of it
 
 Elves that retire honourably are given a #w[Shǫnxąshų́ną] ‘Coal burial’, i.e. they are cremated in such a way as to turn them into Coal, thus contributing to Elvish society even after their demise.
 
+== Sleep
+Elves never sleep prior to their retirement. In Elvish, there are indeed two different words for ‘sleeping’; one that refers to the most sacred and noble hibernation of The Chimney Man, and which therefore naturally assigned a work order of 1 and which can indeed refer only to the sleep of The Chimney Man.
+
+The other word, conversely, has word order 11 and is associated primarily with the sleep of humans and other lesser beings. Elves consider this form of sleep nothing but a waste of time.
+
+Thus, it should also come as no surprise that The Chimney Man’s hibernating is considered a working verb, as The Chimney Man always works the Hardest and therefore His hibernation must obviously be some to the Elves unfathomable form of work. Normal sleeping, by contrast, is a lazy verb.
+
+== Physical Description
+- Elves have no lips, making their sharp and pointy teeth, which are designed for the chewing and consumption of Coal, by which they are perpetually stained a dark and dusty black, clearly visible.
+- Elvish tongues are extremely stiff and don’t bend.
+- Elvish eyes are covered in multiple levels of eye lashes to keep the Coal out of their vision. Since the Elvish eye has evolved to thrive in an exceedingly dry and dusty environment, Elves naturally never need to close their eyes and thus lack eyelids.
+- Elves have pointy ears, but their point downwards, so as to not collide with the low ceiling of their mines.
+- Low-ranking Elves (below the rank of collier) are typically always hunched down so as to fit in lower tunnels.
+- Elves have inverted knees, so as to improve crawling in tunnel conditions.
+- Elves are closer to Coal golemns than biological creatures.
+- Idea for the Minecraft server: change the copper golem texture to be Coal and rename them to ‘Elves’.
+
 == Idioms
 Since Coal is the most important aspect of Elvish society, many idioms and phrases in Elvish revolve around Coal and anything involved in the Coal mining process. For example, whereas in English a seam of Coal may be referred to as a ‘coal vein’ in analogy with the veins of the human body, Elvish does the opposite: the term #w[shų́’i ta-xąro] ‘blood vessel’ literally means ‘tunnel of blood’, where #i[shų́’i] is the term for a tunnel in a Coal mine.
+
+Th
+
+= Notes for the Video
+- For the consonants table, only show the spelling at first, and only then the IPA.
+- Rough plan for the video: Intro: 30s–1m synopsis of Tolkien’s life; say we’re presenting ‘Elvish’; show the consonants table w/o the IPA; show the vowel table w/o the IPA; don’t explain why ⟨o⟩ is off to the side somewhere and conspicuously omit the labels on both tables (because ‘palato-velar’ and ‘uvulo-glotal’ is already too obviously horrible); present an example sentence, spelling only; then read the sentence and show IPA at the same time. ‘Now, if you’re a bit confused about my pronunciation just now, that wasn’t because I’m really bad at Sindarin; see, today, we’re not talking about Tolkien’s Elves, but rather Santa’s, or, should I say, _Santaa’s_. Then do a proper intro and revisit the consonants/vowels, this time w/ IPA etc.
+
 
 = Dictionary
 Lazy verbs are marked with #i[lz], working verbs with #i[wk].
