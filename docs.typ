@@ -275,6 +275,11 @@ Which set of personal pronouns is appropriate in what context is dependent on th
 
 The rules for the 1st person pronoun are simpler: In reference to oneself, the full pronouns are used when speaking to someone of higher social status, and the abridged pronouns otherwise. Naturally, Elves above the rank of Collier use the high-class pronouns and other Elves the low-class pronouns.
 
+==== Disinguishing Personal and Demonstrative Pronouns
+Since personal and demonstrative pronouns can be very similar, as the former simply use the latter, there are rules that can be used to distinguish the two; the most important one of these is that a demonstrative that qualifies the noun always follows the noun. For example, assuming we’re in the REM phase, we have #w[chírnu rǫngi] ‘I’ (high-class pronoun) vs #w[rǫngi chírnu] ‘this cloak’ (literally).
+
+This is especially important in the context of a zero copula (see @copula). Consider e.g. #w[chírtxí tchų́rshu] ‘you are an idiot’ vs #w[tchų́rshu chírtxí] ‘that idiot’.
+
 == Verbs
 Verbs are either classified as ‘working’ or ‘lazy’ (see @nouns-at-work). Verbs are not inflected for number, only nouns are. In the absence of work order distinction, the default word order is VOS. Verbs generally do not have an associated work order (unless they are derived from a noun) and are generally placed first; the main exception to this is that nouns with work order 1 are always placed first and precede even the verb.
 
@@ -321,9 +326,8 @@ Since a sentence in a vacuum without any information as to when it was uttered i
 === Dependent Clauses
 Tense in dependent clauses is relative to the tense of the matrix clause; for example, during the REM sleep phase, a future sentence would use the Non-REM phase 1 tense; a dependent clause that is in the past relative to that Non-REM phase 1 matrix clause would use the REM sleep tense, and in that dependent clause, that tense acts as a past tense---even though the very same tense would be the present tense if used in a matrix clause during the REM sleep phase.
 
-=== Copula
-The Elvish copula is $emptyset$, i.e. the empty root; that is, to express the copula all verb markers are used as they normally would be, except that
-the verb is ‘missing’. The minimal form of the copula in a completely independent clause thus consists of a bare pair of tense and evidentiality marker, but one or even both may be dropped if elision is applied, leading to zero copula (see @elision).
+=== Copula <copula>
+The Elvish copula is $emptyset$, i.e. the empty root; that is, to express the copula all verb markers are used as they normally would be, except that the verb is ‘missing’. Even the tense and evidentiality marker may be dropped if elision is applied, or if they’re obvious from context, generally if the sentence is in the present tense, leading to zero copula (see @elision).
 
 === Aspect
 Aspect marking differs between working verbs and lazy verbs. Working verbs are marked for telicity, i.e. whether the work
@@ -366,8 +370,6 @@ Txǫncų slides down the Chimney (and I see it do so).
 // Note: the tense of the dependent clause is present tense, but because of tense agreement
 // with the matrix clause, the ‘dependent present tense’ is the same as the past tense, which
 // happens to match how English does backshifting.
-//
-// TODO: Second 'gan sąn' can be elided
 #gloss(spacing-override: .25em,`
 Sán sąn sǫtą dishą́ dun chírsąn rǫngi ų́xį́ chírnu tchų́rshu.
 sán sąn sǫtą dishą́ dun chírsąn rǫngi ų́xį́ chírnu tchų́rshu
