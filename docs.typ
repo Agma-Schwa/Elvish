@@ -374,8 +374,10 @@ Txǫncų slides down the Chimney (and I see it do so).
 Sán sąn sǫtą dishą́ dun chírsąn rǫngi ų́xį́ chírnu tchų́rshu.
 sán sąn sǫtą dishą́ dun chírsąn rǫngi ų́xį́ chírnu tchų́rshu
 {ver} {awk} know always {nwk} {dem.awk} cloak {man} {dem.rem} idiot
-I always knew that you were an idiot.#footnote[Lit. ‘This cloak most surely always knew [that] that(#smallcaps[medial]) [was observably an] idiot.]
+I always knew that you were an idiot.
 `)
+
+Lit. ‘This cloak most surely always knew [that] that(#smallcaps[medial]) [was observably an] idiot.’
 
 = Worldbuilding
 == Gender
