@@ -11,8 +11,10 @@ txǫncų|n.||Elvish given name
 rǫngi|n. w4||
     \\ Cloak
     \comment This specifically refers to a type of cloak worn only
-    by Colliers and Master Carbonators.
-    \\ Bigwig, big shot \comment Colloquial term for Elves at the rank of Collier and above.
+        by Colliers and Master Carbonators.
+    \\ Elf (upper class). \comment This term refers to Elves at the rank of Collier and above. Formally, only Elves
+        who are themselves Colliers or higher are allowed to use \this on its own to refer to a
+        high-ranking Elf. Lower-class Elves sometimes do so to, but only amongst themselves.
 isirǫngi|n. w4|from \w{isi} and \w{rǫngi}|Collier
     \comment Lit. ‘redcloak’; see \ref{cloaks}
 xúsųrǫngi|n. w3|from \w{xúsų} and \w{rǫngi}|Master Carbonator
@@ -26,6 +28,13 @@ Shǫnxąshų́ną|n. w2|from \w{Shǫnxą} and \w{shų́ną}|Coal burial \c
 tá-|particle||\i{Possessive marker; this is placed directly before a noun (even in a noun phrase) and is always unstressed}
     \ex \w{tá-Są́ntą́} ‘of The Chimney Man’
     \ex \w{ríngú isi tá-dį́gá} ‘handles of red canes’
+tchų́rshu|n. w11||Idiot, moron \comment This is derogatory and thus always has word order 11.
+dishą́|adv.||
+    \\ Always \comment In a sentence with positive polarity.
+    \\ Never \comment In a sentence with negative polarity.
+sǫtą|v.||
+    \\\i{lz} To know
+    \\\i{wk} To learn
 ríngú|n. w11||Handle
 tą́|n. w4||Chimney
 rǫsa|v. lz.||To slide
@@ -36,6 +45,7 @@ txą́|particle|txą́cą|Evidentiality marker; see \ref{evidentiality}.
 tsų́n|particle||Evidentiality marker; see \ref{evidentiality}.
 gantú|v.||To see
 txą́cą|n. w3||The North Pole
+chųnxi|n. w11||Head
 shų́’i|n. w11||
     \\ A tunnel in a Coal mine
     \\ \w{\this ta-xąro} Blood vessel \comment Lit. ‘blood tunnel’
@@ -43,9 +53,10 @@ xąro|n. w11||Blood
 
 ną́nrų́|n.||
     \\\i{w7} Coal miner
-    \\\i{w6} Elf \comment All Elves are coal miners, whence this sense follows naturally.
+    \\\i{w6} Elf, canary \comment All Elves are coal miners, whence this sense follows naturally.
         This is the Generic term for an Elf whose social status is unknown, as well as the
         term for Canaries.
+ną́nchųn|n. w5|from \w{ną́nrų́} ‘canary’ and \w{chųnxi} ‘head’|Head Miner
 nų́nrą́|v. w6|ną́nrų́|
     \\To mine Coal
     \\To be alive

@@ -13,8 +13,8 @@
 
 #gloss-set-ipa-function(ipa)
 #gloss-set-line-spacing(.6em) // Tie bars and ogoneks may collide, so space this out a bit more.
-#show "↓" : [#h(-.15em)↓]
-// Reduce kerning a bit to save space.
+#show "↓" : [#h(-.15em)↓#h(-.15em)] // Reduce kerning a bit to save space.
+#show "ʄ͡ɠ": [ʄ#box(move(dy: .2em)[\u{0361}])ɠ]
 
 #let w(s) = { [_#[#s]_ #box[/#ipa(s)/]] }
 #let i(s) = { [_#[#s]_] }
@@ -167,6 +167,9 @@ In sequences of adjectives (which Elves are particularly prone to), the followin
 
 Adjectives precede the noun they qualify.
 
+=== Adverbs
+Adverbs follow the verb.
+
 === Standalone Adjective Phrases <standalone-adjective-phrases>
 A very common idom in Elvish is to refer to a noun (phrase) in the domain of discourse by an adjective that describes it,
 optionally preceded by a work order marker that agrees with the work order of the noun (phrase); this largely replaces pronouns
@@ -179,7 +182,9 @@ all interlocutors.] For example, a Master Carbonator with the name of #w[Txǫnc
 == Nouns
 Nouns are declined for number and work (see @nouns-at-work); there are also a number of miscellaneous noun markers that are used to express concepts such as possession.
 
-The default number is Collective. An unmarked noun is assumed to be collective. For concrete nouns, the Collective usually has the meaning of ‘all’ or ‘every’. As opposed to the unmarked "Collective" form, a marking describes a noun as "Non-Collective." This could refer to one individual or a fraction of some whole.
+The default number is Collective. An unmarked noun is usually assumed to be collective, but there are some exceptions. E.g. predicate nouns are never marked for number as they obviously must have the same number as the noun they describe. Pronouns (see @pronouns) are likewise never marked for number, and neither are proper nouns.
+
+For concrete nouns, the Collective usually has the meaning of ‘all’ or ‘every’. As opposed to the unmarked "Collective" form, a marking describes a noun as "Non-Collective." This could refer to one individual or a fraction of some whole.
 
 The following is a list of Elvish noun markers:
 
@@ -207,29 +212,36 @@ There are also a number of contractions:
 
 The verb itself is only inflected for tense (see @tam).
 
-== Pronouns
-=== Demonstrative Pronouns
-There are 5 sets of demonstrative pronouns, each corresponding to a tense (see @tam); as many other things, deixis in Elvish is relative; unlike other languages which employ spatial metaphors to express time, Elvish employs temporal expressions to express relations in space.
+=== Clause Complements
+The noun work markers can also precede the verb, in which case the clause acts as the agent/theme.
 
-That is, the demonstrative pronouns in Elvish is formed by combining the preposition #w[chír] ‘at, in, on’ with one of the tense morphemes:
+== Compounds
+Compound nouns can be expressed by juxtaposition; the modifier comes second, just like in Santaa, e.g. #w[ną́nchųn] ‘head miner’ (lit. ‘miner head’)
+from #w[ną́nrų́] ‘canary’ and #w[chųnxi] ‘head’.
+
+== Pronouns <pronouns>
+=== Demonstrative Pronouns
+There are 5 demonstrative pronouns, each corresponding to a tense (see @tam); as many other things, deixis in Elvish is relative: unlike other languages which employ spatial metaphors to express time, Elvish employs temporal expressions to express relations in space.
+
+That is, the demonstrative pronouns in Elvish are formed by combining the preposition #w[chír] ‘at, in, on’ with one of the tense morphemes:
 + Awake tense: #w[chírsąn]
 + REM sleep tense: #w[chírnu]
 + Non-REM Phase 1 tense: #w[chírtxí]
 + Non-REM Phase 2 tense: #w[chíro]
 + Non-REM Phase 3 tense: #w[chírnų]
 
-The proximal demonstrative pronoun is expressed relative to the _tense_ of the utterance; the medial demonstrative pronoun by the tense following the proximal one, and the distal demonstrative pronoun by the tense following the medial one.
+The proximal demonstrative pronoun is expressed relative to the _tense_ of the utterance: the medial demonstrative pronoun by the tense following the proximal one, and the distal demonstrative pronoun by the tense following the medial one.
 For example, if the utterance is in the REM sleep tense, we have:
 - #i[chírnu] = ‘this’,
 - #i[chírtxí] = ‘that (medial)’,
-- #w[chíro] ‘that (distal).
+- #i[chíro] ‘that (distal).
 
 In the Non-REM phase 2 tense, we instead have:
 - #i[chíro] = ‘this’,
 - #i[chírnų] = ‘that (medial)’,
-- #w[chírsąn] ‘that (distal).
+- #i[chírsąn] ‘that (distal).
 
-In reported speech, the direction is reversed, i.e. instead of medial being the tense after proximal and distal being the tense after medial, instead medial is the tense _preceding_ proximal, and distal is the tense _preceding_ medial. E.g. the demonstrative pronouns in reported speech that uses the REM phase 1 tense would be:
+In reported speech, the direction is reversed, i.e. instead of medial being the tense after proximal and distal being the tense after medial, instead medial is the tense _preceding_ proximal, and distal is the tense preceding medial. E.g. the demonstrative pronouns in reported speech that uses the Non-REM phase 1 tense would be:
 - #i[chírnu] = ‘this’,
 - #i[chírsąn] = ‘that (medial)’,
 - #i[chírnų] = ‘that (distal)’.
@@ -239,11 +251,29 @@ Non-REM phase 2 form; if such a sentence is then paraphrased during Non-REM phas
 be the awake tense, and the medial pronoun would be the tense _before_ that (recall that the direction is reversed in reported speech), and thus, the correct form would be #w[chírnų], i.e. the Non-REM phase 3 form.
 
 === Personal Pronouns
-The ‘personal pronouns’ of Elvish are formed by combining the demonstrative pronouns with the status-appropriate word for ‘Elf’: The proximal demonstrative is used to express the 1st person, the medial to express the 2nd person, and the distal to express the 3rd person. Naturally, this also means that the exact forms of the personal pronouns depend on the tense of the containing clause (as well as whether direct or reported speech is used).
+There are three sets of constructions in Elvish that are jointly referred to as ‘personal pronouns’. While semantically equivalent, their usage is highly dependent on social status, and they are not interchangeable.
+
+==== Full Personal Pronouns
+The so-called _full personal pronouns_ of Elvish are formed by combining the demonstrative pronouns with the status-appropriate word for ‘Elf’: The proximal demonstrative is used to express the 1st person, the medial to express the 2nd person, and the distal to express the 3rd person. Naturally, this also means that the exact forms of the personal pronouns depend on the tense of the containing clause (as well as whether direct or reported speech is used).
 
 For example, in a sentence in Non-REM Phase 2 tense spoken by a Master Carbonator, the closest Elvish equivalent to a word for ‘I’ would be #w[chíro xúsųrǫngi], lit. ‘this Master Carbonator’. Similarly, in a sentence paraphrased in Non-REM Phase 3 tense, the word ‘it’ in reference to a Collier would be #w[chírtxí isirǫngi], lit. ‘that (distal) Collier’.
 
-Personal pronouns are only used to refer to Elves. For any other beings, objects, concepts, etc., standalone adjective phrases (see @standalone-adjective-phrases) are used instead, and they often replace the 3rd person pronoun even in reference to an Elf, though never when the Elf that would be so referenced is of higher social status. Lastly, The Chimney Man is always referred to as #w[Są́ntą́] ‘The Chimney Man’ and never by a pronoun or standalone adjective phrase.
+==== Abridged Personal Pronouns
+There are two forms of ‘abridged’ pronouns: The _high-class_ abriged pronouns are formed by combining the demonstratives with the noun #w[rǫngi] ‘cloak’. The _low-class_ abridged pronouns are identical to the bare demonstratives. Abriged personal pronouns are only used to refer to an Elf at or below one’s own social status.
+
+==== Usage Notes
+Which set of personal pronouns is appropriate in what context is dependent on the social status of the speaker (in the 1st person), as well as that of the referents (in the 2nd and 3rd person). There are strict rules that govern the usage of the pronouns. The rules for the 2nd/3rd person pronouns are:
+- The Chimney Man and The Grand Carbonator are never referred to by a pronoun; instead, the entire phrase ‘The Chimney Man’ or ‘The Grand Carbonator’ is repeated. Similarly, Coal is also never referred to by a pronoun; instead, the noun ‘Coal’ is repeated.
+
+- The full pronouns are used to refer to an Elf of higher social class than one’s own.
+
+- The abridged pronouns are used to refer to an Elf at or below one’s own social class. The high-class pronouns are used when the referent is at the rank of Collier or above, and the low-class pronouns otherwise.
+
+- Personal pronouns are only used to refer to Elves. For any other beings, objects, concepts, etc., standalone adjective phrases (see @standalone-adjective-phrases) are used instead.
+
+- Additionally, standalone adjective phrases may be used whenever an abridged pronoun would be appropriate.
+
+The rules for the 1st person pronoun are simpler: In reference to oneself, the full pronouns are used when speaking to someone of higher social status, and the abridged pronouns otherwise. Naturally, Elves above the rank of Collier use the high-class pronouns and other Elves the low-class pronouns.
 
 == Verbs
 Verbs are either classified as ‘working’ or ‘lazy’ (see @nouns-at-work). Verbs are not inflected for number, only nouns are. In the absence of work order distinction, the default word order is VOS. Verbs generally do not have an associated work order (unless they are derived from a noun) and are generally placed first; the main exception to this is that nouns with work order 1 are always placed first and precede even the verb.
@@ -288,6 +318,13 @@ Reported Speech that paraphrases an utterance that was uttered during the "tempo
 
 Since a sentence in a vacuum without any information as to when it was uttered is impossible to extract temporal data from, any Elvish prose, etc. is always accompanied by a date, much like a diary entry would be. The exception to this is information uttered during the temporal void, during which the date is customarily omitted.
 
+=== Dependent Clauses
+Tense in dependent clauses is relative to the tense of the matrix clause; for example, during the REM sleep phase, a future sentence would use the Non-REM phase 1 tense; a dependent clause that is in the past relative to that Non-REM phase 1 matrix clause would use the REM sleep tense, and in that dependent clause, that tense acts as a past tense---even though the very same tense would be the present tense if used in a matrix clause during the REM sleep phase.
+
+=== Copula
+The Elvish copula is $emptyset$, i.e. the empty root; that is, to express the copula all verb markers are used as they normally would be, except that
+the verb is ‘missing’. The minimal form of the copula in a completely independent clause thus consists of a bare pair of tense and evidentiality marker, but one or even both may be dropped if elision is applied, leading to zero copula (see @elision).
+
 === Aspect
 Aspect marking differs between working verbs and lazy verbs. Working verbs are marked for telicity, i.e. whether the work
 is done (#s[tel] ‘telic’) or not (#s[atel] ‘atelic’). Lazy verbs are marked for whether the laziness is continued
@@ -300,13 +337,16 @@ continuous is the default.
 
 === Evidentiality <evidentiality>
 Evidentiality is split into four categories:
-- #w[sán] (#s[e1]): that which is decreed by the Chimney Man (truth)
-- #w[gan] (#s[e2]): that which is directly observable
-- #w[txą́] (#s[e3]): that which is purported to exist (in the North Pole)
-- #w[tsų́n] (#s[e4]): that which is purported to exist elsewhere
+- #w[sán] (#s[ver] ‘veridical’): (as though) decreed by The Chimney Man (truth)
+- #w[gan] (#s[obs] ‘observable’): directly observable
+- #w[xįn] (#s[com] ‘communicated’): communicated by someone (hearsay)
+- #w[txą́] (#s[nor] ‘North Pole’): purported to exist (in the North Pole)
+- #w[tsų́n] (#s[dub] ‘dubious’): purported to exist elsewhere
 
-Statements of fact use the Chimney man evidentiality.
-For example, $2+2=4$.
+Statements of fact use the Chimney Man evidentiality—for example, $2+2=4$—and so do statements that an Elf is absolutely sure about. The meaning of this evidentiality is closer to ‘as true as though The Chimney Man Himself had decreed it’, and a suitable translation may be ‘most surely’. At the same time, it is of course also used to refer to literal statements made by The Chimney Man
+
+=== Elision <elision>
+When the verb markers for multiple sentences in a row are the same, the markers are dropped for any verb after the first.
 
 == Derivation
 === Vowel Swapping
@@ -317,10 +357,22 @@ A common way to turn a noun into a verb in Elvish that applies solely to disylla
 #gloss-show-numbers(false)
 It is assumed that the examples below are spoken on 2 February (i.e. during the REM phase).
 #gloss(`
-Gan nun’a rǫsa shu ų́xį́ tą́ shu dun txǫncų.
-gan nun’a rǫsa shu ų́xį́ tą́ shu dun txǫncų
-{e2} {rem} slide {nc} {man} chimney {nc} {nwk} Txǫncų
+Gan nun’a rǫsa shu ų́xį́ tą́ dun txǫncų.
+gan nun’a rǫsa shu ų́xį́ tą́ dun txǫncų
+{obs} {rem} slide {nc} {man} chimney {nwk} Txǫncų
 Txǫncų slides down the Chimney (and I see it do so).
+`)
+
+// Note: the tense of the dependent clause is present tense, but because of tense agreement
+// with the matrix clause, the ‘dependent present tense’ is the same as the past tense, which
+// happens to match how English does backshifting.
+//
+// TODO: Second 'gan sąn' can be elided
+#gloss(spacing-override: .25em,`
+Sán sąn sǫtą dishą́ dun chírsąn rǫngi ų́xį́ chírnu tchų́rshu.
+sán sąn sǫtą dishą́ dun chírsąn rǫngi ų́xį́ chírnu tchų́rshu
+{ver} {awk} know always {nwk} {dem.awk} cloak {man} {dem.rem} idiot
+I always knew that you were an idiot.#footnote[Lit. ‘This cloak most surely always knew [that] that(#smallcaps[medial]) [was observably an] idiot.]
 `)
 
 = Worldbuilding

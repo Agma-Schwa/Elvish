@@ -1,8 +1,8 @@
 use aho_corasick::{AhoCorasick, MatchKind};
 use dictgen::{LanguageOps, Node, Options, Part};
 use lazy_static::lazy_static;
+use unicode_normalization::UnicodeNormalization;
 use wasm_minimal_protocol::*;
-
 initiate_protocol!();
 
 static PATTERNS: &[&str] = &[
@@ -31,7 +31,7 @@ static REPLACEMENTS: &[&str] = &[
 lazy_static! {
     static ref IPA_TRIE: AhoCorasick = AhoCorasick::builder()
         .match_kind(MatchKind::LeftmostLongest)
-        .build(PATTERNS)
+        .build(PATTERNS.iter().map(|p|p.nfd().collect::<String>()))
         .unwrap();
 }
 
@@ -40,7 +40,7 @@ struct ElvishOps;
 impl LanguageOps for ElvishOps {
     fn to_ipa(&self, word: &str) -> dictgen::Result<Option<Node>> {
         const { assert!(PATTERNS.len() == REPLACEMENTS.len()); };
-        let word = word.to_lowercase();
+        let word = word.to_lowercase().nfd().collect::<String>();
         let replaced = IPA_TRIE.replace_all(&word, REPLACEMENTS);
         if replaced.contains('$') {
             let mut nodes = Vec::<Node>::new();
