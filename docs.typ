@@ -19,6 +19,11 @@
 #let w(s) = { [_#[#s]_ #box[/#ipa(s)/]] }
 #let i(s) = { [_#[#s]_] }
 
+#gloss-set-replacements((
+    "~": " ",
+    "---": [---],
+))
+
 #table-of-contents()
 #show : mainmatter
 
@@ -171,13 +176,34 @@ Adjectives precede the noun they qualify.
 Adverbs follow the verb.
 
 === Standalone Adjective Phrases <standalone-adjective-phrases>
-A very common idom in Elvish is to refer to a noun (phrase) in the domain of discourse by an adjective that describes it,
+A very common idiom in Elvish is to refer to a noun (phrase) in the domain of discourse by an adjective that describes it,
 optionally preceded by a work order marker that agrees with the work order of the noun (phrase); this largely replaces pronouns
 in Elvish.
 
 In writing, it is common for the first mention of a noun phrase to be accompanied by one or more adjectives that may later on be
 used to refer to it.#footnote[This is omitted in spoken language when the noun phrase is something that is clearly visible to
 all interlocutors.] For example, a Master Carbonator with the name of #w[Txǫncų] might be introduced as #i[Txǫncų xúsųrǫngi] ‘Master Carbonator Txǫncų’ (lit. ‘Blackcloak Txǫncų’) and then later on referred to as #w[Xį́ntí Xúsų] (lit. ‘black~#s[+w8]’). Such adjective phrases are capitalised if they refer to a noun that is capitalised.
+
+==== Invoice
+The Elves employ a tactic for further efficiency in their language known as the 'Invoice.' An invoice operates in a similar way to adjective-noun agreement. 
+The word-initial phonemes of adjectives are derived in a way similar to grammatical gender in order to assign them any of 5 possible invoice categories, which can then be used to further shorten sentences with efficient, contextually-based information.
+However, while these categories are phonologically derived, the invoice associated with any given adjective phrase is entirely dependent on the tense of the sentence.
+For example, a word that begins with #w[d] is of the REM gender, it can be substituted in later conversations with an invoice particle. This particle is assigned to a given noun phrase in conversation, with a value that follows the pattern $"Present Tense" - n$, with $n$ being the number of sleep phases that have passed between the 'gender' and the present day. Thus, there are 5 invoice declaration particles:
++ -2
++ -1
++ 0
++ 1
++ 2
+
+For instance:
+// FIXME: THIS GLOSS IS BROKEN
+//  #gloss(`
+// Gan nun’a rǫsa shu ų́xį́ tą́ --- (-1) --- dun txǫncų.
+// gan nun’a rǫsa shu ų́xį́ tą́ dun txǫncų
+// {obs} {rem} slide {nc} {man} chimney {nwk} Txǫncų
+// Txǫncų slides down the Chimney (Invoice -1) (and I see it do so).
+// `)
+
 
 == Nouns
 Nouns are declined for number and work (see @nouns-at-work); there are also a number of miscellaneous noun markers that are used to express concepts such as possession.
@@ -279,6 +305,7 @@ The rules for the 1st person pronoun are simpler: In reference to oneself, the f
 Since personal and demonstrative pronouns can be very similar, as the former simply use the latter, there are rules that can be used to distinguish the two; the most important one of these is that a demonstrative that qualifies the noun always follows the noun. For example, assuming we’re in the REM phase, we have #w[chírnu rǫngi] ‘I’ (high-class pronoun) vs #w[rǫngi chírnu] ‘this cloak’ (literally).
 
 This is especially important in the context of a zero copula (see @copula). Consider e.g. #w[chírtxí tchų́rshu] ‘you are an idiot’ vs #w[tchų́rshu chírtxí] ‘that idiot’.
+
 
 == Verbs
 Verbs are either classified as ‘working’ or ‘lazy’ (see @nouns-at-work). Verbs are not inflected for number, only nouns are. In the absence of work order distinction, the default word order is VOS. Verbs generally do not have an associated work order (unless they are derived from a noun) and are generally placed first; the main exception to this is that nouns with work order 1 are always placed first and precede even the verb.
