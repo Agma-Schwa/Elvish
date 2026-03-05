@@ -185,7 +185,7 @@ used to refer to it.#footnote[This is omitted in spoken language when the noun p
 all interlocutors.] For example, a Master Carbonator with the name of #w[Txǫncų] might be introduced as #i[Txǫncų xúsųrǫngi] ‘Master Carbonator Txǫncų’ (lit. ‘Blackcloak Txǫncų’) and then later on referred to as #w[Xį́ntí Xúsų] (lit. ‘black~#s[+w8]’). Such adjective phrases are capitalised if they refer to a noun that is capitalised.
 
 ==== Invoice
-The Elves employ a tactic for further efficiency in their language known as the 'Invoice.' An invoice operates in a similar way to adjective-noun agreement. 
+The Elves employ a tactic for further efficiency in their language known as the 'Invoice.' An invoice operates in a similar way to adjective-noun agreement.
 The word-initial phonemes of adjectives are derived in a way similar to grammatical gender in order to assign them any of 5 possible invoice categories, which can then be used to further shorten sentences with efficient, contextually-based information.
 However, while these categories are phonologically derived, the invoice associated with any given adjective phrase is entirely dependent on the tense of the sentence.
 For example, a word that begins with #w[d] is of the REM gender, it can be substituted in later conversations with an invoice particle. This particle is assigned to a given noun phrase in conversation, with a value that follows the pattern $"Present Tense" - n$, with $n$ being the number of sleep phases that have passed between the 'gender' and the present day. Thus, there are 5 invoice declaration particles:
@@ -457,7 +457,7 @@ Since Coal is the most important aspect of Elvish society, many idioms and phras
 
 = Notes for the Video etc.
 - For the consonants table, only show the spelling at first, and only then the IPA.
-- Rough plan for the video: Intro: 30s–1m synopsis of Tolkien’s life; say we’re presenting ‘Elvish’; show the consonants table w/o the IPA; show the vowel table w/o the IPA; don’t explain why ⟨o⟩ is off to the side somewhere and conspicuously omit the labels on both tables (because ‘palato-velar’ and ‘uvulo-glotal’ is already too obviously horrible); present an example sentence, spelling only; then read the sentence and show IPA at the same time. ‘Now, if you’re a bit confused about my pronunciation just now, that wasn’t because I’m really bad at Sindarin; see, today, we’re not talking about Tolkien’s Elves, but rather Santa’s, or, should I say, _Santaa’s_. Then do a proper intro and revisit the consonants/vowels, this time w/ IPA etc.
+- Rough plan for the video: Release it at normal times to make people think it’s a normal video. Intro: 30s–1m synopsis of Tolkien’s life; say we’re presenting ‘Elvish’; show the consonants table w/o the IPA; show the vowel table w/o the IPA; don’t explain why ⟨o⟩ is off to the side somewhere and conspicuously omit the labels on both tables (because ‘palato-velar’ and ‘uvulo-glotal’ is already too obviously horrible); present an example sentence, spelling only; then read the sentence and show IPA at the same time. ‘Now, if you’re a bit confused about my pronunciation just now, that wasn’t because I’m really bad at Sindarin; see, today, we’re not talking about Tolkien’s Elves, but rather Santa’s, or, should I say, _Santaa’s_. Then do a proper intro and revisit the consonants/vowels, this time w/ IPA etc.
 - Just add a sentence about the Elves’ ‘ventral furnace’ and then just don’t elaborate.
 
 == April Fool's notes for the server
