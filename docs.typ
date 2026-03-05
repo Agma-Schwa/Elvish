@@ -299,7 +299,7 @@ Which set of personal pronouns is appropriate in what context is dependent on th
 
 - Additionally, standalone adjective phrases may be used whenever an abridged pronoun would be appropriate.
 
-The rules for the 1st person pronoun are simpler: In reference to oneself, the full pronouns are used when speaking to someone of higher social status, and the abridged pronouns otherwise. Naturally, Elves above the rank of Collier use the high-class pronouns and other Elves the low-class pronouns.
+The rules for the 1st person pronoun are simpler: In reference to oneself, the full pronouns are used when speaking to someone of higher social status, and the abridged pronouns otherwise. Naturally, Elves at or above the rank of Collier use the high-class pronouns and other Elves the low-class pronouns.
 
 ==== Disinguishing Personal and Demonstrative Pronouns
 Since personal and demonstrative pronouns can be very similar, as the former simply use the latter, there are rules that can be used to distinguish the two; the most important one of these is that a demonstrative that qualifies the noun always follows the noun. For example, assuming we’re in the REM phase, we have #w[chírnu rǫngi] ‘I’ (high-class pronoun) vs #w[rǫngi chírnu] ‘this cloak’ (literally).
@@ -354,7 +354,7 @@ Since a sentence in a vacuum without any information as to when it was uttered i
 Tense in dependent clauses is relative to the tense of the matrix clause; for example, during the REM sleep phase, a future sentence would use the Non-REM phase 1 tense; a dependent clause that is in the past relative to that Non-REM phase 1 matrix clause would use the REM sleep tense, and in that dependent clause, that tense acts as a past tense---even though the very same tense would be the present tense if used in a matrix clause during the REM sleep phase.
 
 === Copula <copula>
-The Elvish copula is $emptyset$, i.e. the empty root; that is, to express the copula all verb markers are used as they normally would be, except that the verb is ‘missing’. Even the tense and evidentiality marker may be dropped if elision is applied, or if they’re obvious from context, generally if the sentence is in the present tense, leading to zero copula (see @elision).
+The Elvish copula is $emptyset$, i.e. the empty root; that is, to express the copula all verb markers are used as they normally would be, except that the verb is ‘missing’. Even the tense and evidentiality marker may be dropped if elision is applied, or if they’re obvious from context, generally if the sentence is in the present tense, leading to a zero copula (see @elision).
 
 === Aspect
 Aspect marking differs between working verbs and lazy verbs. Working verbs are marked for telicity, i.e. whether the work
@@ -424,6 +424,8 @@ The social classes of Collier and Master Carbonator comprise the upper classes o
 
 Low-ranking Elves who pretend to have a higher social rank than they actually do are referred to as #w[ishúrǫngi] ‘fake cloaks’; wearing a cloak that corresponds to a higher class than one’s own is generally punished by decommissioning (see @retirement).
 
+Other Elves do not wear any clothes at all. The common Elf instead keeps itself warm in the freezing temperatures of the Arctic by burning the Coal it consumes inside its ventral furnace.
+
 == ‘Retirement’ <retirement>
 A central concept in Elvish society is #w[shų́ną] ‘retirement’.
 Elves never stop working; that is, an Elf only ‘retires’ at the moment of its death. In some cases, Elves who have acted out of line or otherwise disrupted the Coal mining process—or worse, slighted The Chimney Man—can be ‘decommissioned’, which entails _actively_ ‘retiring’ an Elf. This is also known as ‘dishonourable retirement’.
@@ -456,6 +458,9 @@ Since Coal is the most important aspect of Elvish society, many idioms and phras
 = Notes for the Video etc.
 - For the consonants table, only show the spelling at first, and only then the IPA.
 - Rough plan for the video: Intro: 30s–1m synopsis of Tolkien’s life; say we’re presenting ‘Elvish’; show the consonants table w/o the IPA; show the vowel table w/o the IPA; don’t explain why ⟨o⟩ is off to the side somewhere and conspicuously omit the labels on both tables (because ‘palato-velar’ and ‘uvulo-glotal’ is already too obviously horrible); present an example sentence, spelling only; then read the sentence and show IPA at the same time. ‘Now, if you’re a bit confused about my pronunciation just now, that wasn’t because I’m really bad at Sindarin; see, today, we’re not talking about Tolkien’s Elves, but rather Santa’s, or, should I say, _Santaa’s_. Then do a proper intro and revisit the consonants/vowels, this time w/ IPA etc.
+- Just add a sentence about the Elves’ ‘ventral furnace’ and then just don’t elaborate.
+
+== April Fool's notes for the server
 - Make some images and emojis etc. for the Discord server. Make it coal-themed.
    - Rename ‘general’ and ‘general-2’ to ‘mining’ and ‘mining-2’.
    - Change the server icon to a picture of Coal.
@@ -469,6 +474,21 @@ Since Coal is the most important aspect of Elvish society, many idioms and phras
    - Give everyone on the server free Coal.
    - Leave everything that way for a week.
    - Note to Ætérnal: start preparing assets for that; apply all of this when I wake up the day the video comes out. Change my profile picture to Coal. Prepare all of this on my test server ahead of time so I can simply copy the settings.
+
+
+
+= Invoice
+
+= Translation
+Tolkien’s Ring Verse as rendered in literary Elvish by the Elvish poet [insert name here; make the name look as similar to tolkien as possible]:
+- Replace ‘Dark Lord’ with ‘the Chimney Man’
+- Replace ‘Elven kings’ with just ‘Master Carbonators’
+- Replace ‘dwarf lords’ with ‘Colliers’
+- Replace ‘ring(s)’ with ‘ferrules’
+- Replace ‘in the darkness bind them’ with ‘in the Arctic bind them’
+- Replace ‘Land of Mordor’ with ‘the North Pole’
+
+= Video Script
 
 = Dictionary
 Lazy verbs are marked with #i[lz], working verbs with #i[wk].
