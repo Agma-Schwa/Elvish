@@ -480,7 +480,7 @@ Since Coal is the most important aspect of Elvish society, many idioms and phras
 = Invoice
 
 = Translation
-Tolkien’s Ring Verse as rendered in literary Elvish by the Elvish poet [insert name here; make the name look as similar to tolkien as possible]:
+Tolkien’s Ring Verse as rendered in literary Elvish by the Elvish poet #w[Tǫrxí]:
 - Replace ‘Dark Lord’ with ‘the Chimney Man’
 - Replace ‘Elven kings’ with just ‘Master Carbonators’
 - Replace ‘dwarf lords’ with ‘Colliers’
