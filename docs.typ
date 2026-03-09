@@ -11,6 +11,7 @@
     }
 }
 
+#gloss-show-numbers(false)
 #gloss-set-ipa-function(ipa)
 #gloss-set-line-spacing(.6em) // Tie bars and ogoneks may collide, so space this out a bit more.
 #show "↓" : [#h(-.15em)↓#h(-.15em)] // Reduce kerning a bit to save space.
@@ -159,6 +160,9 @@ For example, forming #i[xúnną dį́gá] has the effect of raising the work or
 - Note that in this sense, lowering generally has the effect of expressing disdain, denigrating something, or making something seem less important or fake (this is known as ‘derogatory lowering’), whereas raising is typically a form of praise.
 - The inverse is generally acceptable, e.g. #w[shindí dį́gá] ‘A cane made personally by The Chimney Man’.
 - As we just saw, work order raising/lowering can be used to communicate that an otherwise low-status being or object (or high-status being or object) is in some manner closely associated with something or someone of higher status (or lower status), e.g. #i[xúnną dį́gá] can also refer to a cane that belongs to a Head Miner.
+
+== Work Order of Clauses
+The work order of a clause is equal to the highest work order amongst its constituents. Within a sentence that consists multiple clauses—or within a clause in which another clause appears as the complement of a phrase—all clauses are arranged in descending work order.
 
 == Adjectives
 In sequences of adjectives (which Elves are particularly prone to), the following categories of hierarchy of importance determines the order at which they are uttered:
@@ -384,8 +388,24 @@ When the verb markers for multiple sentences in a row are the same, the markers 
 A common way to turn a noun into a verb in Elvish that applies solely to disyllabic words is to swap the vowels, e.g.
 #w[ną́nrų́] ‘Coal miner’ becomes #w[nų́nrą́] ‘to mine Coal’.
 
+= Literary Elvish
+There are a few differences between spoken and written Elvish. The most striking difference is a natural consequence of the medium: whereas the time of utterance is obvious in a spoken context (as it is just the present day), the time of utterance of a written text is impossible to know unless expressly conveyed to the reader.
+
+Usually, the tense chosen is that of the date on which the author wrote or started writing the text. A natural consequence of this is Elves cease all writing during the Temporal Void. Futhermore, only written texts have a fixed tense. When a story is told by an Elf, it will naturally—and indeed subconsciously without requiring active consideration or effort—rephrase the text relative to the time at which the story is told.
+
+Since the time of utterance is an integral part of Elvish grammar, it is custom in Elvish literature to introduce every piece of written text with the phrase ‘This Elf declares that’, with the status-appropriate abridged personal pronoun used as the subject. The tense of this phrase serves to determine the time of utterance. E.g. if the text is written by a Collier during the REM sleep phase, the phrase would be:
+
+#gloss(`
+Gan nun’a tú tshų́’á tchą́ chírnu rǫngi ...
+gan nun’a tú tshų́’á tchą́ chírnu rǫngi
+{obs} {rem} {atel} declare {wrk} this cloak
+I declare that ...#footnote[Lit. ‘This cloak is observably declaring that ...’]
+`)
+
+This is effectively prefixed to the first sentence of the text proper, thereby forming a new matrix clause around it. As a result, the rest of the first sentence is rendered in reported speech.
+
 = Examples
-#gloss-show-numbers(false)
+== Simple Glosses
 It is assumed that the examples below are spoken on 2 February (i.e. during the REM phase).
 #gloss(`
 Gan nun’a rǫsa shu ų́xį́ tą́ dun txǫncų.
@@ -405,6 +425,39 @@ I always knew that you were an idiot.
 `)
 
 Lit. ‘This cloak most surely always knew [that] that(#smallcaps[medial]) [was observably an] idiot.’
+
+== Ferrule Verse
+An Elvish adaptation of JRR Tolkien’s Ring Verse, as translated and adapted by the Elvish poet #w[Tǫrxí]:
+
+=== Original English Text
+#emph(verse[
+Three Rings for the Elven-kings under the sky, \
+Seven for the Dwarf-lords in their halls of stone, \
+Nine for Mortal Men doomed to die, \
+One for the Dark Lord on his dark throne \
+In the Land of Mordor where the Shadows lie. \
+#quad One Ring to rule them all, One Ring to find them, \
+#quad One Ring to bring them all and in the darkness bind them \
+In the Land of Mordor where the Shadows lie.
+])
+
+=== Poetic English Rendition of the Elvish Adaptation
+#emph(verse[
+Three Ferrules for the Master Carbonators under the mine, \
+Seven for the Colliers in their halls of stone, \
+Nine for Mortal Men doomed to retire, \
+One for The Chimney Man on His red throne \
+At the North Pole where the Shadows lie. \
+#quad One Ferrule to rule them all, One Ferrule to find them, \
+#quad One Ferrule to bring them all and in the Arctic bind them \
+At the North Pole where the Shadows lie.
+])
+
+=== Elvish Adaptation
+
+=== Gloss of the Elvish Adaptation
+
+=== Literal Translation of the Elvish Adaptation
 
 = Worldbuilding
 == Gender
@@ -474,19 +527,6 @@ Since Coal is the most important aspect of Elvish society, many idioms and phras
    - Give everyone on the server free Coal.
    - Leave everything that way for a week.
    - Note to Ætérnal: start preparing assets for that; apply all of this when I wake up the day the video comes out. Change my profile picture to Coal. Prepare all of this on my test server ahead of time so I can simply copy the settings.
-
-
-
-= Invoice
-
-= Translation
-Tolkien’s Ring Verse as rendered in literary Elvish by the Elvish poet #w[Tǫrxí]:
-- Replace ‘Dark Lord’ with ‘the Chimney Man’
-- Replace ‘Elven kings’ with just ‘Master Carbonators’
-- Replace ‘dwarf lords’ with ‘Colliers’
-- Replace ‘ring(s)’ with ‘ferrules’
-- Replace ‘in the darkness bind them’ with ‘in the Arctic bind them’
-- Replace ‘Land of Mordor’ with ‘the North Pole’
 
 = Video Script
 

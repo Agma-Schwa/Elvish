@@ -74,6 +74,7 @@ Shǫnxą|n. w2||Coal
     and all words derived from it are always capitalised.
 
 tǫrxí|n.||Elvish given name
+tshų́’á|v. wk.||To declare, make known
 
 natá|||\i{Work Order raising marker; see \ref{work-order-marking}}
 cį́chą|||\i{Work Order raising marker; see \ref{work-order-marking}}
