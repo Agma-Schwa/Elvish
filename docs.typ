@@ -21,8 +21,8 @@
 #let i(s) = { [_#[#s]_] }
 
 #gloss-set-replacements((
-    "~": " ",
     "---": [---],
+    ..gloss-default-replacements
 ))
 
 #table-of-contents()
@@ -179,35 +179,90 @@ Adjectives precede the noun they qualify.
 === Adverbs
 Adverbs follow the verb.
 
-=== Standalone Adjective Phrases <standalone-adjective-phrases>
+=== Standalone Adjective Phrases (SAPs) <standalone-adjective-phrases>
 A very common idiom in Elvish is to refer to a noun (phrase) in the domain of discourse by an adjective that describes it,
-optionally preceded by a work order marker that agrees with the work order of the noun (phrase); this largely replaces pronouns
-in Elvish.
+optionally preceded by a work order marker that agrees with the work order of the noun (phrase). Such phrases are known as
+_standalone adjective phrases_ (SAPs) this largely replaces pronouns in Elvish.
+
+SAPs consist of an adjective preceded by a so-called _invoice particle_ (see @invoice); syntactically, SAPs are treated as
+though they were nouns; in particular, they may be preceded by the usual noun particles and even other adjectives.
 
 In writing, it is common for the first mention of a noun phrase to be accompanied by one or more adjectives that may later on be
 used to refer to it.#footnote[This is omitted in spoken language when the noun phrase is something that is clearly visible to
-all interlocutors.] For example, a Master Carbonator with the name of #w[Txǫncų] might be introduced as #i[Txǫncų xúsųrǫngi] ‘Master Carbonator Txǫncų’ (lit. ‘Blackcloak Txǫncų’) and then later on referred to as #w[Xį́ntí Xúsų] (lit. ‘black~#s[+w8]’). Such adjective phrases are capitalised if they refer to a noun that is capitalised.
+all interlocutors.] For example, a fat Elf with the name #w[txǫncų] might be introduced as #i[txų́dí txǫncų] ‘Fat Txǫncų’ and then later on referred to as #w[sį́ txų́dí] ‘the fat one’, where #i[sį́] is one of the possible invoice particles.
 
-==== Invoice
-The Elves employ a tactic for further efficiency in their language known as the 'Invoice.' An invoice operates in a similar way to adjective-noun agreement.
-The word-initial phonemes of adjectives are derived in a way similar to grammatical gender in order to assign them any of 5 possible invoice categories, which can then be used to further shorten sentences with efficient, contextually-based information.
-However, while these categories are phonologically derived, the invoice associated with any given adjective phrase is entirely dependent on the tense of the sentence.
-For example, a word that begins with #w[d] is of the REM gender, it can be substituted in later conversations with an invoice particle. This particle is assigned to a given noun phrase in conversation, with a value that follows the pattern $"Present Tense" - n$, with $n$ being the number of sleep phases that have passed between the 'gender' and the present day. Thus, there are 5 invoice declaration particles:
-+ -2
-+ -1
-+ 0
-+ 1
-+ 2
+SAPs are capitalised if they refer to a noun that is capitalised.
 
-For instance:
-// FIXME: THIS GLOSS IS BROKEN
-//  #gloss(`
-// Gan nun’a rǫsa shu ų́xį́ tą́ --- (-1) --- dun txǫncų.
-// gan nun’a rǫsa shu ų́xį́ tą́ dun txǫncų
-// {obs} {rem} slide {nc} {man} chimney {nwk} Txǫncų
-// Txǫncų slides down the Chimney (Invoice -1) (and I see it do so).
-// `)
+==== Invoice <invoice>
+The _invoice_ is a construction used primarily as part of a SAP. An invoice operates in a similar way to adjective-noun agreement, except that it is really tense-noun agreement. That is, each noun is assigned a ‘tense’ based on its initial phoneme (see @table:noun-tense), and the appropriate invoice particle depends on the noun’s inherent tense as well as the tense of the clause. Tenses are assigned an integer value between $1$ and $5$.
 
+#center-table(
+  caption: [Association Between Initial Phonemes and Noun Tense],
+  align: (right, center, left),
+  hlineat(1),
+  ..vlinesat(1, 2),
+  [Tense     & Value & Phonemes],
+  [Awake     & $1$ & _d, tx_],
+  [REM       & $2$ & _n_],
+  [Non-REM 1 & $3$ & ],
+  [Non-REM 2 & $4$ & ],
+  [Non-REM 3 & $5$ & ],
+) <table:noun-tense>
+
+There are five invoice particles, which are assigned an integer value between $-2$ and $2$:
+#center-table(
+  caption: [Invoice Particles by Value],
+  align: (right, left),
+  hlineat(1),
+  vlineat(1),
+  [$v$ & Particle],
+  [-2 & #w[cų́r]],
+  [-1 & #w[so]],
+  [ 0 & #w[tų́r]],
+  [ 1 & #w[sį́]],
+  [ 2 & #w[árxį́]],
+) <table:invoice-particles>
+
+The appropriate invoice particle for a noun is selected as follows: let $d := T(C) - T(N)$ where $T(C)$ is the tense of the clause, and $T(N)$ the tense of the noun. The value $v$ of the appropriate invoice particle is then given by the formula
+$
+  v := cases(
+    d"," & "if" |d| < 3,
+    -"sgn"(d) dot (5 - |d|)"," &"otherwise."
+  )
+$
+
+For instance, recall our example of the fat Elf #i[txų́dí txǫncų] above. The noun #w[txǫncų] is of the Awake tense since it starts with #i[tx]. In a sentence in the REM sleep tense, the formula above gives $ d = T(#mtext[#s[rem]]) - T(#mtext[_txǫncų_]) = 2 - 1 = 1 $ whence
+$v = d = 1$. Thus, the appropriate invoice particle is the one with value 1, i.e. #w[sį́], and the appropriate SAP is #w[sį́ txų́dí].
+By contrast, in a sentence in the Non-REM phase 2 tense, we have $ d = T(#mtext[#s[nr2]]) - T(#mtext[_txǫncų_]) = 4 - 1 = 3 $ which means
+the second case above applies, whereby $ v = -"sgn"(3) dot (5 - |3|) = -1 dot 2 = -2 $ Thus, the appropriate SAP is #w[cų́r txų́dí].
+
+
+==== Extraposition <invoice-extraposition>
+SAPs are also used to ensure a clause or phrase observes proper work order. This phenomenon is known as _extraposition_. For instance, suppose we want to say ‘three ferrules for the Master Carbonators under the mine’, containing the PP #w[tsírǫ ną́n] ‘under the mine(s)’.
+
+#gloss(ungrammatical: true, `
+ún xúsųrǫngi tsírǫ ną́n tchų́’i ta-rųtí·
+ún xúsųrǫngi §tsírǫ §ną́n tchų́’i ta-rųtí
+for Master~Carbonator under mine three {poss}-ferrule
+`)
+
+This phrase is ill-formed because #w[ną́n] ‘mine’, a noun with work order 6, precedes #w[rųtí] ‘ferrule’, a noun with work order 4. To correct this, we need to move ‘mine’ to the end of the clause, but we can’t simply move the entire enclosing PP as that would change the meaning of the phrase:
+#gloss(`
+ún xúsųrǫngi tchų́’i ta-rųtí tsírǫ ną́n·
+ún xúsųrǫngi tchų́’i ta-rųtí §tsírǫ §ną́n
+for Master~Carbonator under mine three {poss}-ferrule
+three ferrules under the mine for the Master Carbonators
+`)
+
+While well-formed, this movement has changed what NP the PP qualifies. Instead, the proper solution is to replace the problematic noun in the PP with a SAP. The noun is then left stranded as far back in the clause as possible, but of course preceding any nouns with lower work order.
+If there is no adjective qualifying the noun, the adjective #w[xún] ‘proper’ is used instead. This adjective has no meaning in this context and only serves to provide something the invoice particle can be attached to. Thus, a grammatical rendition of the above might be:
+
+#gloss(`
+ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n·
+ún xúsųrǫngi §tsírǫ §tų́r §xún tchų́’i ta-rųtí §ną́n
+for Master~Carbonator under {invc.rem} good three {poss}-ferrule mine
+three ferrules for the Master Carbonators under the mine
+`)
 
 == Nouns
 Nouns are declined for number and work (see @nouns-at-work); there are also a number of miscellaneous noun markers that are used to express concepts such as possession.
@@ -310,6 +365,8 @@ Since personal and demonstrative pronouns can be very similar, as the former sim
 
 This is especially important in the context of a zero copula (see @copula). Consider e.g. #w[chírtxí tchų́rshu] ‘you are an idiot’ vs #w[tchų́rshu chírtxí] ‘that idiot’.
 
+=== Numbers
+Elvish numbers use the same system as Santaa numbers, except using Elvish words. Cardinals are expressed using the possessive marker, e.g. #w[tchų́’i ta-ną́nrų́] ‘three Elves’ (lit. ‘three of Elves’).
 
 == Verbs
 Verbs are either classified as ‘working’ or ‘lazy’ (see @nouns-at-work). Verbs are not inflected for number, only nouns are. In the absence of work order distinction, the default word order is VOS. Verbs generally do not have an associated work order (unless they are derived from a noun) and are generally placed first; the main exception to this is that nouns with work order 1 are always placed first and precede even the verb.
@@ -357,6 +414,8 @@ Since a sentence in a vacuum without any information as to when it was uttered i
 === Dependent Clauses
 Tense in dependent clauses is relative to the tense of the matrix clause; for example, during the REM sleep phase, a future sentence would use the Non-REM phase 1 tense; a dependent clause that is in the past relative to that Non-REM phase 1 matrix clause would use the REM sleep tense, and in that dependent clause, that tense acts as a past tense---even though the very same tense would be the present tense if used in a matrix clause during the REM sleep phase.
 
+The rules for reported speech for e.g. pronouns also apply to dependent clauses.
+
 === Copula <copula>
 The Elvish copula is $emptyset$, i.e. the empty root; that is, to express the copula all verb markers are used as they normally would be, except that the verb is ‘missing’. Even the tense and evidentiality marker may be dropped if elision is applied, or if they’re obvious from context, generally if the sentence is in the present tense, leading to a zero copula (see @elision).
 
@@ -378,7 +437,7 @@ Evidentiality is split into four categories:
 - #w[txą́] (#s[nor] ‘North Pole’): purported to exist (in the North Pole)
 - #w[tsų́n] (#s[dub] ‘dubious’): purported to exist elsewhere
 
-Statements of fact use the Chimney Man evidentiality—for example, $2+2=4$—and so do statements that an Elf is absolutely sure about. The meaning of this evidentiality is closer to ‘as true as though The Chimney Man Himself had decreed it’, and a suitable translation may be ‘most surely’. At the same time, it is of course also used to refer to literal statements made by The Chimney Man
+Statements of fact use the Chimney Man evidentiality—for example, $2+2=4$—and so do statements that an Elf is absolutely sure about. The meaning of this evidentiality is closer to ‘as true as though The Chimney Man Himself had decreed it’, and a suitable translation may be ‘most surely’. At the same time, it is of course also used to refer to literal statements made by The Chimney Man.
 
 === Elision <elision>
 When the verb markers for multiple sentences in a row are the same, the markers are dropped for any verb after the first.
@@ -387,6 +446,9 @@ When the verb markers for multiple sentences in a row are the same, the markers 
 === Vowel Swapping
 A common way to turn a noun into a verb in Elvish that applies solely to disyllabic words is to swap the vowels, e.g.
 #w[ną́nrų́] ‘Coal miner’ becomes #w[nų́nrą́] ‘to mine Coal’.
+
+== #i[-rų́]
+The suffix #w[-rų́] can be attached to a verb or noun to form an agent noun describing an Elf who performs an action associated with that verb or noun. E.g. from #w[sǫtą] ‘to learn’, we get #w[sǫtąrų́] ‘teacher’, and from #w[ną́n] ‘Coal mine’, we get #w[ną́nrų́] ‘Coal miner, Elf’.
 
 = Literary Elvish
 There are a few differences between spoken and written Elvish. The most striking difference is a natural consequence of the medium: whereas the time of utterance is obvious in a spoken context (as it is just the present day), the time of utterance of a written text is impossible to know unless expressly conveyed to the reader.
@@ -443,6 +505,7 @@ In the Land of Mordor where the Shadows lie.
 
 === Poetic English Rendition of the Elvish Adaptation
 #emph(verse[
+This Elf declares: \
 Three Ferrules for the Master Carbonators under the mine, \
 Seven for the Colliers in their halls of stone, \
 Nine for Mortal Men doomed to retire, \
@@ -454,8 +517,27 @@ At the North Pole where the Shadows lie.
 ])
 
 === Elvish Adaptation
-
 === Gloss of the Elvish Adaptation
+#gloss(`
+Gan nun’a tú tshų́’á tchą́ chírnu rǫngi·
+gan nun’a tú tshų́’á tchą́ chírnu rǫngi
+{obs} {rem} {atel} declare {wrk} this cloak
+This Elf declares:
+`)
+
+#gloss(`
+Ų́rų́ ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n·
+ų́rų́ ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n
+{wkd} for Master~Carbonator under {invc.rem} {null} three {poss}-ferrule mine
+That [there are] three Ferrules for the Master Carbonators under the mine
+`)
+
+
+=== Notes to add to the grammar.
+- _Clauses_, not sentences, are delimited by an interpunct.
+- The first word of every _clause_, not sentence, is capitalised.
+- The particle ‘that’ as in ‘I declare that’ is expressed by placing the theme marker before the verb
+  of the ‘that’-clause, or before the entire clause if there is no verb (zero copula).
 
 === Literal Translation of the Elvish Adaptation
 

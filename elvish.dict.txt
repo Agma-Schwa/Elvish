@@ -35,6 +35,7 @@ dishą́|adv.||
 sǫtą|v.||
     \\\i{lz} To know
     \\\i{wk} To learn
+sǫtąrų́|n. w6|sǫtą|Teacher
 ríngú|n. w11||Handle
 tą́|n. w4||Chimney
 rǫsa|v. lz.||To slide
@@ -51,7 +52,8 @@ shų́’i|n. w11||
     \\ \w{\this ta-xąro} Blood vessel \comment Lit. ‘blood tunnel’
 xąro|n. w11||Blood
 
-ną́nrų́|n.||
+ną́n|n. w6||Coal mine
+ną́nrų́|n.|ną́n|
     \\\i{w7} Coal miner
     \\\i{w6} Elf, canary \comment All Elves are coal miners, whence this sense follows naturally.
         This is the Generic term for an Elf whose social status is unknown, as well as the
@@ -61,6 +63,8 @@ nų́nrą́|v. w6|ną́nrų́|
     \\To mine Coal
     \\To be alive
 chír|prep.||At, on, in, near
+ún|prep.||\\ For \\ To, towards
+tsírǫ|prep.||Under, beneath, below
 oncų|adj.||
     \\ First
     \\ \i{n. w5} oncų ną́nrų́
@@ -75,6 +79,10 @@ Shǫnxą|n. w2||Coal
 
 tǫrxí|n.||Elvish given name
 tshų́’á|v. wk.||To declare, make known
+rųtí|n. w4||Ferrule
+tchų́’i|n. w11||\\Plan \\ The number 3. \comment From Santaa \w{ò̀̀ħħħ}.
+xún|adj.||\\ Proper, good \\ \i{Null adjective used in extraposition} \comment See \ref{invoice-extraposition}.
+txų́dí|adj.||Fat, big
 
 natá|||\i{Work Order raising marker; see \ref{work-order-marking}}
 cį́chą|||\i{Work Order raising marker; see \ref{work-order-marking}}
