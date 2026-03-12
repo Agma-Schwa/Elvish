@@ -537,6 +537,13 @@ At the North Pole where the Shadows lie.
 ])
 
 === Elvish Adaptation
+#emph(verse[
+Gan nun’a tú tshų́’á tchą́ chírnu rǫngi· \
+Ų́rų́ gan ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n· \
+Ų́rų́ gan ún isirǫngi chír cų́r xún txadą́ irtǫtǫtǫn cįxį́tųn’ą́· \
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+])
+
 === Gloss of the Elvish Adaptation
 #gloss(`
 Gan nun’a tú tshų́’á tchą́ chírnu rǫngi·
@@ -547,14 +554,14 @@ This Elf declares:
 
 #gloss(`
 Ų́rų́ gan ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n·
-ų́rų́ ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n
+ų́rų́ gan ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n
 {wkd} {obs} for Master~Carbonator under {inv.0} {null} three {poss}-ferrule mine
 [That there are] three Ferrules for the Master Carbonators under the mine
 `)
 
 #gloss(`
 Ų́rų́ gan ún isirǫngi chír cų́r xún txadą́ irtǫtǫtǫn cįxį́tųn’ą́·
-ų́rų́ ún isirǫngi chír cų́r xún txadą́ irtǫtǫtǫn cįxį́ tųn’ą́
+ų́rų́ gan ún isirǫngi chír cų́r xún txadą́ irtǫtǫtǫn cįxį́ tųn’ą́
 {wkd} {obs} for Collier in {inv.-1} {null} {wo+7} seven hall stone
 [That there are] seven for the Colliers in their halls of stone
 `)
@@ -566,6 +573,12 @@ This Elf declares:
 [That there are] nine for Mortal Men [who are] doomed to retire
 `)
 
+#gloss(`
+Ún Są́ntą́ chír tų́r isi ta-Są́ntą́ ų́rų́ gan txadą́ nangį́ shindí nurchǫ·
+ún Są́ntą́ chír tų́r isi ta-Są́ntą́ ų́rų́ gan txadą́ nangį́ shindí nurchǫ
+for The~Chimney~Man on {inv.0} red {poss}-The~Chimney~Man {wkd} {obs} {wo+7} one {wo+10} throne
+One for The Chimney Man on His red throne
+`)
 
 === Notes
 The sentence _Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́_ is very complex and serves as a good illustration of some of the quirks of Elvish grammar:

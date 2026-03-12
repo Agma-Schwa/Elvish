@@ -97,6 +97,8 @@ cuncu|n. w11|sense \senseref{2} is a calque of Santaa \w{ō̽̏h}|\\Logistics \
 cuncutǫn|n. w11|from \w{cuncu} and \w{tǫn}; literally ‘logistics more’, a calque of Santaa \w{ō̽̏h ħħó̽̏}|The number 9.
 cą|particle||\i{Introduces a relative clause}
 túsą|v. lz||To be destined to ... \comment The object of this verb is a clause; the nested clause has no evidentiality marker.
+nangį́|n. w11|sense \senseref{2} is a calque of Santaa \w{hɔ̄̋̄}|\\December \\ The number 1.
+nurchǫ|n. w11||Throne
 
 natá|||\i{Work Order raising marker; see \ref{work-order-marking}}
 cį́chą|||\i{Work Order raising marker; see \ref{work-order-marking}}
