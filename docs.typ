@@ -204,8 +204,8 @@ The _invoice_ is a construction used primarily as part of a SAP. An invoice oper
   [Tense     & Value & Phonemes],
   [Awake     & $1$ & _d, tx_],
   [REM       & $2$ & _n_],
-  [Non-REM 1 & $3$ & ],
-  [Non-REM 2 & $4$ & ],
+  [Non-REM 1 & $3$ & _sh_],
+  [Non-REM 2 & $4$ & _c_ ],
   [Non-REM 3 & $5$ & ],
 ) <table:noun-tense>
 
@@ -264,6 +264,25 @@ for Master~Carbonator under {invc.rem} good three {poss}-ferrule mine
 three ferrules for the Master Carbonators under the mine
 `)
 
+==== SAP Contraction <sap-contraction>
+Elvish relative clauses precede the noun they qualify; Elvish NPs are placed after the verb and thus frequently occur at the end of a clause; adjectives precede the noun they qualify and invoice markers in turn precede adjectives. All of these factors combined can lead to a peculiar constellation wherein a SAP directly precedes the NP it refers to, with the same adjective occurring twice in a row. For example, the phrase ‘mortal men who are doomed to retire’ expressed naively in Elvish would end up being:
+#gloss(`
+%dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo shardo núgį́
+dun cą sán túsą ų́xį́ shąnų́ dun tų́r §shardo §shardo núgį́
+{nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal mortal human
+mortal men who are doomed to retire
+`)
+
+This is rather awkward, for which reason most Elves instead opt to omit the duplicate adjective:
+#gloss(`
+dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́
+dun cą sán túsą ų́xį́ shąnų́ dun tų́r §shardo núgį́
+{nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+mortal men who are doomed to retire
+`)
+
+In this phrase, #w[shardo] ‘mortal’ does double duty and is part both of the SAP #w[tų́r shardo] ‘the mortal ones’ as well as the NP #w[shardo núgį́] ‘mortal men’. A sequence of the form ‘#s[invoice.particle adjective noun]’ is usually SAP-contracted.
+
 == Nouns
 Nouns are declined for number and work (see @nouns-at-work); there are also a number of miscellaneous noun markers that are used to express concepts such as possession.
 
@@ -301,8 +320,7 @@ The verb itself is only inflected for tense (see @tam).
 The noun work markers can also precede the verb, in which case the clause acts as the agent/theme.
 
 == Compounds
-Compound nouns can be expressed by juxtaposition; the modifier comes second, just like in Santaa, e.g. #w[ną́nchųn] ‘head miner’ (lit. ‘miner head’)
-from #w[ną́nrų́] ‘canary’ and #w[chųnxi] ‘head’.
+Compound nouns can be expressed by juxtaposition; the modifier comes second, just like in Santaa, e.g. #w[ną́nchųn] ‘head miner’ (lit. ‘miner head’) from #w[ną́nrų́] ‘canary’ and #w[chųnxi] ‘head’. The compound is written without a space, e.g. #w[cįxį́tųn’ą́] ‘stone hall’, not #i[\*cįxį́ tųn’ą́].
 
 == Pronouns <pronouns>
 === Demonstrative Pronouns
@@ -419,6 +437,8 @@ The rules for reported speech for e.g. pronouns also apply to dependent clauses.
 === Copula <copula>
 The Elvish copula is $emptyset$, i.e. the empty root; that is, to express the copula all verb markers are used as they normally would be, except that the verb is ‘missing’. Even the tense and evidentiality marker may be dropped if elision is applied, or if they’re obvious from context, generally if the sentence is in the present tense, leading to a zero copula (see @elision).
 
+If an entire clause is preceded by an agent/theme marker, a zero copula cannot be used, and at least one verb marker (usually the evidentiality marker) is required.
+
 === Aspect
 Aspect marking differs between working verbs and lazy verbs. Working verbs are marked for telicity, i.e. whether the work
 is done (#s[tel] ‘telic’) or not (#s[atel] ‘atelic’). Lazy verbs are marked for whether the laziness is continued
@@ -440,7 +460,7 @@ Evidentiality is split into four categories:
 Statements of fact use the Chimney Man evidentiality—for example, $2+2=4$—and so do statements that an Elf is absolutely sure about. The meaning of this evidentiality is closer to ‘as true as though The Chimney Man Himself had decreed it’, and a suitable translation may be ‘most surely’. At the same time, it is of course also used to refer to literal statements made by The Chimney Man.
 
 === Elision <elision>
-When the verb markers for multiple sentences in a row are the same, the markers are dropped for any verb after the first.
+When the verb markers for multiple sentences in a row are the same, the markers are dropped for any verb after the first. In particular, this often applies to evidentiality markers: if the evidentiality marker of several clauses is the same, all but the first are generally dropped.
 
 == Derivation
 === Vowel Swapping
@@ -526,18 +546,51 @@ This Elf declares:
 `)
 
 #gloss(`
-Ų́rų́ ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n·
+Ų́rų́ gan ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n·
 ų́rų́ ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n
-{wkd} for Master~Carbonator under {invc.rem} {null} three {poss}-ferrule mine
-That [there are] three Ferrules for the Master Carbonators under the mine
+{wkd} {obs} for Master~Carbonator under {inv.0} {null} three {poss}-ferrule mine
+[That there are] three Ferrules for the Master Carbonators under the mine
+`)
+
+#gloss(`
+Ų́rų́ gan ún isirǫngi chír cų́r xún txadą́ irtǫtǫtǫn cįxį́tųn’ą́·
+ų́rų́ ún isirǫngi chír cų́r xún txadą́ irtǫtǫtǫn cįxį́ tųn’ą́
+{wkd} {obs} for Collier in {inv.-1} {null} {wo+7} seven hall stone
+[That there are] seven for the Colliers in their halls of stone
+`)
+
+#gloss(`
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́
+{wkd} {obs} {wo+7} seven for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+[That there are] nine for Mortal Men [who are] doomed to retire
 `)
 
 
+=== Notes
+The sentence _Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́_ is very complex and serves as a good illustration of some of the quirks of Elvish grammar:
+- #w[ų́rų́] marks that the entire clause is an object of the verb #w[tshų́’á] ‘declare’ in the first clause. It can be translated as the English subordinator ‘that’ in this context.
+- The evidentiality marker #w[gan] qualifies the copula, which has no root. It is required here to prevent #i[ų́rų́] from affecting only the following noun phrase, as it must precede a verb (marker) to affect the entire clause.
+- #w[txadą́ cuncutǫn] is simply the word for the number 7 (whose default work order is #[w11]) raised by 7 work orders to give it work order #s[w4] to match #w[rųtí] ‘ferrule’ in the second clause, which is elided here. Thus, this phrase literally means ‘seven of the thing with work order #w[w4]’.
+- The complement of the PP headed by #w[ún] ‘for’ is the rest of the clause.
+
+In particular, the relative clause #i[dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo] ‘which are destined to retire‘ is fairly complicated on its own:
+- The NP it modifies, #w[shardo núgį́] ‘mortal humans’, follows the clause rather than preceding it.
+- Notably, the relative pronoun #w[cą] is not the first word in the clause. Rather, because it is the subject of a clause with a lazy verb, it is preceded by the lazy agent marker #w[dun].
+- The complement of #w[túsą] ‘to be destined’ is yet another clause, viz. #i[shąnų́ dun tų́r shardo] ‘the mortal ones retire’.
+- This inner clause is preceded by the lazy theme marker #w[ų́xį́], which marks that the clause is the theme of the verb.
+- The sequence #w[tų́r shardo núgí] is SAP-contracted (see @sap-contraction) and is short for #w[tų́r shardo shardo núgí]. That is,
+  we have a SAP #w[tų́r shardo] ‘the mortal ones’, which agrees with #w[núgį́] ‘human’ and its referent is the NP #w[shardo núgį́] ‘mortal humans’.
+
+In sum, this sentence is a dependent clause that contains a relative clause whose theme is another clause, and both inner clauses either modify or reference an NP that occurs later on in the sentence.
+
 === Notes to add to the grammar.
-- _Clauses_, not sentences, are delimited by an interpunct.
+- _Clauses_, not sentences, are delimited by an interpunct, excluding relative clauses.
 - The first word of every _clause_, not sentence, is capitalised.
 - The particle ‘that’ as in ‘I declare that’ is expressed by placing the theme marker before the verb
   of the ‘that’-clause, or before the entire clause if there is no verb (zero copula).
+- Relative clauses _precede_ the NP they qualify and are introduced by the relative pronoun #w[cą]. The agent or theme marker is placed
+  _before_ that pronoun, and it thus functions as either the agent or theme of the relative clause.
 
 === Literal Translation of the Elvish Adaptation
 
