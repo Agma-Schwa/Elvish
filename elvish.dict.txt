@@ -47,6 +47,7 @@ txą́|particle|txą́cą|Evidentiality marker; see \ref{evidentiality}.
 tsų́n|particle||Evidentiality marker; see \ref{evidentiality}.
 gantú|v.||To see
 txą́cą|n. w3||The North Pole
+xurgį|n. w3||The Arctic
 chųnxi|n. w11||Head
 shų́’i|n. w11||
     \\ A tunnel in a Coal mine
@@ -54,6 +55,7 @@ shų́’i|n. w11||
 xąro|n. w11||Blood
 
 ną́n|n. w6||Coal mine
+į́nú|n. w6||Minecart
 ną́nrų́|n.|ną́n|
     \\\i{w7} Coal miner
     \\\i{w6} Elf, canary \comment All Elves are coal miners, whence this sense follows naturally.
@@ -95,10 +97,21 @@ shardo|adj.||Mortal
 núgį́|n. w11||Human, man, woman \comment Elves do not distinguish between gender in other species as they have no gender themselves.
 cuncu|n. w11|sense \senseref{2} is a calque of Santaa \w{ō̽̏h}|\\Logistics \\ The number 8.
 cuncutǫn|n. w11|from \w{cuncu} and \w{tǫn}; literally ‘logistics more’, a calque of Santaa \w{ō̽̏h ħħó̽̏}|The number 9.
-cą|particle||\i{Introduces a relative clause}
+cą|pron.||Which, who, what, \comment Introduces a relative clause
 túsą|v. lz||To be destined to ... \comment The object of this verb is a clause; the nested clause has no evidentiality marker.
 nangį́|n. w11|sense \senseref{2} is a calque of Santaa \w{hɔ̄̋̄}|\\December \\ The number 1.
 nurchǫ|n. w11||Throne
+xą́ngá|n. w11||Thing
+chǫnsǫ|v. lz||Reside, live
+ánrų́|n. w11||Shadow
+chírcą|pron.|contraction of \w{chír} and \w{cą}, lit. ‘in which’|
+    Where \comment Introduces a locative relative clause.
+shųnsį́|v.||\\\i{lz} To encounter, meet \\\i{wk} To find, discover
+dorą|v.||\\\i{wk} To rule, reign (+\s{wkd} over sbd./sth.)
+shų́|n. w11||\\Whole, entirety, everything\\All, every \comment Used like a number.
+xį́tį|v. wk||To bring, carry
+tsantú|v. wk||To bind
+
 
 natá|||\i{Work Order raising marker; see \ref{work-order-marking}}
 cį́chą|||\i{Work Order raising marker; see \ref{work-order-marking}}

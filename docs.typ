@@ -161,6 +161,9 @@ For example, forming #i[xúnną dį́gá] has the effect of raising the work or
 - The inverse is generally acceptable, e.g. #w[shindí dį́gá] ‘A cane made personally by The Chimney Man’.
 - As we just saw, work order raising/lowering can be used to communicate that an otherwise low-status being or object (or high-status being or object) is in some manner closely associated with something or someone of higher status (or lower status), e.g. #i[xúnną dį́gá] can also refer to a cane that belongs to a Head Miner.
 
+=== Work Order and Elision
+Generic nouns such as #w[xą́ngá] ‘thing’ as well as numbers can be combined with a work order marker to refer to something in the context that has that work order. For example, an #w[į́nú] ‘minecart’, which has work order #s[w6], may be referred to later on as #w[txų́nsha xą́ngá] ‘the thing with work order #s[w6]’. This is an alternative to SAPs (see @standalone-adjective-phrases) and is especially common with numbers and things that have a relatively high work order.
+
 == Work Order of Clauses
 The work order of a clause is equal to the highest work order amongst its constituents. Within a sentence that consists multiple clauses—or within a clause in which another clause appears as the complement of a phrase—all clauses are arranged in descending work order.
 
@@ -206,7 +209,7 @@ The _invoice_ is a construction used primarily as part of a SAP. An invoice oper
   [REM       & $2$ & _n_],
   [Non-REM 1 & $3$ & _sh_],
   [Non-REM 2 & $4$ & _c_ ],
-  [Non-REM 3 & $5$ & ],
+  [Non-REM 3 & $5$ & _a_, _á_, _ą_, _ą́_],
 ) <table:noun-tense>
 
 There are five invoice particles, which are assigned an integer value between $-2$ and $2$:
@@ -223,7 +226,7 @@ There are five invoice particles, which are assigned an integer value between $-
   [ 2 & #w[árxį́]],
 ) <table:invoice-particles>
 
-The appropriate invoice particle for a noun is selected as follows: let $d := T(C) - T(N)$ where $T(C)$ is the tense of the clause, and $T(N)$ the tense of the noun. The value $v$ of the appropriate invoice particle is then given by the formula
+Intuitively, the invoice particle adjusts the tense of the noun to match the tense of the clause. That is, the appropriate invoice particle for a noun is selected as follows: let $d := T(C) - T(N)$ where $T(C)$ is the tense of the clause, and $T(N)$ the tense of the noun. The value $v$ of the appropriate invoice particle is then given by the formula
 $
   v := cases(
     d"," & "if" |d| < 3,
@@ -541,7 +544,12 @@ At the North Pole where the Shadows lie.
 Gan nun’a tú tshų́’á tchą́ chírnu rǫngi· \
 Ų́rų́ gan ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n· \
 Ų́rų́ gan ún isirǫngi chír cų́r xún txadą́ irtǫtǫtǫn cįxį́tųn’ą́· \
-Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́· \
+Ún Są́ntą́ chír tų́r isi ta-Są́ntą́ ų́rų́ gan txadą́ nangį́ shindí nurchǫ \
+Chír chírcą chǫnsǫ dun árxį́ xún txą́cą ánrų́· \
+#quad Ún ta-dorą nangį́ ta-rųtí· Ún ta-shųnsį́ ų́rų́ txadą́ shų́· \
+#quad Ún ta-xį́tį nangį́ ta-rųtí· Ún ta-tsantú chír xurgį \
+Chír chírcą chǫnsǫ dun árxį́ xún txą́cą ánrų́· \
 ])
 
 === Gloss of the Elvish Adaptation
@@ -577,35 +585,84 @@ This Elf declares:
 Ún Są́ntą́ chír tų́r isi ta-Są́ntą́ ų́rų́ gan txadą́ nangį́ shindí nurchǫ·
 ún Są́ntą́ chír tų́r isi ta-Są́ntą́ ų́rų́ gan txadą́ nangį́ shindí nurchǫ
 for The~Chimney~Man on {inv.0} red {poss}-The~Chimney~Man {wkd} {obs} {wo+7} one {wo+10} throne
-One for The Chimney Man on His red throne
+[That there is] one for The Chimney Man on His red throne
+`)
+
+#gloss(`
+Chír chírcą chǫnsǫ dun árxį́ xún txą́cą ánrų́·
+chír chírcą chǫnsǫ dun árxį́ xún txą́cą ánrų́
+at where reside {nwk} {inv.+2} {null} the~North~Pole shadow
+At the North Pole where the Shadows lie.
+`)
+
+#gloss(`
+Ún ta-dorą nangį́ ta-rųtí
+ún ta-dorą nangį́ ta-rųtí
+for {poss}-rule one {poss}-ferrule
+One Ferrule to rule,
+`)
+
+#gloss(`
+Ún ta-shųnsį́ ų́rų́ txadą́ shų́·
+ún ta-shųnsį́ ų́rų́ txadą́ shų́·
+for {poss}-find {wkd} {wo+7} all
+To find them all
+`)
+
+#gloss(`
+Ún ta-xį́tį nangį́ ta-rųtí
+ún ta-xį́tį nangį́ ta-rųtí
+for {poss}-bring one {poss}-ferrule
+One Ferrule to bring,
+`)
+
+#gloss(`
+Ún ta-tsantú chír xurgį·
+ún ta-tsantú chír xurgį
+for {poss}-bind in arctic
+To bind [them] in the Arctic.
 `)
 
 === Notes
 The sentence _Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́_ is very complex and serves as a good illustration of some of the quirks of Elvish grammar:
 - #w[ų́rų́] marks that the entire clause is an object of the verb #w[tshų́’á] ‘declare’ in the first clause. It can be translated as the English subordinator ‘that’ in this context.
 - The evidentiality marker #w[gan] qualifies the copula, which has no root. It is required here to prevent #i[ų́rų́] from affecting only the following noun phrase, as it must precede a verb (marker) to affect the entire clause.
-- #w[txadą́ cuncutǫn] is simply the word for the number 7 (whose default work order is #[w11]) raised by 7 work orders to give it work order #s[w4] to match #w[rųtí] ‘ferrule’ in the second clause, which is elided here. Thus, this phrase literally means ‘seven of the thing with work order #w[w4]’.
+- #w[txadą́ cuncutǫn] is simply the word for the number 7 (whose default work order is #[w11]) raised by 7 work orders to give it work order #s[w4] to match #w[rųtí] ‘ferrule’ in the second clause, which is elided here. Thus, this phrase literally means ‘seven of the thing with work order #s[w4]’.
 - The complement of the PP headed by #w[ún] ‘for’ is the rest of the clause.
 
 In particular, the relative clause #i[dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo] ‘which are destined to retire‘ is fairly complicated on its own:
 - The NP it modifies, #w[shardo núgį́] ‘mortal humans’, follows the clause rather than preceding it.
 - Notably, the relative pronoun #w[cą] is not the first word in the clause. Rather, because it is the subject of a clause with a lazy verb, it is preceded by the lazy agent marker #w[dun].
 - The complement of #w[túsą] ‘to be destined’ is yet another clause, viz. #i[shąnų́ dun tų́r shardo] ‘the mortal ones retire’.
-- This inner clause is preceded by the lazy theme marker #w[ų́xį́], which marks that the clause is the theme of the verb.
+- This inner clause is preceded by the lazy theme marker #w[ų́xį́], which marks that the clause is the theme of #w[túsą].
 - The sequence #w[tų́r shardo núgí] is SAP-contracted (see @sap-contraction) and is short for #w[tų́r shardo shardo núgí]. That is,
   we have a SAP #w[tų́r shardo] ‘the mortal ones’, which agrees with #w[núgį́] ‘human’ and its referent is the NP #w[shardo núgį́] ‘mortal humans’.
 
 In sum, this sentence is a dependent clause that contains a relative clause whose theme is another clause, and both inner clauses either modify or reference an NP that occurs later on in the sentence.
 
 === Notes to add to the grammar.
-- _Clauses_, not sentences, are delimited by an interpunct, excluding relative clauses.
+- The interpunct is the only punctuation mark and functions as a full stop, semicolon, colon, and comma.
 - The first word of every _clause_, not sentence, is capitalised.
 - The particle ‘that’ as in ‘I declare that’ is expressed by placing the theme marker before the verb
   of the ‘that’-clause, or before the entire clause if there is no verb (zero copula).
 - Relative clauses _precede_ the NP they qualify and are introduced by the relative pronoun #w[cą]. The agent or theme marker is placed
   _before_ that pronoun, and it thus functions as either the agent or theme of the relative clause.
+- Any _constituents_ containing a w1 word are placed at the very start of the sentence even before the verb and its markers. This excludes any nested phrases with lesser work order, which must be extraposed using SAPs.
+- The fact that relative clauses precede the noun coupled with the fact that nouns with higher work order must come earlier in the sentence leads to many nouns in relative clauses requiring extraposition.
+- In poetry, movement of nouns due to work order is restricted to within a line rather than within a clause.
+- ‘In order to do X’ is expressed as ‘for X’s’, e.g. #w[ún ta-shųnsį́] ‘in order to find’ (lit. ‘for of [to] find’).
 
 === Literal Translation of the Elvish Adaptation
+This Elf declares:
+That there are three Ferrules for the Master Carbonators under the mine
+That there are seven for the Colliers in their stone-halls
+That there are nine for Mortal Men [who are] destined to retire
+That there is one for The Chimney Man on The Chimney Man's red throne
+At the North Pole where the Shadows reside
+One Ferrule to rule, to find them all
+One Ferrule to bring, to bind [them] in the Arctic.
+At the North Pole where the Shadows reside
+
 
 = Worldbuilding
 == Gender
@@ -644,11 +701,10 @@ Thus, it should also come as no surprise that The Chimney Man’s hibernating is
 - Elves have no lips, making their sharp and pointy teeth, which are designed for the chewing and consumption of Coal, by which they are perpetually stained a dark and dusty black, clearly visible.
 - Elvish tongues are extremely stiff and don’t bend.
 - Elvish eyes are covered in multiple levels of eye lashes to keep the Coal out of their vision. Since the Elvish eye has evolved to thrive in an exceedingly dry and dusty environment, Elves naturally never need to close their eyes and thus lack eyelids.
-- Elves have pointy ears, but their point downwards, so as to not collide with the low ceiling of their mines.
-- Low-ranking Elves (below the rank of collier) are typically always hunched down so as to fit in lower tunnels.
+- Elves have pointy ears, but they point downwards, so as to not collide with the low ceiling of their mines.
+- Low-ranking Elves (below the rank of Collier) are typically always hunched down so as to fit in lower tunnels.
 - Elves have inverted knees, so as to improve crawling in tunnel conditions.
-- Elves are closer to Coal golemns than biological creatures.
-- Idea for the Minecraft server: change the copper golem texture to be Coal and rename them to ‘Elves’.
+- Elves are closer to Coal golems than biological creatures.
 - The throat and mouth of an Elf is constantly extremely dry due to being coated in Coal dust, which renders their articulation extremely hoarse, strained, and outright grating.
 - The complexion of an Elf is a dark grey, simply because they are always covered in layers upon layers of coal; no-one actually knows what the natural skin colour of an Elf is.
 - Elves are mostly bald; the most hair they have on their bodies is their eye lashes.
@@ -665,7 +721,7 @@ Since Coal is the most important aspect of Elvish society, many idioms and phras
 - Make some images and emojis etc. for the Discord server. Make it coal-themed.
    - Rename ‘general’ and ‘general-2’ to ‘mining’ and ‘mining-2’.
    - Change the server icon to a picture of Coal.
-   - Rename the server to ‘Agma’s Coal Mine’.
+   - Rename the server to ‘Agma’s Colliery’.
    - Rename Agma to ‘The Chimney Man’.
    - Rename Ætérnal to ‘The Grand Carbonator’
    - Some of the mods can rename themselves to ‘Master Carbonator’.
