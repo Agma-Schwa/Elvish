@@ -111,7 +111,8 @@ dorą|v.||\\\i{wk} To rule, reign (+\s{wkd} over sbd./sth.)
 shų́|n. w11||\\Whole, entirety, everything\\All, every \comment Used like a number.
 xį́tį|v. wk||To bring, carry
 tsantú|v. wk||To bind
-
+gųshą|v. lz||To crouch, be crouched
+dą́chą|n. w11||Table
 
 natá|||\i{Work Order raising marker; see \ref{work-order-marking}}
 cį́chą|||\i{Work Order raising marker; see \ref{work-order-marking}}

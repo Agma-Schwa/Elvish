@@ -50,7 +50,6 @@ Due to their extensive and perpetual involvement in and with the Coal mining pro
 )
 
 - #w[r] is a coarticulated palatal-velar trill (yes, Elves can do that)
-
 == Vowels
 #rowtable(
     hlineat(1),
@@ -287,21 +286,15 @@ mortal men who are doomed to retire
 In this phrase, #w[shardo] ‘mortal’ does double duty and is part both of the SAP #w[tų́r shardo] ‘the mortal ones’ as well as the NP #w[shardo núgį́] ‘mortal men’. A sequence of the form ‘#s[invoice.particle adjective noun]’ is usually SAP-contracted.
 
 == Nouns
-Nouns are declined for number and work (see @nouns-at-work); there are also a number of miscellaneous noun markers that are used to express concepts such as possession.
-
-The default number is Collective. An unmarked noun is usually assumed to be collective, but there are some exceptions. E.g. predicate nouns are never marked for number as they obviously must have the same number as the noun they describe. Pronouns (see @pronouns) are likewise never marked for number, and neither are proper nouns.
-
-For concrete nouns, the Collective usually has the meaning of ‘all’ or ‘every’. As opposed to the unmarked "Collective" form, a marking describes a noun as "Non-Collective." This could refer to one individual or a fraction of some whole.
+Elvish nouns are not marked for number or definiteness. However, besides work order markers (see @nouns-at-work), there are a number of miscellaneous noun markers that are used to express concepts such as possession.
 
 The following is a list of Elvish noun markers:
 
-- #w[shu] ‘non-collective’ (#s[nc]), e.g. #i[shu ną́nrų́] ‘one or more Elves’.
 - #w[ta-] (#s[gen]); this is a possessive marker, e.g. #i[ta-ną́nrų́] ‘of the Elves’.
 
 === Nouns at Work <nouns-at-work>
-Nouns are also declined for whether or not they perform work. Essentially this marks their position as an agent or patient in any given clause. The verb itself is not declined for voice---this information is contained exclusively in the noun phrase.
+Nouns are also declined for whether or not they _perform_ work. This is _not_ the same as work order! Rather, this marks their position as an agent or patient in any given clause. The verb itself is not declined for voice---this information is contained exclusively in the noun phrase:
 
-Noun markers precede the noun (phrase) they qualify; the following is list of Elvish noun work markers:
 - #w[tchą́] ‘performs work’ (#s[wrk] ‘working’); this is used to mark the agent of a verb that denotes an action that is considered to perform work.
 - #w[dun] ‘does not perform work’ (#s[nwk] ‘not working’); this is used to mark the agent of a verb that denotes a state or an action that is not considered to perform (worthwile) work.
 - #w[ų́rų́] ‘has work performed on it’ (#s[wkd] ‘worked [on]’); this is used to mark the theme of a verb
@@ -402,8 +395,7 @@ For example, if the Chimney Man is in REM sleep during April, and it's currently
 + Non-REM Phase 2 (#s[nr2]): \~August 26th -- November 9th
 + Non-REM Phase 3 (#s[nr3]): \~November 10th -- December 23rd
 
-The markers for the #s[awk] tense follows the verb, all other markers precede the verb. These
-markers are as follows:
+All tense markers precede the verb. These markers are as follows:
 + Awake tense: #w[sąn]
 + REM sleep tense: #w[nun’a]
 + Non-REM Phase 1 tense: #w[txí]
@@ -493,9 +485,9 @@ This is effectively prefixed to the first sentence of the text proper, thereby f
 == Simple Glosses
 It is assumed that the examples below are spoken on 2 February (i.e. during the REM phase).
 #gloss(`
-Gan nun’a rǫsa shu ų́xį́ tą́ dun txǫncų.
-gan nun’a rǫsa shu ų́xį́ tą́ dun txǫncų
-{obs} {rem} slide {nc} {man} chimney {nwk} Txǫncų
+Gan nun’a rǫsa ų́xį́ tą́ dun txǫncų.
+gan nun’a rǫsa ų́xį́ tą́ dun txǫncų
+{obs} {rem} slide {man} chimney {nwk} Txǫncų
 Txǫncų slides down the Chimney (and I see it do so).
 `)
 
@@ -510,6 +502,13 @@ I always knew that you were an idiot.
 `)
 
 Lit. ‘This cloak most surely always knew [that] that(#smallcaps[medial]) [was observably an] idiot.’
+
+#gloss(`
+Gan nun’a gųshą dun ną́nrų́ chír dą́chą.
+gan nun’a gųshą dun ną́nrų́ chír dą́chą
+{obs} {rem} crouch {nwk} Elf on table
+The Elf crouches on the table.
+`)
 
 == Ferrule Verse
 An Elvish adaptation of JRR Tolkien’s Ring Verse, as translated and adapted by the Elvish poet #w[Tǫrxí]:
