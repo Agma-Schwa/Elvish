@@ -1,29 +1,5 @@
-#import "base/src/lib.typ" : *
-#let elvish = plugin("plugin/target/wasm32-unknown-unknown/release/elvish.wasm")
-#show : setup.with(compact: true)
-
-#let ipa(s) = {
-    if s == none { "<NONE>" }
-    else {
-        render-dictionary-node(
-            json(elvish.ipa_impl(bytes(if type(s) == str { s } else { s.text })))
-        )
-    }
-}
-
-#gloss-show-numbers(false)
-#gloss-set-ipa-function(ipa)
-#gloss-set-line-spacing(.6em) // Tie bars and ogoneks may collide, so space this out a bit more.
-#show "↓" : [#h(-.15em)↓#h(-.15em)] // Reduce kerning a bit to save space.
-#show "ʄ͡ɠ": [ʄ#box(move(dy: .2em)[\u{0361}])ɠ]
-
-#let w(s) = { [_#[#s]_ #box[/#ipa(s)/]] }
-#let i(s) = { [_#[#s]_] }
-
-#gloss-set-replacements((
-    "---": [---],
-    ..gloss-default-replacements
-))
+#import "preamble.typ" : *
+#show : preamble
 
 #align(center, text(size: 30pt, [Ną́ngą́sánshų́]))
 #table-of-contents(title: none)
@@ -81,17 +57,7 @@ Q = ̨
 #partitle[Example word]
 #w[tshǫ’ǫ] ‘ribbon’
 
-// TODO: Make the noun (phrase) ‘cellar door’ sound as horrible as possible.
-
 = Grammar
-vtrbt Q NQ (causative)
-NQ (transitive)
-"Kyle slides (Q/NQ) down the chimney."
-"So (does) BOB."
-He (is) an elf.
-
-(essentially recreate a dummy "do" that can also operate as a contextual ellipsis on previosuly stated verbs)
-
 == Work Order
 Animacy is vital to determining word order in Elvish. The highest animacy, and thus primacy in a clause, goes to that which is working the hardest. This is 'Work Order.' From highest work order to lowest, the ranks go as follows:
 
@@ -197,7 +163,7 @@ all interlocutors.] For example, a fat Elf with the name #w[txǫncų] might be
 SAPs are capitalised if they refer to a noun that is capitalised.
 
 ==== Invoice <invoice>
-The _invoice_ is a construction used primarily as part of a SAP. An invoice operates in a similar way to adjective-noun agreement, except that it is really tense-noun agreement. That is, each noun is assigned a ‘tense’ based on its initial phoneme (see @table:noun-tense), and the appropriate invoice particle depends on the noun’s inherent tense as well as the tense of the clause. Tenses are assigned an integer value between $1$ and $5$.
+The _invoice_ is a construction used primarily as part of a SAP. An invoice operates in a similar way to adjective-noun agreement, except that it is really tense-noun agreement. That is, each noun is assigned a ‘tense’ based on its initial phoneme (see @table:noun-tense), and the appropriate invoice particle depends on the noun’s inherent tense as well as the syntactic tense of the clause. Tenses are assigned an integer value between $1$ and $5$.
 
 #center-table(
   caption: [Association Between Initial Phonemes and Noun Tense],
@@ -226,7 +192,7 @@ There are five invoice particles, which are assigned an integer value between $-
   [ 2 & #w[árxį́]],
 ) <table:invoice-particles>
 
-Intuitively, the invoice particle adjusts the tense of the noun to match the tense of the clause. That is, the appropriate invoice particle for a noun is selected as follows: let $d := T(C) - T(N)$ where $T(C)$ is the tense of the clause, and $T(N)$ the tense of the noun. The value $v$ of the appropriate invoice particle is then given by the formula
+Intuitively, the invoice particle adjusts the tense of the noun to match the syntactic tense of the clause. That is, the appropriate invoice particle for a noun is selected as follows: let $d := T(C) - T(N)$ where $T(C)$ is the syntactic tense of the clause, and $T(N)$ the tense of the noun. The value $v$ of the appropriate invoice particle is then given by the formula
 $
   v := cases(
     d"," & "if" |d| < 3,
@@ -234,9 +200,9 @@ $
   )
 $
 
-For instance, recall our example of the fat Elf #i[txų́dí txǫncų] above. The noun #w[txǫncų] is of the Awake tense since it starts with #i[tx]. In a sentence in the REM sleep tense, the formula above gives $ d = T(#mtext[#s[rem]]) - T(#mtext[_txǫncų_]) = 2 - 1 = 1 $ whence
+For instance, recall our example of the fat Elf #i[txų́dí txǫncų] above. The noun #w[txǫncų] is of the Awake Tense since it starts with #i[tx]. In a sentence in the REM Sleep Tense, the formula above gives $ d = T(#mtext[#s[rem]]) - T(#mtext[_txǫncų_]) = 2 - 1 = 1 $ whence
 $v = d = 1$. Thus, the appropriate invoice particle is the one with value 1, i.e. #w[sį́], and the appropriate SAP is #w[sį́ txų́dí].
-By contrast, in a sentence in the Non-REM phase 2 tense, we have $ d = T(#mtext[#s[nr2]]) - T(#mtext[_txǫncų_]) = 4 - 1 = 3 $ which means
+By contrast, in a sentence in the Non-REM Phase 2 Tense, we have $ d = T(#mtext[#s[nr2]]) - T(#mtext[_txǫncų_]) = 4 - 1 = 3 $ which means
 the second case above applies, whereby $ v = -"sgn"(3) dot (5 - |3|) = -1 dot 2 = -2 $ Thus, the appropriate SAP is #w[cų́r txų́dí].
 
 
@@ -291,7 +257,7 @@ Elvish nouns are not marked for number or definiteness. However, besides work or
 
 The following is a list of Elvish noun markers:
 
-- #w[ta-] (#s[gen]); this is a possessive marker, e.g. #i[ta-ną́nrų́] ‘of the Elves’.
+- #w[ta-] (#s[poss]); this is a possessive marker, e.g. #i[ta-ną́nrų́] ‘of the Elves’.
 
 === Nouns at Work <nouns-at-work>
 Nouns are also declined for whether or not they _perform_ work. This is _not_ the same as work order! Rather, this marks their position as an agent or patient in any given clause. The verb itself is not declined for voice---this information is contained exclusively in the noun phrase:
@@ -321,42 +287,40 @@ Compound nouns can be expressed by juxtaposition; the modifier comes second, jus
 
 == Pronouns <pronouns>
 === Demonstrative Pronouns
-There are 5 demonstrative pronouns, each corresponding to a tense (see @tam); as many other things, deixis in Elvish is relative: unlike other languages which employ spatial metaphors to express time, Elvish employs temporal expressions to express relations in space.
+There are 5 demonstrative pronouns, each corresponding to a syntactic tense (see @tam); as many other things, deixis in Elvish is relative: unlike other languages which employ spatial metaphors to express time, Elvish employs temporal expressions to express relations in space.
 
 That is, the demonstrative pronouns in Elvish are formed by combining the preposition #w[chír] ‘at, in, on’ with one of the tense morphemes:
-+ Awake tense: #w[chírsąn]
-+ REM sleep tense: #w[chírnu]
-+ Non-REM Phase 1 tense: #w[chírtxí]
-+ Non-REM Phase 2 tense: #w[chíro]
-+ Non-REM Phase 3 tense: #w[chírnų]
++ Awake Tense: #w[chírsąn]
++ REM Sleep Tense: #w[chírnu]
++ Non-REM Phase 1 Tense: #w[chírtxí]
++ Non-REM Phase 2 Tense: #w[chíro]
++ Non-REM Phase 3 Tense: #w[chírnų]
 
-The proximal demonstrative pronoun is expressed relative to the _tense_ of the utterance: the medial demonstrative pronoun by the tense following the proximal one, and the distal demonstrative pronoun by the tense following the medial one.
-For example, if the utterance is in the REM sleep tense, we have:
+The proximal demonstrative pronoun is expressed relative to the syntactic tense of the utterance: the medial demonstrative pronoun by the tense following the proximal one, and the distal demonstrative pronoun by the tense following the medial one.
+For example, if the utterance is in the REM Sleep Tense, we have:
 - #i[chírnu] = ‘this’,
 - #i[chírtxí] = ‘that (medial)’,
 - #i[chíro] ‘that (distal).
 
-In the Non-REM phase 2 tense, we instead have:
+In the Non-REM Phase 2 Tense, we instead have:
 - #i[chíro] = ‘this’,
 - #i[chírnų] = ‘that (medial)’,
 - #i[chírsąn] ‘that (distal).
 
-In reported speech, the direction is reversed, i.e. instead of medial being the tense after proximal and distal being the tense after medial, instead medial is the tense _preceding_ proximal, and distal is the tense preceding medial. E.g. the demonstrative pronouns in reported speech that uses the Non-REM phase 1 tense would be:
+In reported speech, the direction is reversed, i.e. instead of medial being the tense after proximal and distal being the tense after medial, instead medial is the tense _preceding_ proximal, and distal is the tense preceding medial. E.g. the demonstrative pronouns in reported speech that uses the Non-REM Phase 1 Tense would be:
 - #i[chírnu] = ‘this’,
 - #i[chírsąn] = ‘that (medial)’,
 - #i[chírnų] = ‘that (distal)’.
 
-Note that it is the _tense_ of the sentence that matters; neither the time of utterance, nor the time at which the utterance is paraphrased, if at all, are relevant here! For example, a sentence that refers to the future that is uttered during the REM sleep phase would use the Non-REM phase 1 tense; in such a sentence, the medial demonstrative pronoun would be #w[chíro], i.e. the
-Non-REM phase 2 form; if such a sentence is then paraphrased during Non-REM phase 3, the corresponding future tense would naturally
-be the awake tense, and the medial pronoun would be the tense _before_ that (recall that the direction is reversed in reported speech), and thus, the correct form would be #w[chírnų], i.e. the Non-REM phase 3 form.
+Note that it is the only the syntactic tense of the sentence that matters; neither the time of utterance, nor the time at which the utterance is paraphrased, if at all, are relevant here! For example, consider a sentence uttered during the REM Sleep Phase, in which the Non-REM Phase 1 Tense is the syntactic Future Tense. In such a sentence, the medial demonstrative pronoun would be #w[chíro], i.e. the Non-REM Phase 2 form; if this sentence is then paraphrased during the Non-REM Phase 3, the syntactic Future Tense would naturally be the Awake Tense, and the medial pronoun would be the tense _before_ that (recall that the direction is reversed in reported speech); thus, the correct form would be #w[chírnų], i.e. the Non-REM Phase 3 form.
 
 === Personal Pronouns
 There are three sets of constructions in Elvish that are jointly referred to as ‘personal pronouns’. While semantically equivalent, their usage is highly dependent on social status, and they are not interchangeable.
 
 ==== Full Personal Pronouns
-The so-called _full personal pronouns_ of Elvish are formed by combining the demonstrative pronouns with the status-appropriate word for ‘Elf’: The proximal demonstrative is used to express the 1st person, the medial to express the 2nd person, and the distal to express the 3rd person. Naturally, this also means that the exact forms of the personal pronouns depend on the tense of the containing clause (as well as whether direct or reported speech is used).
+The so-called _full personal pronouns_ of Elvish are formed by combining the demonstrative pronouns with the status-appropriate word for ‘Elf’: The proximal demonstrative is used to express the 1st person, the medial to express the 2nd person, and the distal to express the 3rd person. Naturally, this also means that the exact forms of the personal pronouns depend on the syntactic tense of the containing clause (as well as whether direct or reported speech is used).
 
-For example, in a sentence in Non-REM Phase 2 tense spoken by a Master Carbonator, the closest Elvish equivalent to a word for ‘I’ would be #w[chíro xúsųrǫngi], lit. ‘this Master Carbonator’. Similarly, in a sentence paraphrased in Non-REM Phase 3 tense, the word ‘it’ in reference to a Collier would be #w[chírtxí isirǫngi], lit. ‘that (distal) Collier’.
+For example, in a sentence in Non-REM Phase 2 Tense spoken by a Master Carbonator, the closest Elvish equivalent to a word for ‘I’ would be #w[chíro xúsųrǫngi], lit. ‘this Master Carbonator’. Similarly, in a sentence paraphrased in Non-REM Phase 3 Tense, the word ‘it’ in reference to a Collier would be #w[chírtxí isirǫngi], lit. ‘that (distal) Collier’.
 
 ==== Abridged Personal Pronouns
 There are two forms of ‘abridged’ pronouns: The _high-class_ abriged pronouns are formed by combining the demonstratives with the noun #w[rǫngi] ‘cloak’. The _low-class_ abridged pronouns are identical to the bare demonstratives. Abriged personal pronouns are only used to refer to an Elf at or below one’s own social status.
@@ -369,9 +333,9 @@ Which set of personal pronouns is appropriate in what context is dependent on th
 
 - The abridged pronouns are used to refer to an Elf at or below one’s own social class. The high-class pronouns are used when the referent is at the rank of Collier or above, and the low-class pronouns otherwise.
 
-- Personal pronouns are only used to refer to Elves. For any other beings, objects, concepts, etc., standalone adjective phrases (see @standalone-adjective-phrases) are used instead.
+- Personal pronouns are only used to refer to Elves. For any other beings, objects, concepts, etc., SAPs (see @standalone-adjective-phrases) are used instead.
 
-- Additionally, standalone adjective phrases may be used whenever an abridged pronoun would be appropriate.
+- Additionally, SAPs may be used whenever an abridged pronoun would be appropriate.
 
 The rules for the 1st person pronoun are simpler: In reference to oneself, the full pronouns are used when speaking to someone of higher social status, and the abridged pronouns otherwise. Naturally, Elves at or above the rank of Collier use the high-class pronouns and other Elves the low-class pronouns.
 
@@ -387,8 +351,7 @@ Elvish numbers use the same system as Santaa numbers, except using Elvish words.
 Verbs are either classified as ‘working’ or ‘lazy’ (see @nouns-at-work). Verbs are not inflected for number, only nouns are. In the absence of work order distinction, the default word order is VOS. Verbs generally do not have an associated work order (unless they are derived from a noun) and are generally placed first; the main exception to this is that nouns with work order 1 are always placed first and precede even the verb.
 
 === Tense, Aspect, Mood <tam>
-Tense follows a paradigm relative to The Chimney Man's typical stage of sleep throughout a given year.
-For example, if the Chimney Man is in REM sleep during April, and it's currently June, the "REM" tense would be used to discuss something in the past.
+The Elvish tense system is based on the hibernation cycle of The Chimney Man. This cycle consists of 5 phases, which are shown here:
 
 + Awake (#s[awk]): Christmas Eve
 + REM sleep (#s[rem]): \~December 29th -- May 3rd
@@ -396,42 +359,37 @@ For example, if the Chimney Man is in REM sleep during April, and it's currently
 + Non-REM Phase 2 (#s[nr2]): \~August 26th -- November 9th
 + Non-REM Phase 3 (#s[nr3]): \~November 10th -- December 23rd
 
-All tense markers precede the verb. These markers are as follows:
+These five phases form the five so-called _syntactic tenses_ of Elvish, which are each marked by a particle that precedes the verb. These markers are as follows:
+
 + Awake tense: #w[sąn]
 + REM sleep tense: #w[nun’a]
 + Non-REM Phase 1 tense: #w[txí]
 + Non-REM Phase 2 tense: #w[ronu]
 + Non-REM Phase 3 tense: #w[ronų]
 
-As nobody truly knows when _exactly_ when the Chimney Man falls asleep, the few days following Chrismtas are an enigma to Elvish speakers. They cannot, and out of respect and fear for the Chimney Man, will not express anything related to time. During this time, which often spans from December 25th until December 28th, all tense marking is dropped. This is known as the ‘Temporal Void’.
+At any point in time, the Present Tense in Elvish is whatever sleep phase The Chimney Man is in when the utterance is spoken. This is referred to as the _semantic tense_ of the utterance. For instance, on 2 February, The Chimney Man is in REM sleep, and thus, a sentence whose syntactic tense is the REM Sleep Tense would have the Present Tense as its semantic tense. In terms of terminology, the term ‘syntactic Present Tense’ in any given context refers to whatever syntactic tense happens to be the Present Tense.
 
-Reported Speech uses the tense at the time being described in the utterance, not the current time.
-For example, a sentence that was spoken on the 20th of August referring to a past event, the speaker of that utterance would use the REM tense. If reported speech is used to describe or paraphrase that sentence on the 3rd of September, the speaker would use the Non-REM Phase 1 Tense, since that is now a past tense.
+The syntactic tense following the Present Tense is the semantic Future Tense, and the syntactic tense after that forms a Future-in-the-Future. Similarly, the syntactic tense preceding the semantic Present Tense forms the Past Tense, and the syntactic tense before that serves as the Pluperfecet.
 
-During the Non-REM Phase 3, the Future is the Awake Tense. This wraps ad infinitum.
+As nobody truly knows when _exactly_ when the Chimney Man falls asleep, the few days following Chrismtas are an enigma to Elvish speakers. They cannot, and out of respect and fear for the Chimney Man, will not express anything related to time. During this time, which often spans from December 25th until December 28th, all tense marking is dropped. This is known as the ‘Temporal Void’. Reported Speech that paraphrases an utterance that was uttered during the this time likewise uses no tense marking.
 
-One has to be careful not to confuse tense between direct speech and reported speech.
-For example, given an utterance that was spoken during Non-REM Phase 1 but _in_ Non-REM Phase 2 Tense, that utterance refers to the future. But if such an utterance were erroneously reported in that same tense during Non-REM Phase 3, it would incorrectly refer to the past. Instead, the Awake Tense should be used to paraphrase.
+The syntactic tense that follows the Non-REM Phase 3 Tense is the Awake Tense; conversely, syntactic tense preceding the Awake tense is the Non-REM Phase 3 Tense. Thus, if the syntactic Present Tense is the Awake Tense, the syntactic Past Tense would be the Non-REM Phase 3 tense.
 
-Note that the tenses are only relative to the point of utterance.
-For example, during Non-REM Phase 1, if one wanted to refer to an event that took place in November of _last year_, one would use the REM Sleep Tense, since that is the Past Tense. The fact that Non-REM Phase 2 takes place in November does not mean that it is used to describe things that did/will take place in November.
+Tense in reported speech is relative to the time of paraphrase rather than the time of utterance. For example, a sentence spoken _during_ the Non-REM Phase 1 but _in_ the REM Sleep Tense is in the Past Tense. If reported speech is used to describe or paraphrase that sentence _during_ the Non-REM Phase 2, the speaker would use the Non-REM Phase 1 Tense, since that is now the Past Tense.
 
-Going back by two tenses creates a pluperfect sense.
-Going forward by two tenses creates a future in the future sense.
+Thus, one has to be careful not to confuse tense between direct speech and reported speech. For example, given an utterance that was spoken during Non-REM Phase 1 but _in_ Non-REM Phase 2 Tense, that utterance refers to the future. But if such an utterance were erroneously reported in that same tense during Non-REM Phase 3, it would incorrectly refer to the past. Instead, the Awake Tense should be used to paraphrase.
 
-It is not possible to go back or forward by three tenses since that would be equivalent to going forward _or_ back by two tenses.
+Note that the tenses are relative only to the point of utterance, not to the point in time at which the action or state described by the utterance takes place. For example, during Non-REM Phase 1, if one wanted to refer to an event that took place in November of _last year_, one would use the REM Sleep Tense, since that is the syntactic Past Tense. The fact that Non-REM Phase 2 takes place in November does not mean that it is used to describe things that take place in November.
 
-Reported Speech that paraphrases an utterance that was uttered during the "temporal void" likewise uses no tense marking.
-
-Since a sentence in a vacuum without any information as to when it was uttered is impossible to extract temporal data from, any Elvish prose, etc. is always accompanied by a date, much like a diary entry would be. The exception to this is information uttered during the temporal void, during which the date is customarily omitted.
+Since a sentence in a vacuum without any information as to when it was uttered is impossible to extract temporal data from, any Elvish prose, etc. is always accompanied by a date, much like a diary entry would be. The exception to this is information uttered during the Temporal Void, during which the date is customarily omitted.
 
 === Dependent Clauses
-Tense in dependent clauses is relative to the tense of the matrix clause; for example, during the REM sleep phase, a future sentence would use the Non-REM phase 1 tense; a dependent clause that is in the past relative to that Non-REM phase 1 matrix clause would use the REM sleep tense, and in that dependent clause, that tense acts as a past tense---even though the very same tense would be the present tense if used in a matrix clause during the REM sleep phase.
+Semantic tense in dependent clauses is relative to the syntactic tense of the matrix clause. For example, during the REM Sleep Phase, the syntactic Future Tense is the Non-REM Phase 1 Tense. Given a matrix clause in this Future Tense, the syntactic Past Tense in one of its dependent clauses would then be the REM Sleep Tense, even though that very same syntactic tense would normally be the syntactic Present Tense during the REM Sleep Phase.
 
 The rules for reported speech for e.g. pronouns also apply to dependent clauses.
 
 === Copula <copula>
-The Elvish copula is $emptyset$, i.e. the empty root; that is, to express the copula all verb markers are used as they normally would be, except that the verb is ‘missing’. Even the tense and evidentiality marker may be dropped if elision is applied, or if they’re obvious from context, generally if the sentence is in the present tense, leading to a zero copula (see @elision).
+The Elvish copula is $emptyset$, i.e. the empty root; that is, to express the copula all verb markers are used as they normally would be, except that the verb is ‘missing’. Even the tense and evidentiality marker may be dropped if elision is applied, or if they’re obvious from context, generally if the sentence is in the Present Tense, leading to a zero copula (see @elision).
 
 If an entire clause is preceded by an agent/theme marker, a zero copula cannot be used, and at least one verb marker (usually the evidentiality marker) is required.
 
@@ -469,9 +427,11 @@ The suffix #w[-rų́] can be attached to a verb or noun to form an agent noun de
 = Literary Elvish
 There are a few differences between spoken and written Elvish. The most striking difference is a natural consequence of the medium: whereas the time of utterance is obvious in a spoken context (as it is just the present day), the time of utterance of a written text is impossible to know unless expressly conveyed to the reader.
 
-Usually, the tense chosen is that of the date on which the author wrote or started writing the text. A natural consequence of this is Elves cease all writing during the Temporal Void. Futhermore, only written texts have a fixed tense. When a story is told by an Elf, it will naturally—and indeed subconsciously without requiring active consideration or effort—rephrase the text relative to the time at which the story is told.
+The choice as to what syntacitc tense denotes the Present Tense is strictly speaking arbitrary, but by convention, it is generally that of the date on which the author wrote or started writing the text. A natural consequence of this is that many Elves cease all writing during the Temporal Void.
 
-Since the time of utterance is an integral part of Elvish grammar, it is custom in Elvish literature to introduce every piece of written text with the phrase ‘This Elf declares that’, with the status-appropriate abridged personal pronoun used as the subject. The tense of this phrase serves to determine the time of utterance. E.g. if the text is written by a Collier during the REM sleep phase, the phrase would be:
+When it comes to stories, poems, etc. only the written form of these texts have a fixed syntactic tense. When a story is told by an Elf, it will naturally—and indeed subconsciously without requiring active consideration or effort—rephrase the text by adjusting the syntactic tense relative to the time at which the story is told while preserving the text’s semantic tense.
+
+Since the time of utterance is an integral part of Elvish grammar, it is custom in Elvish literature to introduce every piece of written text with the phrase ‘This Elf declares that’, with the status-appropriate abridged personal pronoun used as the subject. The syntactic tense of this phrase denotes the Present Tense for the rest of the text. E.g. if the text is written by a Collier during the REM sleep phase, the phrase would be:
 
 #gloss(`
 Gan nun’a tú tshų́’á tchą́ chírnu rǫngi ...
@@ -492,9 +452,9 @@ gan nun’a rǫsa ų́xį́ tą́ dun txǫncų
 Txǫncų slides down the Chimney (and I see it do so).
 `)
 
-// Note: the tense of the dependent clause is present tense, but because of tense agreement
-// with the matrix clause, the ‘dependent present tense’ is the same as the past tense, which
-// happens to match how English does backshifting.
+// Note: the semantic tense of the dependent clause is present tense, but because of
+// tense agreement with the matrix clause, the semantic dependent present tense is the same
+// as the syntactic matrix past tense, which happens to match how English does backshifting.
 #gloss(spacing-override: .25em,`
 Sán sąn sǫtą dishą́ dun chírsąn rǫngi ų́xį́ chírnu tchų́rshu.
 sán sąn sǫtą dishą́ dun chírsąn rǫngi ų́xį́ chírnu tchų́rshu
@@ -653,18 +613,19 @@ In sum, this sentence is a dependent clause that contains a relative clause whos
 - ‘In order to do X’ is expressed as ‘for X’s’, e.g. #w[ún ta-shųnsį́] ‘in order to find’ (lit. ‘for of [to] find’).
 
 === Literal Translation of the Elvish Adaptation
-This Elf declares:
-That there are three Ferrules for the Master Carbonators under the mine
-That there are seven for the Colliers in their stone-halls
-That there are nine for Mortal Men [who are] destined to retire
-That there is one for The Chimney Man on The Chimney Man's red throne
+#verse[
+This Elf declares: \
+That there are three Ferrules for the Master Carbonators under the mine \
+That there are seven for the Colliers in their stone-halls \
+That there are nine for Mortal Men [who are] destined to retire \
+That there is one for The Chimney Man on The Chimney Man's red throne \
+At the North Pole where the Shadows reside \
+One Ferrule to rule, to find them all \
+One Ferrule to bring, to bind [them] in the Arctic. \
 At the North Pole where the Shadows reside
-One Ferrule to rule, to find them all
-One Ferrule to bring, to bind [them] in the Arctic.
-At the North Pole where the Shadows reside
+]
 
-
-= Worldbuilding
+= Elvish Culture
 == Gender
 Elves have no concept of gender and are each referred to as ‘it’. They also do not reproduce naturally and are instead all created by The Chimney Man.
 

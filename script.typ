@@ -1,18 +1,7 @@
 #import "@preview/wordometer:0.1.5" : word-count, total-words
-#import "base/src/lib.typ": *
-#show : setup.with(compact: true)
+#import "preamble.typ" : *
+#show : preamble
 
-#let elvish = plugin("plugin/target/wasm32-unknown-unknown/release/elvish.wasm")
-#let ipa(s) = {
-    if s == none { "<NONE>" }
-    else [
-        #render-dictionary-node(
-            json(elvish.ipa_impl(bytes(if type(s) == str { s } else { s.text })))
-        )
-    ]
-}
-
-#let w(s) = { [_#[#s]_ #box[/#ipa(s)/]] }
 #let sd(it) = text(fill: rgb("#dd8542"), [[#it]])
 #set page(footer: align(center, context counter(page).display("1 / 1", both: true)))
 #set par(first-line-indent: 0pt, spacing: 1.5em)
@@ -93,17 +82,46 @@ There are a few things to note here: attempting to raise or lower the work order
 Another use of the word order markers is in combination with an adjective or number to refer to an object in the context that has that word order. For example, the word for ‘minecart’ in Elvish has work order 6, so a set of 7 minecarts may be referred to as #w[txų́nsha irtǫtǫtǫn], which literally means ‘seven of the thing with work order 6’.
 
 == Noun Markers
+On the subject of nouns, nouns are also declined for whether or not they _perform_ work. This is _not_ the same as work order! Rather, this marks their position as an agent or patient in any given clause. The verb itself is not inflected for voice or person---this information is contained exclusively in the noun phrase.
+
+There are four such markers. #w[tchą́] ‘performs work’, glossed #s[wrk] for ‘working’, which is used to mark the agent of a verb that denotes an action that is considered to perform work. The opposite of this is #w[dun] ‘does not perform work’, glossed #s[nwk] for ‘not working’, which marks the agent of a verb that denotes a state or an action that is _not_ considered to perform (worthwile) work.
+
+As there are two agent markers, there are naturally also two theme markers. #w[ų́rų́] ‘has work performed on it’, glossed #s[wkd] for ‘being worked on’, which marks the patient or theme of a verb whose agent assumes the ‘working’ form, as well as #w[ų́xį́] ‘is being manipulated in some fashion’, glossed #s[man] for ‘manipulated’, which marks the patient or theme of a verb whose agent assumes the ‘not working’ form.
+
+This system naturally gives rise to 2 verb classes: ‘working verbs’, whose agent assumes the ‘working’ form and whose theme assumes the ‘being worked on’ form, as well as ‘lazy verbs’, whose agent assumes the ‘not working’ form, and whose theme assumes the ‘manipulated’ form.
+Finally, there are a pair of contractions that denote reflexive forms, one for working verbs and one for lazy verbs.
+
+In addition to the agent/theme markers, there is another noun marker, #w[ta-] which denotes a possessive form, e.g. #w[ta-ną́nrų́] ‘of the Elves’. Finally, nouns can also be combined with one another to form compounds. Just like in Santaa, the modifier is placed _second_; for example, in the compound #w[cįxį́tųn’ą́] ‘stone hall’, #w[cįxį́] means ‘hall, and  #w[tųn’ą́] is ‘stone’; compounds are always written as a single word. The most important compound noun in Elvish is without a doubt #w[Są́ntą́] ‘The Chimney Man’, which is derived from #w[są́n] ‘being’ and #w[tą́] ‘chimney’.
 
 == Tense
 There are two systems around which all of Elvish grammar revolves. One is work order, which we just discussed. The other is tense. The Elvish tense system is based on the hibernation cycle of The Chimney Man. #sd[slide] The Chimney Man wakes up and is awake on Christmas Eve. Starting at around 29 December, the Chimney Man enters REM sleep before sinking further into Non-REM Phases 1, 2, and 3 on 4 May, 26 August, and 10 November.
 
-These five phases form the five Elvish tenses, which are each marked by a particle that precedes the verb. For instance, the REM Tense lasts from 29 December to 3 May. So, how exactly is this used to express tense? At any point in time, the Present Tense in Elvish is whatever sleep phase The Chimney Man is in when the utterance is spoken. For instance, on 2 February, The Chimney Man is in REM sleep, and thus, the REM Sleep Tense is the Present Tense. The tense after that, in this case the Non-REM Phase 1 Tense, is the Future Tense, and the tense after that forms a future-in-the-future. Similarly, the tense preceding the current tense is the Past Tense, in this case the Awake Tense, and tense before that serves as the pluperfect.
+These five phases form the five so-called _syntactic tenses_ of Elvish. They are each marked by a particle that precedes the verb. For instance, the REM Tense lasts from 29 December to 3 May. So, how exactly is this used to express time? At any point in time, the Present Tense in Elvish is whatever sleep phase The Chimney Man is in when the utterance is spoken. For instance, on 2 February, The Chimney Man is in REM sleep, and thus, the REM Sleep Tense is the Present Tense.
 
-But wait, what is the tense two tenses before the REM Sleep Tense if there’s only the Awake Tense before it? Well, obviously, it wraps, like so #sd[slide w/ cycle], so in this case, the pluperfect would be the Non-REM Phase 3 Tense. What this means is that the meaning of any of these five tenses is completely dependent on the time of utterance. Conversely, if you don’t know when an utterance is spoken, you will have no idea how to interpret any of the tenses.
+Thus, in such a sentence, the _semantic semantic_ tense is the Present Tense and the _syntactic tense_ is the REM Sleep Tense; syntactic tense denotes the grammatical forms used, whereas semantic tense denotes the actual meaning. We may also say that the REM Sleep Tense is the ‘syntactic Present Tense’ in this context.
 
-Recall our example sentence, ‘The Elf crouches on the table’ from before #sd[slide]. This sentence is in the REM Sleep Tense and thus only has that meaning if spoken between 29 December and 3 May. If spoken on 4 May, its meaning changes to ‘The Elf crouched on the table’ #sd[slide];; we would have to change its tense to the Non-REM Phase 1 Tense to preserve the original meaning #sd[slide]. Conversely, if this new sentence was spoken on 3 May, it would instead mean ‘The Elf will crouch on the table’.
+The syntactic tense following the syntactic Presen Tense, in this case the Non-REM Phase 1 Tense, denotes the Future Tense, and the tense after that forms a future-in-the-future. Similarly, the syntactic tense preceding the syntactic Present Tense is the Past Tense, in this case the Awake Tense, and tense before that serves as the pluperfect.
 
-This is further complicated during reported speech, as the tense of the sentence is taken to be relative to the time at which the utterance was spoken, not the time at which is is described. For instance, a sentence spoken _during_ the REM Sleep Phase but _in_ the Awake Tense is in the Past Tense. Irrespective of when it is paraphrased, it will remain in the Awake Tense. If the paraphrase happens to be spoken during the Non-REM Phase 3, then we end up with a sentence in which the Awake Tense denotes the Past Tense, even though it would normally be the Future Tense during that time of the year.
+But wait, what is the syntactic tense two tenses before the REM Sleep Tense if there’s only the Awake Tense before it? Well, obviously, it wraps, like so #sd[slide w/ cycle], so in this case, the syntactic Pluperfect would be the Non-REM Phase 3 Tense. What this means is that the meaning of any of the five syntactic tenses is completely dependent on the time of utterance. Thus, if you don’t know when an utterance is spoken, you will have no idea how to interpret any of the tenses.
+
+Recall our example sentence, ‘The Elf crouches on the table’ from before #sd[slide]. The syntactic tense of this sentence is the REM Sleep Tense; thus, it only denotes a Present Tense if spoken between 29 December and 3 May. If spoken on 4 May, the meaning of this sentence changes to ‘The Elf crouched on the table’ #sd[slide], as the REM Sleep Tense is now the syntactic Past Tense. We would have to change the syntactic tense to the Non-REM Phase 1 Tense to preserve the original meaning #sd[slide]. Conversely, if this new sentence was spoken on 3 May, it would instead mean ‘The Elf will crouch on the table’, as the Non-REM Phase 1 Tense would now be the syntactic Future Tense.
+
+In written language, the choice as to what syntactic tense is the Present Tense is strictly speaking arbitrary, but by convention, it is generally that of the date on which the author wrote or started writing the text. A natural consequence of this is that many Elves cease all writing during the Temporal Void.
+
+In Elvish literature, it is custom to start a text with the phrase ‘This Elf declares that’, with the status-appropriate abridged personal pronoun used as the subject. The syntactic tense of this phrase denotes the Present Tense for the rest of the text. E.g. if the text is written by a Collier during the REM Sleep Phase, the introductory phrase would be:
+
+#gloss(`
+Gan nun’a tú tshų́’á tchą́ chírnu rǫngi ...
+gan nun’a tú tshų́’á tchą́ chírnu rǫngi
+{obs} {rem} {atel} declare {wrk} this cloak
+I declare that ...#footnote[Lit. ‘This cloak is observably declaring that ...’]
+`)
+
+This is effectively prefixed to the first sentence of the text proper, thereby forming a new matrix clause around it. As a result, the rest of the first sentence is rendered in reported speech.
+
+As an aside, when it comes to stories, poems, etc. only the written form of these texts have a fixed syntactic tense. When a story is told by an Elf, it will naturally—and indeed subconsciously without requiring active consideration or effort—rephrase the text by adjusting the syntactic tense relative to the time at which the story is told while preserving the text’s semantic tense.
+
+This is further complicated during reported speech, wherein the syntactic tense is relative to the time of paraphrase rather than the time of utterance. For example, in a sentence spoken _during_ the Non-REM Phase 1, the REM Sleep Tense is the syntactic Past Tense. If reported speech is used to describe or paraphrase that sentence _during_ the Non-REM Phase 2, the speaker would use the Non-REM Phase 1 Tense, since that is now the syntactic Past Tense.
 
 Finally, if we return to the list of tenses from earlier #sd[slide], you might notice that there’s a gap between the Awake Tense and REM Sleep Tense that leaves a few days unaccounted for. As nobody truly knows when _exactly_ the Chimney Man falls asleep, the few days following Chrismtas are an enigma to Elvish speakers. They cannot—and, out of respect and fear for the Chimney Man, will not—express anything related to time. During this time, which often spans from 25 December until 28 December, all tense marking is dropped. This is known as the ‘Temporal Void’.
 
@@ -118,9 +136,9 @@ though they were nouns; in particular, they may be preceded by the usual noun pa
 In writing, it is common for the first mention of a noun phrase to be accompanied by one or more adjectives that may later on be
 used to refer to it. For example, a fat Elf with the name #w[txǫncų] might be introduced as #w[txų́dí txǫncų] or ‘Fat Txǫncų’ and then later on referred to as #w[sį́ txų́dí] ‘the fat one’, where #w[sį́] is one of the possible invoice particles.
 
-So what is this ‘invoice particle’? The invoice operates in a similar way to adjective-noun agreement, except that it is really noun-clause agreement. That is, each noun is assigned a ‘tense’ based on its initial phoneme #sd[show table], and the appropriate invoice particle depends on the noun’s inherent tense as well as the tense of the clause. Tenses are assigned an integer value between $1$ and $5$ as you can see here #sd[table].
+So what is this ‘invoice particle’? The invoice operates in a similar way to adjective-noun agreement, except that it is really noun-clause agreement. That is, each noun is assigned a ‘(syntactic) tense’ based on its initial phoneme #sd[show table], and the appropriate invoice particle depends on the noun’s inherent tense as well as the syntactic tense of the clause. All syntactic tenses are assigned an integer value between $1$ and $5$ as you can see here #sd[table].
 
-There are five invoice particles, which are assigned an integer value between $-2$ and $2$. Intuitively, the invoice particle adjusts the tense of the noun to match the tense of the clause. That is, the appropriate invoice particle for a noun is selected as follows: #sd[slide] let $d$ be defined as the difference of $T(C)$ and $T(N)$ where $T(C)$ is the tense of the clause, and $T(N)$ the tense of the noun. The value $v$ of the appropriate invoice particle is then given by this formula #sd[slide], that being $d$ if its absolute value is less than $3$, and the opposite sign of $d$ times $5$ minus the absolute value of $d$ otherwise:
+There are five invoice particles, which are assigned an integer value between $-2$ and $2$. Intuitively, the invoice particle adjusts the tense of the noun to match the syntactic tense of the clause. That is, the appropriate invoice particle for a noun is selected as follows: #sd[slide] let $d$ be defined as the difference of $T(C)$ and $T(N)$ where $T(C)$ is the syntactic tense of the clause, and $T(N)$ the tense of the noun. The value $v$ of the appropriate invoice particle is then given by this formula #sd[slide], that being $d$ if its absolute value is less than $3$, and the opposite sign of $d$ times $5$ minus the absolute value of $d$ otherwise:
 $
   v := cases(
     d"," & "if" |d| < 3,
@@ -128,9 +146,9 @@ $
   )
 $
 
-For instance, recall our example of the fat Elf #w[txų́dí txǫncų] above. The noun #w[txǫncų] is of the Awake tense since it starts with #w[tx]. In a sentence in the REM Sleep Rense, the formula above gives $1$ #sd[slide], and thus, the appropriate invoice particle is the one with value 1, that being #w[sį́], resulting in this SAP #sd[slide].
+For instance, recall our example of the fat Elf #w[txų́dí txǫncų] above. The noun #w[txǫncų] is of the Awake Tense since it starts with #w[tx]. In a sentence in the REM Sleep Tense, the formula above gives $1$ #sd[slide], and thus, the appropriate invoice particle is the one with value 1, that being #w[sį́], resulting in this SAP #sd[slide].
 
-By contrast, in a sentence in the Non-REM Phase 2 tense, the formula ultimately yields $-2$, and thus, the appropriate SAP is #w[cų́r txų́dí] #sd[slide].
+By contrast, in a sentence in the Non-REM Phase 2 Tense, the formula ultimately yields $-2$, and thus, the appropriate SAP is #w[cų́r txų́dí] #sd[slide].
 
 In addition to replacing pronouns, SAPs are also used to snsure a clause or phrase observes proper work order. This phenomenon is known as _extraposition_. For instance, suppose we want to say #sd[slide] ‘three ferrules for the Master Carbonators under the mine’—if you don’t know what a ferrule is, it’s this metal band here #sd[slide] on a pickaxe.
 
@@ -139,6 +157,30 @@ Obviously, the Master Carbonators have the highest work order, so they must be p
 To correct this, we need to move ‘mine’ to the end of the clause, but we can’t simply move the entire enclosing PP as that would change the meaning of the phrase: we’d get #w[ún xúsųrǫngi tchų́’i ta-rųtí tsírǫ ną́n], which means ‘three ferrules under the mine for the Master Carbonators’—it’s now the ferrules that are under the mine and not the Master Carbonators!
 
 Instead, the proper solution is to replace the problematic noun in the PP with a SAP. The noun is then left stranded as far back in the clause as possible, but of course preceding any nouns with lower work order. In this case, there is no adjective qualifying the noun, so the adjective #w[xún] is used instead. This adjective normally means ‘proper’, but in this context, it has no meaning and only serves as an expletive, in other words to provide something the invoice particle can be attached to. Thus, a grammatical rendition that preserves the meaning of what we want to communicate would be #w[ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n].
+
+== Demonstrative Pronouns
+As many other things, deixis in Elvish is relative: unlike other languages which employ spatial metaphors to express time, Elvish employs temporal expressions to express relations in space. That is, there are 5 demonstrative pronouns, each corresponding to a syntacitc tense.
+
+These pronouns are formed by combining the preposition #w[chír] ‘at, in, on’ with one of the tense morphemes, as seen here #sd[slide].
+
+The proximal demonstrative pronoun matches the syntactic tense of the clause, the medial demonstrative pronoun is expressed by the tense following the proximal one, and the distal demonstrative pronoun by the tense following the medial one. For example, if a clause is in the REM Sleep Tense, the demonstrative pronouns are these #sd[slide]. By contrast, if a clause is in the Non-REM Phase 2 Tense, we instead have these #sd[slide].
+
+What this means is that what to inexperienced speakers of Elvish might look like the same pronoun might have a completely different meaning, or even be outright ungrammatical, depending on the tense of the enclosing sentence.
+
+To make matters worse, in reported speech, the direction is reversed, i.e. instead of medial being the tense after proximal and distal being the tense after medial, instead medial is the syntactic tense _preceding_ proximal, and distal is the tense preceding medial.
+
+For example, consider a sentence uttered during the REM Sleep Phase, in which the Non-REM Phase 1 Tense is the syntactic Future Tense. In such a sentence, the medial demonstrative pronoun would be #w[chíro], i.e. the Non-REM Phase 2 form; if this sentence is then paraphrased during the Non-REM Phase 3, the syntactic Future Tense would naturally be the Awake Tense, and the medial pronoun would be the tense _before_ that (recall that the direction is reversed in reported speech); thus, the correct form would be #w[chírnų], i.e. the Non-REM Phase 3 form.
+
+== Personal Pronouns
+There are three sets of constructions in Elvish that are jointly referred to as ‘personal pronouns’. While semantically equivalent, their usage is highly dependent on social status, and they are not interchangeable.
+
+The so-called _full personal pronouns_ are formed by combining the demonstrative pronouns with the status-appropriate word for ‘Elf’: The proximal demonstrative is used to express the 1st person, the medial to express the 2nd person, and the distal to express the 3rd person. Naturally, this also means that the exact forms of the personal pronouns depend on the syntactic tense of the containing clause (as well as on whether direct or reported speech is used).
+
+For example, in a sentence in Non-REM Phase 2 tense spoken by a Master Carbonator, the closest Elvish equivalent to a word for ‘I’ would be #w[chíro xúsųrǫngi], lit. ‘this Master Carbonator’. Similarly, in a sentence paraphrased in Non-REM Phase 3 tense, the word ‘it’ in reference to a Collier would be #w[chírtxí isirǫngi], lit. ‘that (distal) Collier’.
+
+In addition to the full pronouns, there are two forms of ‘abridged’ pronouns: The _high-class_ abriged pronouns are formed by combining the demonstratives with the noun #w[rǫngi] ‘cloak’. The _low-class_ abridged pronouns are identical to the bare demonstratives.
+
+There are a few rules that constrain the use of personal pronouns in Elvish: The full pronouns are used when speaking to someone of higher status, the abridged pronouns when speaking to someone of lower status. The high-class pronouns are used only by and in reference to Elves at the rank of Collier or Master Carbonator. The Chimney Man and The Grand Carbonator are never referred to with pronouns. Finally, pronouns are only used to refer to Elves; SAPs are used for other beings, objects, concepts, and so on. SAPs may also be used whenever an abridged pronoun would be appropriate.
 
 == Physical Description
 Let me paint you a picture: #sd[_Literally_ show a timelapse of you drawing an Elf while you’re explaining what Elves look like] The body and mental state of an Elf are optimised for the mining of Coal, with all unnecessary aspects of life removed. The complexion of an Elf is a dark grey, because they are always covered in layers of Coal dust. As the Elvish eye is designed to thrive in dry and dusty environments, Elves never need to close their eyes and thus lack eyelids. The only protection around their eyes is formed by multiple layers of eye lashes, which keep the Coal dust out of their vision.
