@@ -68,9 +68,6 @@ nų́nrą́|v. w6|ną́nrų́|
 chír|prep.||At, on, in, near
 ún|prep.||\\ For \\ To, towards
 tsírǫ|prep.||Under, beneath, below
-oncų|adj.||
-    \\ First
-    \\ \i{n. w5} oncų ną́nrų́
 
 ishú|n. w11||
     \\ Charcoal
@@ -83,23 +80,23 @@ Shǫnxą|n. w2||Coal
 tǫrxí|n.||Elvish given name
 tshų́’á|v. wk.||To declare, make known
 rųtí|n. w4||Ferrule
-tchų́’i|n. w11|sense \senseref{2} is a calque of Santaa \w{ò̀̀ħħħ}|\\Plan \\ The number 3.
+tchų́’i|n. w11|\senseref{2} is a calque of Santaa \w{ò̀̀ħħħ}|\\Plan \\ The number 3.
 xún|adj.||\\ Proper, good \\ \i{Null adjective used in extraposition} \comment See \ref{invoice-extraposition}.
 txų́dí|adj.||Fat, big
 cįxį́|n. w11||Hall
 tųn’ą́|n. w11||Stone
-irgų|v.|sense \senseref{2} is a calque of Santaa \w{ħȍ̀̽}|\\To build\\ The number 4.
+irgų|v.|\senseref{2} is a calque of Santaa \w{ħȍ̀̽}|\\To build\\ The number 4.
 tǫn|adj.||More
 irtǫn|n. w11|from \w{irgų} and \w{tǫn}; literally ‘build more more’, a calque of Santaa \w{ħȍ̀̽ ħħó̽̏}|The number 5.
 irtǫtǫn|n. w11|from \w{irgų} and \w{tǫn}; literally ‘build more more’, a calque of Santaa \w{ħȍ̀̽ ħħó̽̏ ħħó̽̏}|The number 6.
 irtǫtǫtǫn|n. w11|from \w{irgų} and \w{tǫn}; literally ‘build more more more’, a calque of Santaa \w{ħȍ̀̽ ħħó̽̏ ħħó̽̏ ħħó̽̏}|The number 7.
 shardo|adj.||Mortal
 núgį́|n. w11||Human, man, woman \comment Elves do not distinguish between gender in other species as they have no gender themselves.
-cuncu|n. w11|sense \senseref{2} is a calque of Santaa \w{ō̽̏h}|\\Logistics \\ The number 8.
+cuncu|n. w11|\senseref{2} is a calque of Santaa \w{ō̽̏h}|\\Logistics \\ The number 8.
 cuncutǫn|n. w11|from \w{cuncu} and \w{tǫn}; literally ‘logistics more’, a calque of Santaa \w{ō̽̏h ħħó̽̏}|The number 9.
 cą|pron.||Which, who, what, \comment Introduces a relative clause
 túsą|v. lz||To be destined to ... \comment The object of this verb is a clause; the nested clause has no evidentiality marker.
-nangį́|n. w11|sense \senseref{2} is a calque of Santaa \w{hɔ̄̋̄}|\\December \\ The number 1.
+nangį́|n. w11|\senseref{2} is a calque of Santaa \w{hɔ̄̋̄}|\\December \\ The number 1.
 nurchǫ|n. w11||Throne
 xą́ngá|n. w11||Thing
 chǫnsǫ|v. lz||Reside, live
@@ -113,6 +110,12 @@ xį́tį|v. wk||To bring, carry
 tsantú|v. wk||To bind
 gųshą|v. lz||To crouch, be crouched
 dą́chą|n. w11||Table
+sántǫ|n. w11||Place
+tchatų|n. w11||Work
+sánshų́|n. w11||Workplace
+ną́ngą́|n. w11||Communication
+ną́ngą́sánshų́|n. w6|from \w{ną́ngą́} and \w{sánshų́}, lit. ‘workplace communication’|The Elvish language
+igą́|n. w11||Poem
 
 natá|||\i{Work Order raising marker; see \ref{work-order-marking}}
 cį́chą|||\i{Work Order raising marker; see \ref{work-order-marking}}

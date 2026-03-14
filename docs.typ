@@ -25,7 +25,8 @@
     ..gloss-default-replacements
 ))
 
-#table-of-contents()
+#align(center, text(size: 30pt, [Ną́ngą́sánshų́]))
+#table-of-contents(title: none)
 #show : mainmatter
 
 = Phonology

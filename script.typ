@@ -1,3 +1,4 @@
+#import "@preview/wordometer:0.1.5" : word-count, total-words
 #import "base/src/lib.typ": *
 #show : setup.with(compact: true)
 
@@ -13,9 +14,14 @@
 
 #let w(s) = { [_#[#s]_ #box[/#ipa(s)/]] }
 #let sd(it) = text(fill: rgb("#dd8542"), [[#it]])
-#set page(footer: align(center, context counter(page).display("1")))
+#set page(footer: align(center, context counter(page).display("1 / 1", both: true)))
 #set par(first-line-indent: 0pt, spacing: 1.5em)
+
+Word Count: #total-words
+
 #set par.line(numbering: "1")
+#show heading : set par.line(numbering: none)
+#show : word-count
 
 == INTRO
 #sd[Fade in slide with a picture of Tolkien] John Ronald Reuel /ruːl/ Tolkien is a man who probably needs no introduction. He is considered by many as the father of modern fantasy literature; most know him by his most famous works, _The Hobbit_ and _The Lord of the Rings_, which have leaving a profound impact on the fantasy genre. Some of you might also know as a professor of English Language and Literature and from his work around Old English, the most famous of which is probably his translation of the Anglo-Saxon epic _Beowulf_.
@@ -115,7 +121,7 @@ used to refer to it. For example, a fat Elf with the name #w[txǫncų] might b
 
 So what is this ‘invoice particle’? The invoice operates in a similar way to adjective-noun agreement, except that it is really tense-noun agreement. That is, each noun is assigned a ‘tense’ based on its initial phoneme #sd[show table], and the appropriate invoice particle depends on the noun’s inherent tense as well as the tense of the clause. Tenses are assigned an integer value between $1$ and $5$ as you can see here #sd[table].
 
-There are five invoice particles, which are assigned an integer value between $-2$ and $2$. Intuitively, the invoice particle adjusts the tense of the noun to match the tense of the clause using an invoice particle with the smallest absolute value. That is, the appropriate invoice particle for a noun is selected as follows: #sd[slide] let $d$ be defined as the difference of $T(C)$ and $T(N)$ where $T(C)$ is the tense of the clause, and $T(N)$ the tense of the noun. The value $v$ of the appropriate invoice particle is then given by this formula:
+There are five invoice particles, which are assigned an integer value between $-2$ and $2$. Intuitively, the invoice particle adjusts the tense of the noun to match the tense of the clause using an invoice particle with the smallest absolute value. That is, the appropriate invoice particle for a noun is selected as follows: #sd[slide] let $d$ be defined as the difference of $T(C)$ and $T(N)$ where $T(C)$ is the tense of the clause, and $T(N)$ the tense of the noun. The value $v$ of the appropriate invoice particle is then given by this formula #sd[slide], that being $d$ if its absolute value is less than $3$, and the sign of $d$ times $5$ minus the absolute value of $d$ otherwise:
 $
   v := cases(
     d"," & "if" |d| < 3,
