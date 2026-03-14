@@ -64,6 +64,8 @@ Animacy is vital to determining word order in Elvish. The highest animacy, and t
 + The Chimney Man (#s[w1]) \
   In any circumstance in which The Chimney Man is referenced, He will always have the highest Work Order, for He is always working the Hardest. Except for the day after Christmas.
 
+  Any _constituents_ containing a #s[w1] word are placed at the very start of the sentence even before the verb and its markers. This excludes any nested phrases with lesser work order, which must be extraposed using SAPs.
+
 + Coal (#s[w2]) \
   Coal is considered the most important aspect of Elvish society and thus placed just below The Chimney Man. It is also considered capable of performing more work than any Elf as it generates a lot of energy when burnt (unlike Elves).
   Amongst Elves, only the Grand Carbonator is assigned a work order of 2 (see @carbonators).
@@ -129,9 +131,6 @@ For example, forming #i[xúnną dį́gá] has the effect of raising the work or
 
 === Work Order and Elision
 Generic nouns such as #w[xą́ngá] ‘thing’ as well as numbers can be combined with a work order marker to refer to something in the context that has that work order. For example, an #w[į́nú] ‘minecart’, which has work order #s[w6], may be referred to later on as #w[txų́nsha xą́ngá] ‘the thing with work order #s[w6]’. This is an alternative to SAPs (see @standalone-adjective-phrases) and is especially common with numbers and things that have a relatively high work order.
-
-== Work Order of Clauses
-The work order of a clause is equal to the highest work order amongst its constituents. Within a sentence that consists multiple clauses—or within a clause in which another clause appears as the complement of a phrase—all clauses are arranged in descending work order.
 
 == Adjectives
 In sequences of adjectives (which Elves are particularly prone to), the following categories of hierarchy of importance determines the order at which they are uttered:
@@ -234,7 +233,7 @@ three ferrules for the Master Carbonators under the mine
 `)
 
 ==== SAP Contraction <sap-contraction>
-Elvish relative clauses precede the noun they qualify; Elvish NPs are placed after the verb and thus frequently occur at the end of a clause; adjectives precede the noun they qualify and invoice markers in turn precede adjectives. All of these factors combined can lead to a peculiar constellation wherein a SAP directly precedes the NP it refers to, with the same adjective occurring twice in a row. For example, the phrase ‘mortal men who are doomed to retire’ expressed naively in Elvish would end up being:
+Elvish relative clauses (see @relative-clauses) precede the noun they qualify; Elvish NPs are placed after the verb and thus frequently occur at the end of a clause; adjectives precede the noun they qualify and invoice markers in turn precede adjectives. All of these factors combined can lead to a peculiar constellation wherein a SAP directly precedes the NP it refers to, with the same adjective occurring twice in a row. For example, the phrase ‘mortal men who are doomed to retire’ expressed naively in Elvish would end up being:
 #gloss(`
 %dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo shardo núgį́
 dun cą sán túsą ų́xį́ shąnų́ dun tų́r §shardo §shardo núgį́
@@ -402,19 +401,22 @@ continuous is the default.
 - #w[dor] (#s[hab]): marks that a lazy verb is habitual
 
 === Moods
+[TODO]
 
 === Evidentiality <evidentiality>
 Evidentiality is split into four categories:
 - #w[sán] (#s[ver] ‘veridical’): (as though) decreed by The Chimney Man (truth)
-- #w[gan] (#s[obs] ‘observable’): directly observable
+- #w[gan] (#s[obs] ‘observable’): either directly observable or deduced via reasoning
 - #w[xįn] (#s[com] ‘communicated’): communicated by someone (hearsay)
 - #w[txą́] (#s[nor] ‘North Pole’): purported to exist (in the North Pole)
 - #w[tsų́n] (#s[dub] ‘dubious’): purported to exist elsewhere
 
+The ‘default’ evidentiality marker is generally #w[gan];; it is commonly used for statements which the speaker considers to be true but which are not self-evident or proven facts.
+
 Statements of fact use the Chimney Man evidentiality—for example, $2+2=4$—and so do statements that an Elf is absolutely sure about. The meaning of this evidentiality is closer to ‘as true as though The Chimney Man Himself had decreed it’, and a suitable translation may be ‘most surely’. At the same time, it is of course also used to refer to literal statements made by The Chimney Man.
 
 === Elision <elision>
-When the verb markers for multiple sentences in a row are the same, the markers are dropped for any verb after the first. In particular, this often applies to evidentiality markers: if the evidentiality marker of several clauses is the same, all but the first are generally dropped.
+When multiple verbs in a row have verb markers in common, those markers are often dropped for any verb after the first. In particular, this often applies to evidentiality markers: if the evidentiality marker of several clauses is the same, all but the first are generally dropped.
 
 == Derivation
 === Vowel Swapping
@@ -423,6 +425,12 @@ A common way to turn a noun into a verb in Elvish that applies solely to disylla
 
 == #i[-rų́]
 The suffix #w[-rų́] can be attached to a verb or noun to form an agent noun describing an Elf who performs an action associated with that verb or noun. E.g. from #w[sǫtą] ‘to learn’, we get #w[sǫtąrų́] ‘teacher’, and from #w[ną́n] ‘Coal mine’, we get #w[ną́nrų́] ‘Coal miner, Elf’.
+
+== Syntax
+=== Relative Clauses <relative-clauses>
+Relative clauses in Elvish are headed by the pronoun #w[cą] ‘who, what, which, that’. If the relative pronoun is the agent or theme of the predicate of the relative clause, the appropriate agent or theme marker is placed _before_ the relative pronoun. Relative clauses always _precede_ the noun they qualify.
+
+There are also two variants of relative clauses that are headed by different pronouns: _locative relative clauses_, which are headed by the pronoun #w[chírcą] ‘where’, and _temporal relative clauses_, which are headed by the pronoun #w[rįcą] ‘when’.
 
 = Literary Elvish
 There are a few differences between spoken and written Elvish. The most striking difference is a natural consequence of the medium: whereas the time of utterance is obvious in a spoken context (as it is just the present day), the time of utterance of a written text is impossible to know unless expressly conveyed to the reader.
@@ -587,7 +595,7 @@ To bind [them] in the Arctic.
 The sentence _Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́_ is very complex and serves as a good illustration of some of the quirks of Elvish grammar:
 - #w[ų́rų́] marks that the entire clause is an object of the verb #w[tshų́’á] ‘declare’ in the first clause. It can be translated as the English subordinator ‘that’ in this context.
 - The evidentiality marker #w[gan] qualifies the copula, which has no root. It is required here to prevent #i[ų́rų́] from affecting only the following noun phrase, as it must precede a verb (marker) to affect the entire clause.
-- #w[txadą́ cuncutǫn] is simply the word for the number 7 (whose default work order is #[w11]) raised by 7 work orders to give it work order #s[w4] to match #w[rųtí] ‘ferrule’ in the second clause, which is elided here. Thus, this phrase literally means ‘seven of the thing with work order #s[w4]’.
+- #w[txadą́ cuncutǫn] is simply the word for the number 9 (whose default work order is #[w11]) raised by 7 work orders to give it work order #s[w4] to match #w[rųtí] ‘ferrule’ in the second clause, which is elided here. Thus, this phrase literally means ‘nine of the thing with work order #s[w4]’.
 - The complement of the PP headed by #w[ún] ‘for’ is the rest of the clause.
 
 In particular, the relative clause #i[dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo] ‘which are destined to retire‘ is fairly complicated on its own:
@@ -602,15 +610,9 @@ In sum, this sentence is a dependent clause that contains a relative clause whos
 
 === Notes to add to the grammar.
 - The interpunct is the only punctuation mark and functions as a full stop, semicolon, colon, and comma.
-- The first word of every _clause_, not sentence, is capitalised.
 - The particle ‘that’ as in ‘I declare that’ is expressed by placing the theme marker before the verb
   of the ‘that’-clause, or before the entire clause if there is no verb (zero copula).
-- Relative clauses _precede_ the NP they qualify and are introduced by the relative pronoun #w[cą]. The agent or theme marker is placed
-  _before_ that pronoun, and it thus functions as either the agent or theme of the relative clause.
-- Any _constituents_ containing a w1 word are placed at the very start of the sentence even before the verb and its markers. This excludes any nested phrases with lesser work order, which must be extraposed using SAPs.
-- The fact that relative clauses precede the noun coupled with the fact that nouns with higher work order must come earlier in the sentence leads to many nouns in relative clauses requiring extraposition.
 - In poetry, movement of nouns due to work order is restricted to within a line rather than within a clause.
-- ‘In order to do X’ is expressed as ‘for X’s’, e.g. #w[ún ta-shųnsį́] ‘in order to find’ (lit. ‘for of [to] find’).
 
 === Literal Translation of the Elvish Adaptation
 #verse[
@@ -625,7 +627,7 @@ One Ferrule to bring, to bind [them] in the Arctic. \
 At the North Pole where the Shadows reside
 ]
 
-= Elvish Culture
+= Appearance and Culture
 == Gender
 Elves have no concept of gender and are each referred to as ‘it’. They also do not reproduce naturally and are instead all created by The Chimney Man.
 
@@ -673,11 +675,6 @@ Thus, it should also come as no surprise that The Chimney Man’s hibernating is
 == Idioms
 Since Coal is the most important aspect of Elvish society, many idioms and phrases in Elvish revolve around Coal and anything involved in the Coal mining process. For example, whereas in English a seam of Coal may be referred to as a ‘coal vein’ in analogy with the veins of the human body, Elvish does the opposite: the term #w[shų́’i ta-xąro] ‘blood vessel’ literally means ‘tunnel of blood’, where #i[shų́’i] is the term for a tunnel in a Coal mine.
 
-= Notes for the Video etc.
-- For the consonants table, only show the spelling at first, and only then the IPA.
-- Rough plan for the video: Release it at normal times to make people think it’s a normal video. Intro: 30s–1m synopsis of Tolkien’s life; say we’re presenting ‘Elvish’; show the consonants table w/o the IPA; show the vowel table w/o the IPA; don’t explain why ⟨o⟩ is off to the side somewhere and conspicuously omit the labels on both tables (because ‘palato-velar’ and ‘uvulo-glotal’ is already too obviously horrible); present an example sentence, spelling only; then read the sentence and show IPA at the same time. ‘Now, if you’re a bit confused about my pronunciation just now, that wasn’t because I’m really bad at Sindarin; see, today, we’re not talking about Tolkien’s Elves, but rather Santa’s, or, should I say, _Santaa’s_. Then do a proper intro and revisit the consonants/vowels, this time w/ IPA etc.
-- Just add a sentence about the Elves’ ‘ventral furnace’ and then just don’t elaborate.
-
 == April Fool's notes for the server
 - Make some images and emojis etc. for the Discord server. Make it coal-themed.
    - Rename ‘general’ and ‘general-2’ to ‘mining’ and ‘mining-2’.
@@ -693,8 +690,13 @@ Since Coal is the most important aspect of Elvish society, many idioms and phras
    - Leave everything that way for a week.
    - Note to Ætérnal: start preparing assets for that; apply all of this when I wake up the day the video comes out. Change my profile picture to Coal. Prepare all of this on my test server ahead of time so I can simply copy the settings.
 
-= Video Script
-
 = Dictionary
 Lazy verbs are marked with #i[lz], working verbs with #i[wk].
-#dictionary(read("elvish.dict.txt"), elvish)
+#dictionary(
+    read("elvish.dict.txt"),
+    elvish,
+    custom-macro-handler: (macro, render) => {
+        if macro.name == "santaa" [Santaa #santaa(render(macro.args.at(0)))]
+        else { panic("Unsupported macro " + macro.name) }
+    }
+)

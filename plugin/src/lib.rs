@@ -38,6 +38,18 @@ lazy_static! {
 
 struct ElvishOps;
 impl LanguageOps for ElvishOps {
+    fn handle_unknown_macro(
+        &self,
+        macro_name: &str,
+        args: dictgen::Nodes,
+    ) -> dictgen::Result<Node> {
+        if macro_name == "santaa" {
+            Ok(Node::custom("santaa".into(), args))
+        } else {
+            Err(format!("Unsupported macro in dictionary generator: {}", macro_name))
+        }
+    }
+
     fn to_ipa(&self, word: &str) -> dictgen::Result<Option<Node>> {
         const { assert!(PATTERNS.len() == REPLACEMENTS.len()); };
         let word = word.to_lowercase().nfd().collect::<String>();

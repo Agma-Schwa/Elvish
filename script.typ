@@ -12,7 +12,7 @@ Word Count: #total-words
 #show heading : set par.line(numbering: none)
 #show : word-count
 
-== INTRO
+== Fake Intro
 #sd[Fade in slide with a picture of Tolkien] John Ronald Reuel /ruːl/ Tolkien is a man who probably needs no introduction. He is considered by many as the father of modern fantasy literature; most know him by his most famous works, _The Hobbit_ and _The Lord of the Rings_, which have left a profound impact on the fantasy genre. Some of you might know him as a professor of English Language and Literature or from his work around Old English, the most famous of which is probably his translation of the Anglo-Saxon epic _Beowulf_.
 
 However, since you’re watching this video, the part of Tolkien’s work that you are probably most interested in is his conlangs, among which the Elvish languages of Quenya and Sindarin are probably the most well-known.
@@ -21,7 +21,7 @@ But today’s video isn’t a biography of Tolkien’s life, so without further 
 
 #sd[TODO: The intro could probably be improved quite a bit...]
 
-== Fake Phonology Intro
+== Fake Phonology + Sentence
 As ever, let’s start by talking about the phonology of Elvish. The table here shows the Elvish consonant phoneme inventory #sd[Show Sindarin phoneme table]. The consonants are #sd[start reading the consonants, up to the middle of the 'stop' row, then interrupt]... wait hold on that doesn’t look right. Er... #sd[1/2 second pause], I think I got the wrong table. Where did I... Er, never mind let’s start with the vowels #sd[show Elvish vowel table].
 
 As you can see, Elvish has a very simple 6-vowel system #sd[show vowel chart w/o click and ogoneks], well _technically_ it’s more than that #sd[show slide w/ ogoneks], but we’ll get back to that later. I think this is pretty self-explanatory, so I’m not even going to bother pronouncing these. Now where did I put the consonants... #sd[cut to Agma flipping through some pages trying to find a specific one]. AHA, THERE, there it is #sd[show Elvish consonants]. As I was saying the Elvish consonant phoneme inventory is not too complicated in terms of number. There are a total of 15 consonants in Elvish.
@@ -31,6 +31,9 @@ Now, reading out sounds is nice and all, but I feel like in order to get a prope
 What can I say, an attempt was made I suppose. Sorry guys, but you got it all wrong. I saw some of you caught on to what was happening this time when we didn’t provide any IPA, but the _correct_ way to pronounce this sentence is obviously #sd[Show slide w/ IPA and read the sentence].
 
 Isn’t that beautiful? Euphonic? Now, if you’re a bit confused about my pronunciation just now, that wasn’t because I’m really bad at Sindarin, or Quenya. No, this is _Elvish_; except that the Elves we’re talking about here... are not Tolkien’s Elves. No, they’re Santa’s Elves #sd[slide w/ elf on the shelf], or, should I say... Santaa’s #sd[stress the ‘aa’] Elves #sd[show Santaa video thumbnail].
+
+== Intro
+#sd[Proper intro; 'hello and welcome to nguh' etc.]
 
 == Phonology (for real this time)
 Now, let’s take a step back and take a proper look at the phoneme inventory. Over here, we have the Elvish consonant table, this time with IPA. The Elvish consonants are: #sd[read consonants]. See Elves have very stiff tongues and as a result are incapable of articulating consonants that would require the tongue to bend to any meaningful extent. This is why the alveolar sounds are all _laminar_, that is, articulated with the _blade_ rather than the tip of the tongue touching the alveolar ridge. Another consequence of this is the palato-velar series of sounds, which results from the fact that any attempt to make contact with either the palatal or velar region of the mouth results in the tongue touching nearly the entire roof of the mouth.
@@ -182,8 +185,31 @@ In addition to the full pronouns, there are two forms of ‘abridged’ pronouns
 
 There are a few rules that constrain the use of personal pronouns in Elvish: The full pronouns are used when speaking to someone of higher status, the abridged pronouns when speaking to someone of lower status. The high-class pronouns are used only by and in reference to Elves at the rank of Collier or Master Carbonator. The Chimney Man and The Grand Carbonator are never referred to with pronouns. Finally, pronouns are only used to refer to Elves; SAPs are used for other beings, objects, concepts, and so on. SAPs may also be used whenever an abridged pronoun would be appropriate.
 
-== Physical Description
-Let me paint you a picture: #sd[_Literally_ show a timelapse of you drawing an Elf while you’re explaining what Elves look like] The body and mental state of an Elf are optimised for the mining of Coal, with all unnecessary aspects of life removed. The complexion of an Elf is a dark grey, because they are always covered in layers of Coal dust. As the Elvish eye is designed to thrive in dry and dusty environments, Elves never need to close their eyes and thus lack eyelids. The only protection around their eyes is formed by multiple layers of eye lashes, which keep the Coal dust out of their vision.
+== Minor Grammar Notes
+=== Evidentiality
+Now that we’ve discussed everything that depends on tense, we can talk about the rest of the grammar; most of these will be fairly short sections, starting with evidentiality. Evidentiality in Elvish is split into four categories: #w[sán], glossed #s[ver] for ‘veridical’, with the meaning (as though) decreed by The Chimney Man (truth); #w[gan], glossed #s[obs] for ‘observable’, with the meaning either directly observable or deduced via reasoning; #w[xįn], glossed #s[com] for ‘communicated’, with the meaning communicated by someone (hearsay); #w[txą́], glossed #s[nor] for ‘North Pole’, with the meaning purported to exist (in the North Pole); and finally #w[tsų́n], glossed #s[dub] for ‘dubious’, with the meaning purported to exist elsewhere.
+
+The ‘default’ evidentiality marker is generally #w[gan];; it is commonly used for statements which the speaker considers to be true but which are not self-evident or proven facts. Statements of fact instead use the Chimney Man evidentiality—for example, $2+2=4$—and so do statements that an Elf is absolutely sure about. The meaning of this evidentiality is closer to ‘as true as though The Chimney Man Himself had decreed it’, and a suitable translation may be ‘most surely’. At the same time, it is of course also used to refer to literal statements made by The Chimney Man.
+
+=== Aspect
+Aspect marking differs between working verbs and lazy verbs. Working verbs are marked for telicity, i.e. whether the work
+is done, glossed #s[tel] for ‘telic’, or not, glossed #s[atel] for ‘atelic’. Lazy verbs are marked for whether the laziness is continued, glossed #s[cont] for ‘continuous’, or returning, glossed #s[hab] for ‘habitual’. For working verbs, telic is the default, for lazy verbs, continuous is the default.
+
+=== Elision
+When multiple verbs in a row have verb markers in common, those markers are often dropped for any verb after the first. In particular, this often applies to evidentiality markers: if the evidentiality marker of several clauses is the same, all but the first are generally dropped.
+
+=== Copula
+The Elvish copula is the empty root; that is, to express the copula, all verb markers (tense, evidentiality, etc.) are used as they normally would be, except that the verb itself is ‘missing’. If elision is applied, this can lead to a zero copula.
+
+=== Derivation
+A common way to turn a noun into a verb in Elvish that applies solely to disyllabic words is to swap the vowels, e.g.
+#w[ną́nrų́] ‘Coal miner’ becomes #w[nų́nrą́] ‘to mine Coal’. Another common derivational affix is #w[-rų́], which can be attached to a verb or noun to form an agent noun describing an Elf who performs an action associated with that verb or noun. E.g. from #w[sǫtą] ‘to learn’, we get #w[sǫtąrų́] ‘teacher’, and from #w[ną́n] ‘Coal mine’, we get #w[ną́nrų́] ‘Coal miner, Elf (canary)’.
+
+=== Numbers
+Elvish numbers are direct calques of Santaa’s numbers. E.g. the word for 7 in Elvish is #w[irtǫtǫtǫn], derived from #w[irgų] ‘to build’ and #w[tǫn] ‘more’. It literally translates to ‘build more more more’, which is a calque of Santaa #santaa[ħȍ̀̽ ħħó̽̏ ħħó̽̏ ħħó̽̏].
+
+== Appearance and Culture
+Now that we’ve discussed Elvish grammar at length, let’s talk a bit more about the Elves themselves. Let me paint you a picture: #sd[_Literally_ show a timelapse of you drawing an Elf while you’re explaining what Elves look like] The body and mental state of an Elf are optimised for the mining of Coal, with all unnecessary aspects of life removed. The complexion of an Elf is a dark grey, because they are always covered in layers of Coal dust. As the Elvish eye is designed to thrive in dry and dusty environments, Elves never need to close their eyes and thus lack eyelids. The only protection around their eyes is formed by multiple layers of eye lashes, which keep the Coal dust out of their vision.
 
 The throats and mouths of Elves are likewise covered in dust, making Elvish articulation extremely hoarse and grating. Their tongues are stiff and don’t bend. Elves also have no lips, making their sharp and pointy teeth, which are perpetually stained black by the consumption of Coal, clearly visible; it is for this reason that Elvish lacks labial sounds and rounded vowels.
 
@@ -191,11 +217,45 @@ Elves have inverted knees, which improves crawling in tunnel conditions. Their e
 
 Lastly, Elves have no gender and are all referred to as ‘it’. They do not, and for that matter, cannot, reproduce and are instead all created by The Chimney Man.
 
+== Elvish Upper Class
+The social classes of Collier and Master Carbonator comprise the upper classes of Elvish society; these Elves are easily identified as only they are entitled to wear #w[rǫngi] ‘cloaks’. These cloaks come in three forms:
+
+- Colliers wear crimson cloaks and are thus commonly referred to as #w[isirǫngi] ‘redcloaks’.
+- Master Carbonators wear crimson cloaks embroidered with black patterns of Coal and are thus commonly referred to as #w[xúsųrǫngi] ‘blackcloaks’.
+- Finally, the Grand Carbonator’s cloak is entirely black and coated with Coal; for this reason, the Grand Carbonator is commonly referred to as #w[Shǫnxąrǫngi] ‘Coal cloak’.
+
+Low-ranking Elves who pretend to have a higher social rank than they actually do are referred to as #w[ishúrǫngi] ‘fake cloaks’; wearing a cloak that corresponds to a higher class than one’s own is generally punished by decommissioning. Other Elves do not wear any clothes at all. The common Elf instead keeps itself warm in the freezing temperatures of the Arctic by burning the Coal it consumes inside its ventral furnace.
+
+== ‘Retirement’
+A central concept in Elvish society is #w[shų́ną] ‘retirement’.
+Elves never stop working; that is, an Elf only ‘retires’ at the moment of its death. In some cases, Elves who have acted out of line or otherwise disrupted the Coal mining process—or worse, slighted The Chimney Man—can be ‘decommissioned’, which entails _actively_ ‘retiring’ an Elf. This is also known as ‘dishonourable retirement’.
+
+Elves that retire honourably are given a #w[Shǫnxąshų́ną] ‘Coal burial’, i.e. they are cremated in such a way as to turn them into Coal, thus contributing to Elvish society even after their demise.
+
 == Translation
+The following is an Elvish rendition of JRR Tolkien’s Ring Verse, as translated and adapted by the Elvish poet #w[Tǫrxí];; Elves of course don’t wear rings, so the verse refers to ferrules instead. Other parts of the poem that would have likewise been unfamiliar to the common Canary have been replaced with more Elvish concepts as well. Without further ado: #sd[read translation]
 
 == Sentence Analysis
-#sd[analyse the complicated sentence and also explain SAP contraction here as well as relative clauses.]
+Finally, let’s take a closer look at one of the sentences of the translation as it serves as a good example of some of the quirks of Elvish grammar. The sentence in question is #i[Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́], lit. ‘that there are nine for mortal men doomed to retire’.
 
+The marker #w[ų́rų́] marks that the entire clause is an object of the verb #w[tshų́’á] ‘declare’ in the first clause of the poem. It can be translated as the English subordinator ‘that’ in this context.
 
-== Culture
- Above the common Elvish miner, who in Elvish society is dubbed a ‘canary’, are the upper classes of Elvish society.
+The evidentiality marker #w[gan] qualifies the copula, which has no root. It is required here to prevent #i[ų́rų́] from affecting only the following noun phrase, as it must precede a verb (marker) to affect the entire clause.
+
+#w[txadą́ cuncutǫn] is simply the word for the number 9 (whose default work order is 11) raised by 7 work orders to give it work order 4 to match #w[rųtí] ‘ferrule’ in the a preceding clause, which is elided here. Thus, this phrase literally means ‘nine of the thing with work order 4’.
+
+The complement of the PP headed by #w[ún] ‘for’ is the rest of the clause.
+
+The relative clause #i[dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo] ‘which are destined to retire‘ is fairly complicated on its own. Relative clauses in Elvish _precede_ the noun they modify, which in this case is #w[shardo núgį́] ‘mortal humans’.Notably, the relative pronoun #w[cą] is not the first word in the clause. Rather, because it is the subject of a clause with a lazy verb, it is preceded by the lazy agent marker #w[dun].
+
+The complement of #w[túsą] ‘to be destined’ is yet another clause, viz. #i[shąnų́ dun tų́r shardo] ‘the mortal ones retire’.
+This inner clause is preceded by the lazy theme marker #w[ų́xį́], which marks that the clause is the theme of #w[túsą].
+
+The sequence #w[tų́r shardo núgí] is actually short for #w[tų́r shardo shardo núgí]. That is, we have a SAP #w[tų́r shardo] ‘the mortal ones’, which agrees with #w[núgį́] ‘human’, followed by the noun #w[shardo núgį́] ‘mortal humans’, which is also the referent of the SAP.
+
+In such situations, that is, when a SAP is followed immediately by its referent, it is not uncommon for the same adjective to appear twice in a row (since it is both part of the SAP and also modifies the noun). This is rather awkward, so Elvish instead contracts the two into a single instance of the adjective. This phenomenon is known as _SAP contraction_. It is fairly easily identified as the sequence ‘invoice marker + adjective + noun’ isn’t otherwise valid in Elvish.
+
+So in sum, this sentence is a dependent clause that acts as the theme of a preceding clause and which contains a relative clause whose theme is yet _another_ clause, and both inner clauses either modify or reference a noun that occurs later on in the sentence.
+
+== Outro
+#sd[Outro]
