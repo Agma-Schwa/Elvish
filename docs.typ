@@ -675,20 +675,20 @@ Thus, it should also come as no surprise that The Chimney Man’s hibernating is
 == Idioms
 Since Coal is the most important aspect of Elvish society, many idioms and phrases in Elvish revolve around Coal and anything involved in the Coal mining process. For example, whereas in English a seam of Coal may be referred to as a ‘coal vein’ in analogy with the veins of the human body, Elvish does the opposite: the term #w[shų́’i ta-xąro] ‘blood vessel’ literally means ‘tunnel of blood’, where #i[shų́’i] is the term for a tunnel in a Coal mine.
 
-== April Fool's notes for the server
+= April Fool's notes for the server
 - Make some images and emojis etc. for the Discord server. Make it coal-themed.
-   - Rename ‘general’ and ‘general-2’ to ‘mining’ and ‘mining-2’.
-   - Change the server icon to a picture of Coal.
-   - Rename the server to ‘Agma’s Colliery’.
-   - Rename Agma to ‘The Chimney Man’.
-   - Rename Ætérnal to ‘The Grand Carbonator’
-   - Some of the mods can rename themselves to ‘Master Carbonator’.
-   - Change all role colours to shades of grey/black (save the previous colours so they can be restored); only Agma’s role as the Chimney Man should remain red.
-   - Don’t rename the roles to people can still ping them for moderation purposes.
-   - Rename the MC channel to ‘coal-mining’
-   - Give everyone on the server free Coal.
-   - Leave everything that way for a week.
-   - Note to Ætérnal: start preparing assets for that; apply all of this when I wake up the day the video comes out. Change my profile picture to Coal. Prepare all of this on my test server ahead of time so I can simply copy the settings.
+- Rename ‘general’ and ‘general-2’ to ‘mining’ and ‘mining-2’.
+- Change the server icon to a picture of Coal.
+- Rename the server to ‘Agma’s Colliery’.
+- Rename Agma to ‘The Chimney Man’.
+- Rename Ætérnal to ‘The Grand Carbonator’
+- Some of the mods can rename themselves to ‘Master Carbonator’.
+- Change all role colours to shades of grey/black (save the previous colours so they can be restored); only Agma’s role as the Chimney Man should remain red.
+- Don’t rename the roles to people can still ping them for moderation purposes.
+- Rename the MC channel to ‘coal-mining’
+- Give everyone on the server free Coal.
+- Leave everything that way for a week.
+- Note to Ætérnal: start preparing assets for that; apply all of this when I wake up the day the video comes out. Change my profile picture to Coal. Prepare all of this on my test server ahead of time so I can simply copy the settings.
 
 = Dictionary
 Lazy verbs are marked with #i[lz], working verbs with #i[wk].

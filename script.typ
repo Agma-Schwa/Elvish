@@ -111,14 +111,7 @@ Recall our example sentence, ‘The Elf crouches on the table’ from before #sd
 
 In written language, the choice as to what syntactic tense is the Present Tense is strictly speaking arbitrary, but by convention, it is generally that of the date on which the author wrote or started writing the text. A natural consequence of this is that many Elves cease all writing during the Temporal Void.
 
-In Elvish literature, it is custom to start a text with the phrase ‘This Elf declares that’, with the status-appropriate abridged personal pronoun used as the subject. The syntactic tense of this phrase denotes the Present Tense for the rest of the text. E.g. if the text is written by a Collier during the REM Sleep Phase, the introductory phrase would be:
-
-#gloss(`
-Gan nun’a tú tshų́’á tchą́ chírnu rǫngi ...
-gan nun’a tú tshų́’á tchą́ chírnu rǫngi
-{obs} {rem} {atel} declare {wrk} this cloak
-I declare that ...#footnote[Lit. ‘This cloak is observably declaring that ...’]
-`)
+In Elvish literature, it is custom to start a text with the phrase ‘This Elf declares that’, with the status-appropriate abridged personal pronoun used as the subject. The syntactic tense of this phrase denotes the Present Tense for the rest of the text. E.g. if the text is written by a Collier during the REM Sleep Phase, the introductory phrase would be #w[Gan nun’a tú tshų́’á tchą́ chírnu rǫngi].
 
 This is effectively prefixed to the first sentence of the text proper, thereby forming a new matrix clause around it. As a result, the rest of the first sentence is rendered in reported speech.
 

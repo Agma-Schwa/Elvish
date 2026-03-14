@@ -13,15 +13,6 @@
 #let w(s) = { [_#[#s]_ #box[/#ipa(s)/]] }
 #let i(s) = { [_#[#s]_] }
 
-// Tie bars and ogoneks may collide, so space this out a bit more.
-#gloss-set-line-spacing(.6em)
-#gloss-show-numbers(false)
-#gloss-set-ipa-function(ipa)
-#gloss-set-replacements((
-    "---": [---],
-    ..gloss-default-replacements
-))
-
 #let santaa(x) = text(size: 11pt, style: "italic", font: "Charis SIL", x)
 #let preamble(it) = {
     let l(dx: 0pt, dy: 0pt) = box(
@@ -54,6 +45,11 @@
             )
         )
     }
+
+    // Tie bars and ogoneks may collide, so space this out a bit more.
+    gloss-set-line-spacing(.6em)
+    gloss-show-numbers(false)
+    gloss-set-ipa-function(ipa)
 
     // These are calibrated for Charis SIL Italic; DO NOT CHANGE the font
     // or style, else these will have to be redone from scratch.
