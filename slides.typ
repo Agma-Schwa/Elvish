@@ -29,14 +29,6 @@
     #x
 ]
 
-#slide[
-#set align(center)
-#set text(size: 14pt)
-#image("assets/image.png", height: 95%)
-#v(1fr)
-Image credit: Encyclopædia Britannica
-]
-
 #section[Elvish]
 #slide[
 == Consonants
@@ -53,6 +45,8 @@ Image credit: Encyclopædia Britannica
 ]
 
 #slide[
+    // At this font size, the tie bars are somehow too low...
+    #show "ʄ͡ɠ": [ʄ#box(move(dy: -.1em)[\u{0361}])ɠ]
     #ex[_Ų́rų́ gan ún isirǫngi chír cų́r xún txadą́ irtǫtǫtǫn cįxį́tųn’ą́·_]
     #box(height: 0pt, uncover(
         2,
@@ -278,13 +272,13 @@ The Elf crouches on the table.
 ]
 
 #slide[
-== Tense Cont’d
+== Tense: Syntactic vs Semantic
 #item-by-item[
-- During the REM Sleep Phase, the #s[rem] tense denotes the Present Tense.
-- This is _semantic tense_.
-- Equivalently: the ‘syntactic Present Tense’ is the #s[rem] tense.
-- Syntactic Tense _before_ the syntactic Present Tense is the Past Tense.
-- Syntactic Tense _after_ the syntactic Present Tense is the Future Tense.
+- In a clause spoken during the REM Phase, the #s[rem] Tense acts as the _Present Tense_.
+- Terminology: the Present Tense is the _semantic tense_ of such a clause.
+- Equivalently: the _syntactic Present Tense_ of the clause is the #s[rem] Tense.
+- Syntactic tense _before_ the syntactic Present Tense is the Past Tense.
+- Syntactic tense _after_ the syntactic Present Tense is the Future Tense.
 ]
 ]
 
@@ -564,7 +558,7 @@ and thus, the appropriate SAP is #i[cų́r txų́dí]
     three ferrules under the mine for the Master Carbonators
   `)
 
-- Now the ferrules are under the mine, not the Master Carbonators!
+- Now the ferrules, and not the Master Carbonators, are under the mine!
 ]
 
 #slide[
@@ -576,7 +570,7 @@ and thus, the appropriate SAP is #i[cų́r txų́dí]
   #uncover(4, gloss(`
     ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n·
     ún xúsųrǫngi tsírǫ §§§tų́r §§§xún tchų́’i §§ta-rųtí §ną́n
-    for Master~Carbonator under {invc.rem} {null} three {poss}-ferrule mine
+    for Master~Carbonator under {invc.0} {null} three {poss}-ferrule mine
     three ferrules for the Master Carbonators under the mine
   `))
 ]
@@ -586,5 +580,3 @@ and thus, the appropriate SAP is #i[cų́r txų́dí]
 #pagebreak()
 #pagebreak()
 #let sd(it) = it
-
-Instead, the proper solution is to replace the problematic noun in the PP with a SAP. The noun is then left stranded as far back in the clause as possible, but of course preceding any nouns with lower work order. In this case, there is no adjective qualifying the noun, so the adjective #w[xún] is used instead. This adjective normally means ‘proper’, but in this context, it has no meaning and only serves as an expletive, in other words to provide something the invoice particle can be attached to. Thus, a grammatical rendition that preserves the meaning of what we want to communicate would be #w[ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n].

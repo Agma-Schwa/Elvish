@@ -229,7 +229,7 @@ If there is no adjective qualifying the noun, the adjective #w[xún] ‘proper�
 #gloss(`
 ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n·
 ún xúsųrǫngi §tsírǫ §tų́r §xún tchų́’i ta-rųtí §ną́n
-for Master~Carbonator under {invc.rem} {null} three {poss}-ferrule mine
+for Master~Carbonator under {invc.0} {null} three {poss}-ferrule mine
 three ferrules for the Master Carbonators under the mine
 `)
 

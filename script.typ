@@ -14,7 +14,7 @@ Word Count: #total-words
 #show : word-count
 
 == Fake Intro
-#sd[Fade in slide with a picture of Tolkien] John Ronald Reuel /ruːl/ Tolkien is a man who probably needs no introduction. He is considered by many as the father of modern fantasy literature; most know him by his most famous works, _The Hobbit_ and _The Lord of the Rings_, which have left a profound impact on the fantasy genre. Some of you might know him as a professor of English Language and Literature or from his work around Old English, the most famous of which is probably his translation of the Anglo-Saxon epic _Beowulf_.
+#sd[Fade in a picture of Tolkien] John Ronald Reuel /ruːl/ Tolkien is a man who probably needs no introduction. He is considered by many as the father of modern fantasy literature; most know him by his most famous works, _The Hobbit_ and _The Lord of the Rings_, which have left a profound impact on the fantasy genre. Some of you might know him as a professor of English Language and Literature or from his work around Old English, the most famous of which is probably his translation of the Anglo-Saxon epic _Beowulf_.
 
 However, since you’re watching this video, the part of Tolkien’s work that you are probably most interested in is his conlangs, among which the Elvish languages of Quenya and Sindarin are probably the most well-known.
 
