@@ -329,23 +329,117 @@ The Elf crouches on the table.
         #v(.5em)
         #text(fill: red, box(width: 10em)[$square.filled$ Past])
     ])
-
-    // arc-through(
-    //     (0, 0),
-    //     (1, 1),
-    //     (2, 2),
-    // )
-    // arc(
-    //    (0, 0),
-    //    anchor: "center",
-    //    radius: 3,
-    //    start: -45deg,
-    //    delta: -270deg,
-    //    mark: (
-    //    end: "straight",
-    //    ),
-    // )
 })
+]
+
+#slide[
+== Tense Cycle: Example
+#gloss(`
+Gan nun’a gųshą dun ną́nrų́ chír dą́chą.
+gan §nun’a gųshą dun ną́nrų́ chír dą́chą
+{obs} {rem} crouch {nwk} Elf on table
+The Elf #h1[crouches] on the table.
+`)
+#v(1em)
+Time of Utterance: REM Sleep Phase \
+Syntactic Tense: REM Sleep Tense \
+Semantic Tense: Present Tense \
+]
+
+#slide[
+== Tense Cycle: Example
+#gloss(`
+Gan nun’a gųshą dun ną́nrų́ chír dą́chą.
+gan §nun’a gųshą dun ną́nrų́ chír dą́chą
+{obs} {rem} crouch {nwk} Elf on table
+The Elf #h1[crouched] on the table.
+`)
+#v(1em)
+Time of Utterance: Non-REM Phase 1 \
+Syntactic Tense: REM Sleep Tense \
+Semantic Tense: Past Tense \
+]
+
+#slide[
+== Tense Cycle: Example
+#gloss(`
+Gan txí gųshą dun ną́nrų́ chír dą́chą.
+gan §txí gųshą dun ną́nrų́ chír dą́chą
+{obs} {nr1} crouch {nwk} Elf on table
+The Elf #h1[crouches] on the table.
+`)
+#v(1em)
+Time of Utterance: Non-REM Phase 1 \
+Syntactic Tense: Non-REM Phase 1 Tense \
+Semantic Tense: Present Tense \
+]
+
+#slide[
+== Tense Cycle: Example
+#gloss(`
+Gan txí gųshą dun ną́nrų́ chír dą́chą.
+gan §txí gųshą dun ną́nrų́ chír dą́chą
+{obs} {nr1} crouch {nwk} Elf on table
+The Elf #h1[will crouch] on the table.
+`)
+#v(1em)
+Time of Utterance: REM Sleep Phase \
+Syntactic Tense: Non-REM Phase 1 Tense \
+Semantic Tense: Future Tense \
+]
+
+#slide[
+== Tense: Written Language
+#item-by-item[
+- Choice of tense is arbitrary; usually date of writing.
+- ‘This Elf declares that ...’
+- E.g. In a text written by a Collier during the #h1[REM Sleep Phase]:
+
+  #gloss(`
+    Gan nun’a tú tshų́’á tchą́ chírnu rǫngi ...
+    gan §nun’a tú tshų́’á tchą́ chírnu rǫngi
+    {obs} {rem} {atel} declare {wrk} this cloak
+    I declare that ...
+`)
+
+- No fixed syntactic tense in oral narration.
+- In reported speech, the syntactic tense is relative to the time of paraphrase.
+]
+]
+
+// Slide duplicated from above.
+#slide[
+== Tense#uncover(2)[: Temporal Void]
+// Horrible hack to prevent the superscript tie bar in the last cell of the
+// first row from colliding with the horizontal line above it. We also increase
+// thw row gutter so all the rows get some extra space and then remove the same
+// space from the header row.
+#show table.cell.where(y: 0): it => { it; v(-.2em) }
+#show table.cell.where(y: 1): it => { v(.2em); it }
+#show table.cell.where(y: 2): it => h1(it)
+#rowtable(
+    hlineat(1),
+    ..vlinesat(1, 2, 3),
+    row-gutter: .3em,
+    [ *Phase* & *Gloss* & *Time of the Year* & *Particle* ],
+    [ Awake & #s[awk] & Christmas Eve & #w[sąn]],
+    [
+          #alternatives[???][Temporal Void]
+        & #alternatives[???][/]
+        & \~25--28 December
+        & #alternatives[???][/]
+    ],
+    [ REM Sleep & #s[rem] & \~29 December -- 3 May & #w[nun’a]],
+    [ Non-REM Phase 1 & #s[nr1] & \~4 May -- 25 August & #w[txí]],
+    [ Non-REM Phase 2 & #s[nr2] & \~26 August -- 9 November & #w[ronu]],
+    [ Non-REM Phase 3 & #s[nr3] & \~10 November -- 23 December & #w[ronų]],
+)
+
+#uncover(2)[
+- All tense marking is dropped.
+- Elves prefer not to speak or write during this time.
+- Upper classes switch to communicating in Santaa.
+]
 ]
 
 //
