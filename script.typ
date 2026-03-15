@@ -155,7 +155,7 @@ For instance, recall our example of the fat Elf #w[txų́dí txǫncų] above. 
 
 By contrast, in a sentence in the Non-REM Phase 2 Tense, the formula ultimately yields $-2$, and thus, the appropriate SAP is #w[cų́r txų́dí] #sd[slide].
 
-In addition to replacing pronouns, SAPs are also used to snsure a clause or phrase observes proper work order. This phenomenon is known as _extraposition_. For instance, suppose we want to say #sd[slide] ‘three ferrules for the Master Carbonators under the mine’—if you don’t know what a ferrule is, it’s this metal band here #sd[slide] on a pickaxe.
+In addition to replacing pronouns, SAPs are also used to ensure a clause or phrase observes proper work order. This phenomenon is known as _extraposition_. For instance, suppose we want to say #sd[slide] ‘three ferrules for the Master Carbonators under the mine’—if you don’t know what a ferrule is, it’s this metal band here #sd[slide] on a pickaxe.
 
 Obviously, the Master Carbonators have the highest work order, so they must be placed first. A naive translation would thus be \*#w[ún xúsųrǫngi tsírǫ ną́n tchų́’i ta-rųtí] which literally means ‘for the Master Carbonators under the mine, three ferrules’. However, this phrase is ill-formed because #w[ną́n] ‘mine’, a noun with work order 6, precedes #w[rųtí] ‘ferrule’, a noun with work order 4.
 

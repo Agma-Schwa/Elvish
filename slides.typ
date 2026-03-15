@@ -442,6 +442,149 @@ Semantic Tense: Future Tense \
 ]
 ]
 
+#section[Adjectives]
+#slide[
+== Adjectives#uncover("2-")[: SAPs]
+#item-by-item[
+- Precede the noun they qualify.
+- _Standalone adjective phrase_ (SAP).
+- SAPs largely replace pronouns.
+- SAP = _invoice particle_ + adjective.
+- E.g. #i[txų́dí txǫncų] ‘Fat Txǫncų’.
+
+  $arrow$ Possible SAP: #i[sį́ txų́dí] ‘the fat one’.
+]
+]
+
+#slide[
+== SAPs: Invoice
+#item-by-item[
+- Noun-clause agreement.
+- Each noun is assigned a syntactic tense based on its initial phoneme.
+- And each syntactic tense is assigned a value $v in {1, 2, 3, 4, 5}$:
+  #rowtable(
+    align: (right, center, left),
+    hlineat(1),
+    ..vlinesat(1, 2),
+    [Tense     & $v$ & Phonemes],
+    [Awake     & $1$ & _d, tx_, _x_, _ts_, _í_],
+    [REM       & $2$ & _n_, _t_, _s_, _ch_, _o_],
+    [Non-REM 1 & $3$ & _sh_, _’_, _r_, _u_],
+    [Non-REM 2 & $4$ & _c_, _g_, _tsh_, _tch_ ],
+    [Non-REM 3 & $5$ & (all vowels other than _u_, _í_, _o_)],
+  )
+]
+]
+
+#slide[
+== SAPs: Invoice Particles
+#item-by-item[
+- Five invoice particles with a value $v in {-2, -1, 0, 1, 2}$:
+  #rowtable(
+    align: (right, left),
+    hlineat(1),
+    vlineat(1),
+    [$v$ & Particle],
+    [$-2$ & #i[cų́r]],
+    [$-1$ & #i[so]],
+    [$ 0$ & #i[tų́r]],
+    [$ 1$ & #i[sį́]],
+    [$ 2$ & #i[árxį́]],
+  )
+- Invoice particle adjusts the tense of the noun.
+]
+]
+
+#slide[
+== SAPs: Determining the Invoice Particle
+#item-by-item[
+- Compute the tense difference $d$ between the noun and the clause:
+  $ d := T(C) - T(N) $
+  where $T(C)$ is the syntactic tense of the clause and $T(N)$ the tense of the noun.
+- The value $v$ of the invoice particle is then given by: $
+    v := cases(
+        d"," & "if" |d| < 3,
+        -"sgn"(d) dot (5 - |d|)"," &"otherwise."
+    )
+  $
+]
+]
+
+#slide[
+== SAPs: Example 1
+Given #i[txų́dí txǫncų] in a sentence in the REM Sleep Tense: $
+    d = T(#mtext[#s[rem]]) - T(#mtext[_txǫncų_]) = 2 - 1 = 1 \
+$
+
+The first case is taken, yielding $
+    v = d = 1
+$
+
+and thus, the appropriate SAP is #i[sį́ txų́dí].
+]
+
+#slide[
+== SAPs: Example 2
+Alternatively, in a sentence in the Non-REM Phase 2 Tense: $
+    d = T(#mtext[#s[nr2]]) - T(#mtext[_txǫncų_]) = 4 - 1 = 3
+$
+
+The second case applies, yielding $
+    v = -"sgn"(3) dot (5 - |3|) = -1 dot 2 = -2
+$
+
+and thus, the appropriate SAP is #i[cų́r txų́dí]
+]
+
+#slide[
+== SAPs: Extraposition
+#item-by-item[
+- Used to ensure a clause or phrase observes proper work order.
+- E.g. ‘three ferrules for the Master Carbonators under the mine’.
+- Word-by word translation is ill-formed:
+  #gloss(ungrammatical: true, `
+    ún xúsųrǫngi tsírǫ ną́n tchų́’i ta-rųtí·
+    ún xúsųrǫngi tsírǫ §ną́n tchų́’i §§ta-rųtí
+    for Master~Carbonator under mine three {poss}-ferrule
+  `)
+
+  #h1[#i[ną́n]] ‘mine’ $->$ work order 6 \
+  #h2[#i[rųtí]] ‘ferrule’ $->$ work order 4
+
+]
+]
+
+#slide[
+== SAPs: Extraposition
+- Moving the PP is grammatical, but changes the meaning:
+  #gloss(`
+    ún xúsųrǫngi tchų́’i ta-rųtí tsírǫ ną́n·
+    ún xúsųrǫngi tchų́’i §§ta-rųtí §tsírǫ §ną́n
+    for Master~Carbonator three {poss}-ferrule under mine
+    three ferrules under the mine for the Master Carbonators
+  `)
+
+- Now the ferrules are under the mine, not the Master Carbonators!
+]
+
+#slide[
+== SAPs: Extraposition
+#item-by-item[
+- Solution: Extraposition.
+- Replace #h1[#i[ną́n]] with a #h3[SAP] and move it to the end.
+- Since there is no adjective qualifying #i[ną́n], the ‘null adjective’ #i[xún] is used.
+  #uncover(4, gloss(`
+    ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n·
+    ún xúsųrǫngi tsírǫ §§§tų́r §§§xún tchų́’i §§ta-rųtí §ną́n
+    for Master~Carbonator under {invc.rem} {null} three {poss}-ferrule mine
+    three ferrules for the Master Carbonators under the mine
+  `))
+]
+]
+
 //
 #pagebreak()
+#pagebreak()
+#let sd(it) = it
 
+Instead, the proper solution is to replace the problematic noun in the PP with a SAP. The noun is then left stranded as far back in the clause as possible, but of course preceding any nouns with lower work order. In this case, there is no adjective qualifying the noun, so the adjective #w[xún] is used instead. This adjective normally means ‘proper’, but in this context, it has no meaning and only serves as an expletive, in other words to provide something the invoice particle can be attached to. Thus, a grammatical rendition that preserves the meaning of what we want to communicate would be #w[ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n].
