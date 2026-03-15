@@ -62,7 +62,6 @@
     show "hhhhh": [h#triple-line#rotated-line]
     show "ħħħħħ": [ħ#triple-line#rotated-line]
 
-    show : setup.with(compact: true)
     show "↓" : [#h(-.15em)↓#h(-.15em)] // Reduce kerning a bit to save space.
     show "ʄ͡ɠ": [ʄ#box(move(dy: .2em)[\u{0361}])ɠ]
     it

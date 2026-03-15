@@ -1,6 +1,6 @@
 tshǫ’ǫ|n. w11||Ribbon
-shų́ną|n. w4||Retirement \comment See \ref{retirement}.
-shąnų́|v. lz|shų́ną|To retire
+shų́ną|n. w4|see also \w{shąnų́}|Retirement \comment See \ref{retirement}.
+shąnų́|v. lz|see also \w{shų́ną}|To retire
 dį́gá|n. w11||Cane
 Są́ntą́|n. w1|from \w{są́n} and \w{tą́}; direct borrowing from \santaa{ħo̽̀̄ ṑ̀h ɔ̽̋̄h ħɒ̋̋̋ ṑ̀h ɔ̽̋̄h ꜧɋɋ}|
     The Chimney Man

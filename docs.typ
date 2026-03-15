@@ -1,4 +1,5 @@
 #import "preamble.typ" : *
+#show : setup.with(compact: true)
 #show : preamble
 
 #align(center, text(size: 30pt, [Ną́ngą́sánshų́]))
@@ -18,7 +19,7 @@ Due to their extensive and perpetual involvement in and with the Coal mining pro
 #rowtable(
     hlineat(1),
     vlineat(1),
-    [            & Alveolar         & Palato-velar        & Uvulo-Glottal ],
+    [            & Alveolar         & Palato-Velar        & Uvulo-Glottal ],
     [ Nasal      &                  &                     & ɴˀ ⟨n⟩        ],
     [ Stop       & d̻ t̻    ⟨d t⟩     & c͡k ɟ͡g      ⟨c g⟩    & ʔ  ⟨’⟩        ],
     [ Fricative  & s̻ s̻ʰ   ⟨s sh⟩    & ç͡x ç͡xʰ     ⟨ch x⟩   &               ],
@@ -350,21 +351,20 @@ Elvish numbers use the same system as Santaa numbers, except using Elvish words.
 Verbs are either classified as ‘working’ or ‘lazy’ (see @nouns-at-work). Verbs are not inflected for number, only nouns are. In the absence of work order distinction, the default word order is VOS. Verbs generally do not have an associated work order (unless they are derived from a noun) and are generally placed first; the main exception to this is that nouns with work order 1 are always placed first and precede even the verb.
 
 === Tense, Aspect, Mood <tam>
-The Elvish tense system is based on the hibernation cycle of The Chimney Man. This cycle consists of 5 phases, which are shown here:
+The Elvish tense system is based on the hibernation cycle of The Chimney Man. This cycle consists of 5 phases. These five phases form the five so-called _syntactic tenses_ of Elvish, which are each marked by a particle that precedes the verb (see @tab:syntactic-tenses).
 
-+ Awake (#s[awk]): Christmas Eve
-+ REM sleep (#s[rem]): \~December 29th -- May 3rd
-+ Non-REM Phase 1 (#s[nr1]): \~May 4th -- August 25th
-+ Non-REM Phase 2 (#s[nr2]): \~August 26th -- November 9th
-+ Non-REM Phase 3 (#s[nr3]): \~November 10th -- December 23rd
-
-These five phases form the five so-called _syntactic tenses_ of Elvish, which are each marked by a particle that precedes the verb. These markers are as follows:
-
-+ Awake tense: #w[sąn]
-+ REM sleep tense: #w[nun’a]
-+ Non-REM Phase 1 tense: #w[txí]
-+ Non-REM Phase 2 tense: #w[ronu]
-+ Non-REM Phase 3 tense: #w[ronų]
+#center-table(
+    hlineat(1),
+    ..vlinesat(1, 2, 3),
+    caption: [Syntactic Tenses in Elvish],
+    align: left,
+    [ *Phase* & *Gloss* & *Time of the Year* & *Particle* ],
+    [ Awake & #s[awk] & Christmas Eve & #w[sąn]],
+    [ REM Sleep & #s[rem] & \~29 December -- 3 May & #w[nun’a]],
+    [ Non-REM Phase 1 & #s[nr1] & \~4 May -- 25 August & #w[txí]],
+    [ Non-REM Phase 2 & #s[nr2] & \~26 August -- 9 November & #w[ronu]],
+    [ Non-REM Phase 3 & #s[nr3] & \~10 November -- 23 December & #w[ronų]],
+) <tab:syntactic-tenses>
 
 At any point in time, the Present Tense in Elvish is whatever sleep phase The Chimney Man is in when the utterance is spoken. This is referred to as the _semantic tense_ of the utterance. For instance, on 2 February, The Chimney Man is in REM sleep, and thus, a sentence whose syntactic tense is the REM Sleep Tense would have the Present Tense as its semantic tense. In terms of terminology, the term ‘syntactic Present Tense’ in any given context refers to whatever syntactic tense happens to be the Present Tense.
 
@@ -420,8 +420,7 @@ When multiple verbs in a row have verb markers in common, those markers are ofte
 
 == Derivation
 === Vowel Swapping
-A common way to turn a noun into a verb in Elvish that applies solely to disyllabic words is to swap the vowels, e.g.
-#w[ną́nrų́] ‘Coal miner’ becomes #w[nų́nrą́] ‘to mine Coal’.
+A common way to turn a noun into a verb in Elvish (or vice versa) that applies solely to disyllabic words is to swap the vowels, e.g. #w[ną́nrų́] ‘Coal miner’ becomes #w[nų́nrą́] ‘to mine Coal’.
 
 == #i[-rų́]
 The suffix #w[-rų́] can be attached to a verb or noun to form an agent noun describing an Elf who performs an action associated with that verb or noun. E.g. from #w[sǫtą] ‘to learn’, we get #w[sǫtąrų́] ‘teacher’, and from #w[ną́n] ‘Coal mine’, we get #w[ną́nrų́] ‘Coal miner, Elf’.

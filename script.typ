@@ -1,5 +1,6 @@
 #import "@preview/wordometer:0.1.5" : word-count, total-words
 #import "preamble.typ" : *
+#show : setup.with(compact: true)
 #show : preamble
 
 #let sd(it) = text(fill: rgb("#dd8542"), [[#it]])
@@ -24,13 +25,13 @@ But today’s video isn’t a biography of Tolkien’s life, so without further 
 == Fake Phonology + Sentence
 As ever, let’s start by talking about the phonology of Elvish. The table here shows the Elvish consonant phoneme inventory #sd[Show Sindarin phoneme table]. The consonants are #sd[start reading the consonants, up to the middle of the 'stop' row, then interrupt]... wait hold on that doesn’t look right. Er... #sd[1/2 second pause], I think I got the wrong table. Where did I... Er, never mind let’s start with the vowels #sd[show Elvish vowel table].
 
-As you can see, Elvish has a very simple 6-vowel system #sd[show vowel chart w/o click and ogoneks], well _technically_ it’s more than that #sd[show slide w/ ogoneks], but we’ll get back to that later. I think this is pretty self-explanatory, so I’m not even going to bother pronouncing these. Now where did I put the consonants... #sd[cut to Agma flipping through some pages trying to find a specific one]. AHA, THERE, there it is #sd[show Elvish consonants]. As I was saying the Elvish consonant phoneme inventory is not too complicated in terms of number. There are a total of 15 consonants in Elvish.
+As you can see, Elvish has a very simple 6-vowel system #sd[show vowel chart w/o click and ogoneks], well _technically_ it’s more than that, but we’ll get back to that later. I think this is pretty self-explanatory, so I’m not even going to bother pronouncing these. Now where did I put the consonants... #sd[cut to Agma flipping through some pages trying to find a specific one]. Er, whatever, I bet y’all are tired of conlang reviews starting off with the phonology section anyway.
 
-Now, reading out sounds is nice and all, but I feel like in order to get a proper understanding of the language we should start with a proper text so we can fully appreciate the elegance and euphony of the Elvish language. Recently, I gave our Discord members a short sentence in Elvish and asked them to provide their best attempt at a rendition of it. This is what I got #sd[Play everyone’s audio clips as usual].
+Y’know reading out sounds is nice and all, but I feel like in order to get a proper understanding of the language, we should start with a proper text so we can fully appreciate the elegance and euphony of the Elvish language. Recently, I gave our Discord members a short sentence in Elvish and asked them to provide their best attempt at a rendition of it. This is what I got #sd[Play everyone’s audio clips as usual].
 
 What can I say, an attempt was made I suppose. Sorry guys, but you got it all wrong. I saw some of you caught on to what was happening this time when we didn’t provide any IPA, but the _correct_ way to pronounce this sentence is obviously #sd[Show slide w/ IPA and read the sentence].
 
-Isn’t that beautiful? Euphonic? Now, if you’re a bit confused about my pronunciation just now, that wasn’t because I’m really bad at Sindarin, or Quenya. No, this is _Elvish_; except that the Elves we’re talking about here... are not Tolkien’s Elves. No, they’re Santa’s Elves #sd[slide w/ elf on the shelf], or, should I say... Santaa’s #sd[stress the ‘aa’] Elves #sd[show Santaa video thumbnail].
+Isn’t that beautiful? Euphonic? Now, if you’re a bit confused about my pronunciation just now, that wasn’t because I’m really bad at Sindarin, or Quenya. No, this is _Elvish_; except that the Elves we’re talking about here... are not Tolkien’s Elves. No, they’re Santa’s Elves, or, should I say... Santaa’s #sd[stress the ‘aa’] Elves #sd[show Santaa video thumbnail].
 
 == Intro
 #sd[Proper intro; 'hello and welcome to nguh' etc.]
@@ -45,12 +46,14 @@ Now, do you know what other sounds are always ingressive? Clicks! Elvish actuall
 Now, the crucial part here is that _only_ the vowels are ingressive. The consonants are, of course, are all egressive. What this means is that speaking Elvish requires the speaker to constantly flip-flop back and forth between egressive and ingressive when articulating consonants and vowels.
 
 == Cultural Background
+#sd[No slides for this one; find some nice images to show on screen for this section]
+
 Now for an interlude: I’m assuming a lot of you are familiar with the Sapir-Whorf hypothesis, but for anyone who isn’t, it conjectures that the language we speak determines the way we think. This hypothesis is from the 1920s, and most of modern linguistics considers it to be abject nonsense, so why am I talking about this? Well, the relationship between the Elves and Elvish is the exact opposite! That is, many aspects of the Elvish language are a direct consequence of the strict rules and hierarchy of Elvish society. Thus, in order to understand Elvish, we must understand the Elves themselves.
 
 So, what are Elves, really? Well, as we’ve established, these Elves are Santa’s Elves, or rather, Santaa’s Elves. Every year, on the 24th night of December, The Chimney Man travels the world to distribute ‘gifts’ among the people. The most prominent of His ‘gifts’ is Coal. Have you ever wondered where all of that Coal comes from? That’s right, the Coal is mined by the Elves. In fact this is the only thing the Elves do: An entire society dedicated to Coal mining.
 
 == Work Order
-It is thus perhaps not surprising that Elves emphasise work above all else. Elvish grammar has a system much akin to animacy in other languages, and it is vital to determining word order in Elvish. The highest ‘animacy’, and thus primacy in a clause, goes to that which is working the hardest. This is 'Work Order' #sd[show slide w/ ‘Work Order’]. There are 11 work orders in Elvish, numbered 1 to 11, with 1 being the highest and 11 the lowest. The work orders are: #sd[show slide w/ work orders, revealing one at a time]
+It is thus perhaps not surprising that Elves emphasise work above all else. Elvish grammar has a system much akin to animacy in other languages, and it is vital to determining word order in Elvish. The highest ‘animacy’, and thus primacy in a clause, goes to that which is working the hardest. This is 'Work Order' #sd[only now, cut to the slide w/ ‘Work Order’]. There are 11 work orders in Elvish, numbered 1 to 11, with 1 being the highest and 11 the lowest. The work orders are: #sd[show slide w/ work orders, revealing one at a time]
 
 Number 1: The Chimney Man. In any circumstance in which The Chimney Man is referenced, He will always have the highest Work Order, for He is always working the Hardest. Except for the day after Christmas, of course.
 
@@ -59,7 +62,7 @@ Number 2: Coal. Elves mine Coal, eat Coal, and breathe air laden with Coal dust.
 #sd[TODO: Move some of the more detail descriptions here elsewhere]
 Number 3: Master Carbonator. At the very top of Elvish society stands the council of Master Carbonators. This council consists of a dozen or so Elves who are assigned a work order of 3. The council is ruled over by the Grand Carbonator. It is the sole Elf that is assigned a work order of 2, and who is thus considered equally important to the Elves as Coal itself. The Grand Carbonator is effectively the right-hand Elf of The Chimney Man and reports to Him in person every Christmas Eve.
 
-Number 4: Collier. These are highly experienced Elves that have been working in the Coal industry for at least 100 years and are typically regional overseers. Only Elves at the rank of Collier or above enjoy the privilege of having their names capitalised in writing, and only they are entitled to wear #w[rǫngi] ‘cloaks’.
+Number 4: Collier. These are highly experienced Elves that have been working in the Coal industry for at least 100 years and are typically regional overseers. Only Elves at the rank of Collier or above enjoy the privilege of having their names capitalised in writing, and only they are entitled to wear #w[rǫngi] ‘cloaks’ #sd[there is a slide for #i[rǫngi];; it’s after all the work order slides].
 
 Number 5: Head Miner. These are Elves in charge of a tunnel or Coal mine.
 
@@ -94,16 +97,22 @@ As there are two agent markers, there are naturally also two theme markers. #w[�
 This system naturally gives rise to 2 verb classes: ‘working verbs’, whose agent assumes the ‘working’ form and whose theme assumes the ‘being worked on’ form, as well as ‘lazy verbs’, whose agent assumes the ‘not working’ form, and whose theme assumes the ‘manipulated’ form.
 Finally, there are a pair of contractions that denote reflexive forms, one for working verbs and one for lazy verbs.
 
-In addition to the agent/theme markers, there is another noun marker, #w[ta-] which denotes a possessive form, e.g. #w[ta-ną́nrų́] ‘of the Elves’. Finally, nouns can also be combined with one another to form compounds. Just like in Santaa, the modifier is placed _second_; for example, in the compound #w[cįxį́tųn’ą́] ‘stone hall’, #w[cįxį́] means ‘hall, and  #w[tųn’ą́] is ‘stone’; compounds are always written as a single word. The most important compound noun in Elvish is without a doubt #w[Są́ntą́] ‘The Chimney Man’, which is derived from #w[są́n] ‘being’ and #w[tą́] ‘chimney’.
+In addition to the agent/theme markers, there is another noun marker, #w[ta-] which denotes a possessive form, e.g. #w[ta-ną́nrų́] ‘of the Elves’.
+
+== Compounds and Derivation
+Nouns can also be combined with one another to form compounds. Just like in Santaa, the modifier is placed _second_; for example, in the compound #w[cįxį́tųn’ą́] ‘stone hall’, #w[cįxį́] means ‘hall, and  #w[tųn’ą́] is ‘stone’; compounds are always written as a single word. The most important compound noun in Elvish is without a doubt #w[Są́ntą́] ‘The Chimney Man’, which is derived from #w[są́n] ‘being’ and #w[tą́] ‘chimney’.
+
+There are also a number of derivational processes that may involve nouns. For instance, the affix #w[-rų́] can be attached to a verb or noun to form an agent noun describing an Elf who performs an action associated with that verb or noun. E.g. from #w[sǫtą] ‘to learn’, we get #w[sǫtąrų́] ‘teacher’, and from #w[ną́n] ‘Coal mine’, we get #w[ną́nrų́] ‘Coal miner, Elf (canary)’. Additionally, a common way to turn a noun into a verb (or vice versa) that applies solely to disyllabic words is to swap the vowels, e.g. #w[ną́nrų́] ‘Coal miner’ becomes #w[nų́nrą́] ‘to mine Coal’.
+
 
 == Tense
 There are two systems around which all of Elvish grammar revolves. One is work order, which we just discussed. The other is tense. The Elvish tense system is based on the hibernation cycle of The Chimney Man. #sd[slide] The Chimney Man wakes up and is awake on Christmas Eve. Starting at around 29 December, the Chimney Man enters REM sleep before sinking further into Non-REM Phases 1, 2, and 3 on 4 May, 26 August, and 10 November.
 
 These five phases form the five so-called _syntactic tenses_ of Elvish. They are each marked by a particle that precedes the verb. For instance, the REM Tense lasts from 29 December to 3 May. So, how exactly is this used to express time? At any point in time, the Present Tense in Elvish is whatever sleep phase The Chimney Man is in when the utterance is spoken. For instance, on 2 February, The Chimney Man is in REM sleep, and thus, the REM Sleep Tense is the Present Tense.
 
-Thus, in such a sentence, the _semantic semantic_ tense is the Present Tense and the _syntactic tense_ is the REM Sleep Tense; syntactic tense denotes the grammatical forms used, whereas semantic tense denotes the actual meaning. We may also say that the REM Sleep Tense is the ‘syntactic Present Tense’ in this context.
+Thus, in such a sentence, the _semantic_ tense is the Present Tense and the _syntactic tense_ is the REM Sleep Tense; syntactic tense denotes the grammatical forms used, whereas semantic tense denotes the actual meaning. We may also say that the REM Sleep Tense is the ‘syntactic Present Tense’ in this context.
 
-The syntactic tense following the syntactic Presen Tense, in this case the Non-REM Phase 1 Tense, denotes the Future Tense, and the tense after that forms a future-in-the-future. Similarly, the syntactic tense preceding the syntactic Present Tense is the Past Tense, in this case the Awake Tense, and tense before that serves as the pluperfect.
+The syntactic tense following the syntactic Present Tense, in this case the Non-REM Phase 1 Tense, denotes the Future Tense, and the tense after that forms a future-in-the-future. Similarly, the syntactic tense preceding the syntactic Present Tense is the Past Tense, in this case the Awake Tense, and tense before that serves as the pluperfect.
 
 But wait, what is the syntactic tense two tenses before the REM Sleep Tense if there’s only the Awake Tense before it? Well, obviously, it wraps, like so #sd[slide w/ cycle], so in this case, the syntactic Pluperfect would be the Non-REM Phase 3 Tense. What this means is that the meaning of any of the five syntactic tenses is completely dependent on the time of utterance. Thus, if you don’t know when an utterance is spoken, you will have no idea how to interpret any of the tenses.
 
@@ -193,10 +202,6 @@ When multiple verbs in a row have verb markers in common, those markers are ofte
 
 === Copula
 The Elvish copula is the empty root; that is, to express the copula, all verb markers (tense, evidentiality, etc.) are used as they normally would be, except that the verb itself is ‘missing’. If elision is applied, this can lead to a zero copula.
-
-=== Derivation
-A common way to turn a noun into a verb in Elvish that applies solely to disyllabic words is to swap the vowels, e.g.
-#w[ną́nrų́] ‘Coal miner’ becomes #w[nų́nrą́] ‘to mine Coal’. Another common derivational affix is #w[-rų́], which can be attached to a verb or noun to form an agent noun describing an Elf who performs an action associated with that verb or noun. E.g. from #w[sǫtą] ‘to learn’, we get #w[sǫtąrų́] ‘teacher’, and from #w[ną́n] ‘Coal mine’, we get #w[ną́nrų́] ‘Coal miner, Elf (canary)’.
 
 === Numbers
 Elvish numbers are direct calques of Santaa’s numbers. E.g. the word for 7 in Elvish is #w[irtǫtǫtǫn], derived from #w[irgų] ‘to build’ and #w[tǫn] ‘more’. It literally translates to ‘build more more more’, which is a calque of Santaa #santaa[ħȍ̀̽ ħħó̽̏ ħħó̽̏ ħħó̽̏].

@@ -6,7 +6,7 @@ use wasm_minimal_protocol::*;
 initiate_protocol!();
 
 static PATTERNS: &[&str] = &[
-    "-",
+    "-", "·",
     "n",
     "d", "t", "c", "g", "’",
     "s", "sh", "ch", "x",
@@ -17,7 +17,7 @@ static PATTERNS: &[&str] = &[
 ];
 
 static REPLACEMENTS: &[&str] = &[
-    "",
+    "", "",
     "ɴˀ",
     "d̻", "t̻", "c͡k", "ɟ͡g", "ʔ",
     "s̻", "s̻ʰ", "ç͡x", "ç͡xʰ",
