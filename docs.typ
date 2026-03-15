@@ -211,24 +211,24 @@ SAPs are also used to ensure a clause or phrase observes proper work order. This
 
 #gloss(ungrammatical: true, `
 ún xúsųrǫngi tsírǫ ną́n tchų́’i ta-rųtí·
-ún xúsųrǫngi §tsírǫ §ną́n tchų́’i ta-rųtí
+ún xúsųrǫngi tsírǫ §ną́n tchų́’i §§ta-rųtí
 for Master~Carbonator under mine three {poss}-ferrule
 `)
 
-This phrase is ill-formed because #w[ną́n] ‘mine’, a noun with work order 6, precedes #w[rųtí] ‘ferrule’, a noun with work order 4. To correct this, we need to move ‘mine’ to the end of the clause, but we can’t simply move the entire enclosing PP as that would change the meaning of the phrase:
+This phrase is ill-formed because #h1(w[ną́n]) ‘mine’, a noun with work order 6, precedes #h2(w[rųtí]) ‘ferrule’, a noun with work order 4. To correct this, we need to move ‘mine’ to the end of the clause, but we can’t simply move the entire enclosing PP as that would change the meaning of the phrase:
 #gloss(`
 ún xúsųrǫngi tchų́’i ta-rųtí tsírǫ ną́n·
-ún xúsųrǫngi tchų́’i ta-rųtí §tsírǫ §ną́n
+ún xúsųrǫngi tchų́’i §§ta-rųtí tsírǫ §ną́n
 for Master~Carbonator three {poss}-ferrule under mine
 three ferrules under the mine for the Master Carbonators
 `)
 
-While well-formed, this movement has changed what NP the PP qualifies. Instead, the proper solution is to replace the problematic noun in the PP with a SAP. The noun is then left stranded as far back in the clause as possible, but of course preceding any nouns with lower work order.
+While well-formed, this movement has changed what NP the PP qualifies. Instead, the proper solution is to replace the problematic noun in the PP with a #h3[SAP]. The noun is then left stranded as far back in the clause as possible, but of course preceding any nouns with lower work order.
 If there is no adjective qualifying the noun, the adjective #w[xún] ‘proper’ is used instead. This adjective has no meaning in this context and only serves to provide something the invoice particle can be attached to. Thus, a grammatical rendition of the above might be:
 
 #gloss(`
 ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n·
-ún xúsųrǫngi §tsírǫ §tų́r §xún tchų́’i ta-rųtí §ną́n
+ún xúsųrǫngi tsírǫ §§§tų́r §§§xún tchų́’i §§ta-rųtí §ną́n
 for Master~Carbonator under {invc.0} {null} three {poss}-ferrule mine
 three ferrules for the Master Carbonators under the mine
 `)

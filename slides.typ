@@ -576,6 +576,11 @@ and thus, the appropriate SAP is #i[cų́r txų́dí]
 ]
 ]
 
+#section[Pronouns]
+#slide[
+= Demonstrative Pronouns
+]
+
 //
 #pagebreak()
 #pagebreak()
