@@ -104,9 +104,8 @@ Nouns can also be combined with one another to form compounds. Just like in Sant
 
 There are also a number of derivational processes that may involve nouns. For instance, the affix #w[-rų́] can be attached to a verb or noun to form an agent noun describing an Elf who performs an action associated with that verb or noun. E.g. from #w[sǫtą] ‘to learn’, we get #w[sǫtąrų́] ‘teacher’, and from #w[ną́n] ‘Coal mine’, we get #w[ną́nrų́] ‘Coal miner, Elf (canary)’. Additionally, a common way to turn a noun into a verb (or vice versa) that applies solely to disyllabic words is to swap the vowels, e.g. #w[ną́nrų́] ‘Coal miner’ becomes #w[nų́nrą́] ‘to mine Coal’.
 
-
 == Tense
-There are two systems around which all of Elvish grammar revolves. One is work order, which we just discussed. The other is tense. The Elvish tense system is based on the hibernation cycle of The Chimney Man. #sd[slide] The Chimney Man wakes up and is awake on Christmas Eve. Starting at around 29 December, the Chimney Man enters REM sleep before sinking further into Non-REM Phases 1, 2, and 3 on 4 May, 26 August, and 10 November.
+There are two systems around which all of Elvish grammar revolves. One is work order, which we just discussed. The other is tense. The Elvish tense system is based on the hibernation cycle of The Chimney Man. #sd[slide] The Chimney Man wakes up and is awake on Christmas Eve. Starting at around 29 December, the Chimney Man enters REM sleep. On 4 May, He sinks into Non-REM Sleep, entering Non-REM Phase 1. This continues on 26 August, where He reaches Non-REM Phase 2, before finally sinking all the way into Non-REM Phase 3 on 10 November.
 
 These five phases form the five so-called _syntactic tenses_ of Elvish. They are each marked by a particle that precedes the verb. For instance, the REM Tense lasts from 29 December to 3 May. So, how exactly is this used to express time? At any point in time, the Present Tense in Elvish is whatever sleep phase The Chimney Man is in when the utterance is spoken. For instance, on 2 February, The Chimney Man is in REM sleep, and thus, the REM Sleep Tense is the Present Tense.
 

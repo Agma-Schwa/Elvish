@@ -132,26 +132,40 @@
 
 #slide(ex[#w[rǫngi] ‘cloaks’])
 
-#gloss-slide(`
+#slide[
+== Work Order: Example
+#gloss(`
 Gan nun’a gųshą dun ną́nrų́ chír dą́chą.
 gan nun’a gųshą dun ną́nrų́ chír dą́chą
 {obs} {rem} crouch {nwk} Elf on table
 The Elf crouches on the table.
 `)
+]
 
-#gloss-slide(`
+#slide[
+== Work Order: Example
+#gloss(`
 Gan nun’a gųshą dun ną́nrų́ chír dą́chą.
 gan nun’a gųshą dun §ną́nrų́ chír dą́chą
 {obs} {rem} crouch {nwk} Elf on table
 The Elf crouches on the table.
 `)
 
-#gloss-slide(`
+- #h1(i[ną́nrų́]) ‘Elf’ has work order 6, as it refers to Elves that are canaries.
+]
+
+#slide[
+== Work Order: Example
+#gloss(`
 Gan nun’a gųshą dun ną́nrų́ chír dą́chą.
 gan nun’a gųshą dun §ną́nrų́ chír §§dą́chą
 {obs} {rem} crouch {nwk} Elf on table
 The Elf crouches on the table.
 `)
+
+- #h1(i[ną́nrų́]) ‘Elf’ has work order 6, as it refers to Elves that are canaries.
+- Thus, it precedes #h2(i[dą́chą]) ‘table’, which has work order 11.
+]
 
 #slide[
 == Work Order Markers
@@ -191,7 +205,7 @@ The Elf crouches on the table.
 - Lowering can be derogatory and raising a form of praise.
 - Combine with adjective/number to refer to a noun.
 
-  E.g. #i[txų́nsha irtǫtǫtǫn] ‘seven of the thing with work order 6’
+  E.g. #i[txų́nsha irtǫtǫtǫn] ‘seven of the thing with work order 6’.
 ]
 ]
 
@@ -199,19 +213,19 @@ The Elf crouches on the table.
 == Noun Markers
 //#set list(spacing: 1em)
 #item-by-item[
-- #w[tchą́] ‘performs work’ (#s[wrk] ‘working’)
+- #w[tchą́] ‘performs work’ (#s[wrk] ‘working’).
 
   Marks the agent of a verb that denotes an action that performs work.
 
-- #w[dun] ‘does not perform work’ (#s[nwk] ‘not working’)
+- #w[dun] ‘does not perform work’ (#s[nwk] ‘not working’).
 
   Marks the agent of a verb that denotes a state or an action that is _not_ considered to perform (worthwile) work.
 
-- #w[ų́rų́] ‘has work performed on it’ (#s[wkd] ‘[being] worked [on]’)
+- #w[ų́rų́] ‘has work performed on it’ (#s[wkd] ‘[being] worked [on]’).
 
   Marks the theme of a verb whose agent assumes the #s[wrk] form.
 
-- #w[ų́xį́] ‘is being manipulated in some fashion’ (#s[man] ‘manipulated’)
+- #w[ų́xį́] ‘is being manipulated in some fashion’ (#s[man] ‘manipulated’).
 
   Marks the theme of a verb whose agent assumes the #s[nwk] form.
 
@@ -221,9 +235,9 @@ The Elf crouches on the table.
 
 #slide[
 == Noun Markers Cont’d
-- #w[ta-] (#s[poss]): Possessive form
+- #w[ta-] (#s[poss]): Possessive form.
 
-  E.g. #w[ta-ną́nrų́] ‘of the Elves’
+  E.g. #w[ta-ną́nrų́] ‘of the Elves’.
 ]
 
 #slide[
@@ -237,15 +251,15 @@ The Elf crouches on the table.
 
 - Agent noun affix #i[-rų́]:
 
-  #i[sǫtą] ‘to learn’ $arrow$ #i[sǫtąrų́] ‘teacher’
+  #i[sǫtą] ‘to learn’ $arrow$ #i[sǫtąrų́] ‘teacher’.
 
   #i[ną́n] ‘Coal mine’ $arrow$ #i[ną́nrų́] ‘Coal miner’.
 
 - Vowel swapping converts noun $arrows.lr$ verb (disyllabic words only).
 
-  #i[ną́nrų́] ‘Coal miner’ $arrows.lr$ #i[nų́nrą́] ‘to mine Coal’
+  #i[ną́nrų́] ‘Coal miner’ $arrows.lr$ #i[nų́nrą́] ‘to mine Coal’.
 
-  #i[shų́ną] ‘retirement’ $arrows.lr$ #i[shąnų́] ‘to retire’
+  #i[shų́ną] ‘retirement’ $arrows.lr$ #i[shąnų́] ‘to retire’.
 ]
 ]
 
@@ -263,7 +277,9 @@ The Elf crouches on the table.
 // space from the header row.
 #show table.cell.where(y: 0): it => { it; v(-.2em) }
 #show table.cell.where(y: 1): it => { v(.2em); it }
-#rowtable(
+#show table.cell: it => { uncover(str(it.y + 1) + "-", it) }
+
+#uncover("2-", rowtable(
     hlineat(1),
     ..vlinesat(1, 2, 3),
     row-gutter: .3em,
@@ -273,7 +289,7 @@ The Elf crouches on the table.
     [ Non-REM Phase 1 & #s[nr1] & \~4 May -- 25 August & #w[txí]],
     [ Non-REM Phase 2 & #s[nr2] & \~26 August -- 9 November & #w[ronu]],
     [ Non-REM Phase 3 & #s[nr3] & \~10 November -- 23 December & #w[ronų]],
-)
+))
 ]
 
 #slide[
@@ -398,7 +414,7 @@ Semantic Tense: Future Tense \
     Gan nun’a tú tshų́’á tchą́ chírnu rǫngi ...
     gan §nun’a tú tshų́’á tchą́ chírnu rǫngi
     {obs} {rem} {atel} declare {wrk} this cloak
-    I declare that ...
+    This Elf declares that ...
 `)
 
 - No fixed syntactic tense in oral narration.
@@ -462,7 +478,7 @@ Semantic Tense: Future Tense \
 - Each noun is assigned a syntactic tense based on its initial phoneme.
 - And each syntactic tense is assigned a value $v in {1, 2, 3, 4, 5}$:
   #rowtable(
-    align: (right, center, left),
+    align: (left, center, left),
     hlineat(1),
     ..vlinesat(1, 2),
     [Tense     & $v$ & Phonemes],
@@ -532,7 +548,7 @@ The second case applies, yielding $
     v = -"sgn"(3) dot (5 - |3|) = -1 dot 2 = -2
 $
 
-and thus, the appropriate SAP is #i[cų́r txų́dí]
+and thus, the appropriate SAP is #i[cų́r txų́dí].
 ]
 
 #slide[
@@ -586,10 +602,10 @@ and thus, the appropriate SAP is #i[cų́r txų́dí]
 == Demonstrative Pronouns
 #item-by-item[
 - Deixis is relative.
-- One demonstrative pronouns for each _syntactic_ tense.
-- Proximal = syntactic Present Tense
-- Medial = syntactic Future Tense
-- Distal = syntactic Future-in-the-Future Tense
+- One demonstrative pronoun for each _syntactic_ tense.
+- Proximal = syntactic Present Tense.
+- Medial = syntactic Future Tense.
+- Distal = syntactic Future-in-the-Future Tense.
 ]
 ]
 
@@ -645,20 +661,22 @@ and thus, the appropriate SAP is #i[cų́r txų́dí]
 #slide[
 == Personal Pronouns: Rules
 #item-by-item[
-- Full pronouns for speaking to a higher-class Elf.
-- Abridged pronouns for speaking to an Elf of equal or lower status.
-- Not used for The Chimney Man or The Grand Carbonator.
+- Full pronouns when speaking (or in reference) to a higher-class Elf.
+- Abridged pronouns when speaking (or in reference) to an equal/lower-status Elf.
+- Not used in reference to The Chimney Man or The Grand Carbonator.
 - Pronouns only refer to Elves; SAPs are used with other referents.
 ]
 ]
 
 #slide[
 == Evidentiality
-- #i[sán] (#s[ver] ‘veridical’): (as though) decreed by The Chimney Man (truth)
-- #i[gan] (#s[obs] ‘observable’): directly observable or deduced via reasoning
-- #i[xįn] (#s[com] ‘communicated’): communicated by someone (hearsay)
-- #i[txą́] (#s[nor] ‘North Pole’): purported to exist (in the North Pole)
-- #i[tsų́n] (#s[dub] ‘dubious’): purported to exist elsewhere
+#item-by-item[
+- #i[sán] (#s[ver] ‘veridical’): (as though) decreed by The Chimney Man (truth).
+- #i[gan] (#s[obs] ‘observable’): directly observable or deduced via reasoning.
+- #i[xįn] (#s[com] ‘communicated’): communicated by someone (hearsay).
+- #i[txą́] (#s[nor] ‘North Pole’): purported to exist (in the North Pole).
+- #i[tsų́n] (#s[dub] ‘dubious’): purported to exist elsewhere.
+]
 ]
 
 #slide[
@@ -877,7 +895,7 @@ Nine for Mortal Men doomed to retire,
 == Sentence Analysis
 #gloss(`
 Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
-ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą §ų́xį́ §shąnų́ §dun §tų́r §§shardo núgį́
+ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą §ų́xį́ §shąnų́ §dun §tų́r §shardo núgį́
 {wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
 Nine for Mortal Men doomed to retire,
 `)
@@ -897,7 +915,9 @@ Nine for Mortal Men doomed to retire,
 
 #slide[
 == SAP Contraction
+#item-by-item[
 - Occurs when a SAP is immediately followed by its referent.
-- E.g. #i[tų́r shardo shardo núgį́] $->$ #i[tų́r shardo núgį́].
+- E.g. #i[tų́r #h1[shardo shardo] núgį́] $->$ #i[tų́r #h1[shardo] núgį́].
 - Sequence ‘invoice marker + adjective + noun’ is indicative of contraction.
+]
 ]
