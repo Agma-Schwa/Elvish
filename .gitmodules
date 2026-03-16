@@ -1,3 +1,6 @@
 [submodule "base"]
 	path = base
 	url = git@github.com:Agma-Schwa/typst-base
+[submodule "polylux"]
+	path = polylux
+	url = https://github.com/polylux-typ/polylux

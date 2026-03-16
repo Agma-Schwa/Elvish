@@ -166,13 +166,13 @@ Instead, the proper solution is to replace the problematic noun in the PP with a
 == Demonstrative Pronouns
 As many other things, deixis in Elvish is relative: unlike other languages which employ spatial metaphors to express time, Elvish employs temporal expressions to express relations in space. That is, there are 5 demonstrative pronouns, each corresponding to a syntacitc tense.
 
-These pronouns are formed by combining the preposition #w[chír] ‘at, in, on’ with one of the tense morphemes, as seen here #sd[slide].
+The proximal demonstrative pronoun matches the syntactic tense of the clause, the medial demonstrative pronoun is expressed by the tense following the proximal one, and the distal demonstrative pronoun by the tense following the medial one.
 
-The proximal demonstrative pronoun matches the syntactic tense of the clause, the medial demonstrative pronoun is expressed by the tense following the proximal one, and the distal demonstrative pronoun by the tense following the medial one. For example, if a clause is in the REM Sleep Tense, the demonstrative pronouns are these #sd[slide]. By contrast, if a clause is in the Non-REM Phase 2 Tense, we instead have these #sd[slide].
+The pronouns are formed by combining the preposition #w[chír] ‘at, in, on’ with one of the tense markers, as seen here #sd[slide]. For example, if a clause is in the REM Sleep Tense, the demonstrative pronouns are these. By contrast, if a clause is in the Non-REM Phase 2 Tense, we instead have these. As you can see, they wrap around once we get to the Non-REM Phase 3 Tense.
 
 What this means is that what to inexperienced speakers of Elvish might look like the same pronoun might have a completely different meaning, or even be outright ungrammatical, depending on the tense of the enclosing sentence.
 
-To make matters worse, in reported speech, the direction is reversed, i.e. instead of medial being the tense after proximal and distal being the tense after medial, instead medial is the syntactic tense _preceding_ proximal, and distal is the tense preceding medial.
+In reported speech, the direction is reversed, i.e. instead of medial being the tense after proximal and distal being the tense after medial, instead medial is the syntactic tense _preceding_ proximal, and distal is the tense preceding medial.
 
 For example, consider a sentence uttered during the REM Sleep Phase, in which the Non-REM Phase 1 Tense is the syntactic Future Tense. In such a sentence, the medial demonstrative pronoun would be #w[chíro], i.e. the Non-REM Phase 2 form; if this sentence is then paraphrased during the Non-REM Phase 3, the syntactic Future Tense would naturally be the Awake Tense, and the medial pronoun would be the tense _before_ that (recall that the direction is reversed in reported speech); thus, the correct form would be #w[chírnų], i.e. the Non-REM Phase 3 form.
 
@@ -185,7 +185,7 @@ For example, in a sentence in Non-REM Phase 2 tense spoken by a Master Carbonato
 
 In addition to the full pronouns, there are two forms of ‘abridged’ pronouns: The _high-class_ abriged pronouns are formed by combining the demonstratives with the noun #w[rǫngi] ‘cloak’. The _low-class_ abridged pronouns are identical to the bare demonstratives.
 
-There are a few rules that constrain the use of personal pronouns in Elvish: The full pronouns are used when speaking to someone of higher status, the abridged pronouns when speaking to someone of lower status. The high-class pronouns are used only by and in reference to Elves at the rank of Collier or Master Carbonator. The Chimney Man and The Grand Carbonator are never referred to with pronouns. Finally, pronouns are only used to refer to Elves; SAPs are used for other beings, objects, concepts, and so on. SAPs may also be used whenever an abridged pronoun would be appropriate.
+There are a few rules that constrain the use of personal pronouns in Elvish: The full pronouns are used when speaking to someone of higher status, the abridged pronouns when speaking to someone of equal or lower status. The high-class pronouns are used only by and in reference to Elves at the rank of Collier or Master Carbonator. The Chimney Man and The Grand Carbonator are never referred to with pronouns. Finally, pronouns are only used to refer to Elves; SAPs are used for other beings, objects, concepts, and so on. SAPs may also be used whenever an abridged pronoun would be appropriate.
 
 == Minor Grammar Notes
 === Evidentiality

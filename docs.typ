@@ -320,7 +320,7 @@ There are three sets of constructions in Elvish that are jointly referred to as 
 ==== Full Personal Pronouns
 The so-called _full personal pronouns_ of Elvish are formed by combining the demonstrative pronouns with the status-appropriate word for ‘Elf’: The proximal demonstrative is used to express the 1st person, the medial to express the 2nd person, and the distal to express the 3rd person. Naturally, this also means that the exact forms of the personal pronouns depend on the syntactic tense of the containing clause (as well as whether direct or reported speech is used).
 
-For example, in a sentence in Non-REM Phase 2 Tense spoken by a Master Carbonator, the closest Elvish equivalent to a word for ‘I’ would be #w[chíro xúsųrǫngi], lit. ‘this Master Carbonator’. Similarly, in a sentence paraphrased in Non-REM Phase 3 Tense, the word ‘it’ in reference to a Collier would be #w[chírtxí isirǫngi], lit. ‘that (distal) Collier’.
+For example, in a sentence in Non-REM Phase 2 Tense spoken by a Master Carbonator, the closest Elvish equivalent to a word for ‘I’ would be #w[chíro xúsųrǫngi], lit. ‘this Master Carbonator’. Similarly, in a sentence paraphrased in Non-REM Phase 3 Tense, the word ‘it’ in reference to a Collier would be #w[chírtxí isirǫngi], lit. ‘that Collier’.
 
 ==== Abridged Personal Pronouns
 There are two forms of ‘abridged’ pronouns: The _high-class_ abriged pronouns are formed by combining the demonstratives with the noun #w[rǫngi] ‘cloak’. The _low-class_ abridged pronouns are identical to the bare demonstratives. Abriged personal pronouns are only used to refer to an Elf at or below one’s own social status.

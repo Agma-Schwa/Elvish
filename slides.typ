@@ -1,5 +1,5 @@
 #import "preamble.typ" : *
-#import "@preview/polylux:0.4.0": *
+#import "polylux/src/polylux.typ" : * // Latest release doesn't have in-subslide() yet...
 #import "@preview/cetz:0.4.2"
 #show : slides
 #show : preamble
@@ -28,6 +28,12 @@
     #set text(size: 50pt)
     #x
 ]
+
+// hNon(slide, x): apply hN() to 'x' only on slide 'slide'.
+#let h1on(slide, x) = context if (in-subslide(slide)) { h1(x) } else { x }
+#let h2on(slide, x) = context if (in-subslide(slide)) { h2(x) } else { x }
+#let h3on(slide, x) = context if (in-subslide(slide)) { h3(x) } else { x }
+#let h4on(slide, x) = context if (in-subslide(slide)) { h4(x) } else { x }
 
 #section[Elvish]
 #slide[
@@ -578,8 +584,75 @@ and thus, the appropriate SAP is #i[cų́r txų́dí]
 
 #section[Pronouns]
 #slide[
-= Demonstrative Pronouns
+== Demonstrative Pronouns
+#item-by-item[
+- Deixis is relative.
+- One demonstrative pronouns for each _syntactic_ tense.
+- Proximal = syntactic Present Tense
+- Medial = syntactic Future Tense
+- Distal = syntactic Future-in-the-Future Tense
 ]
+]
+
+#slide[
+== Demonstrative Pronouns
+#item-by-item[
+- #i[chír] + Tense Marker:
+  #rowtable(
+    hlineat(1),
+    vlineat(1),
+    [Tense & Demonstrative],
+    [ #s[awk] & #h3on(3, i[chírsąn]) ],
+    [ #s[rem] & #h1on(2, i[chírnu])  ],
+    [ #s[nr1] & #h2on(2, i[chírtxí]) ],
+    [ #s[nr2] & #h1on(3, h3on(2, i[chíro]))   ],
+    [ #s[nr3] & #h2on(3, i[chírnų])  ],
+  )
+- In a #s[rem] clause:
+    proximal = #h1on(2, i[chírnu]),
+    medial = #h2on(2, i[chírtxí]),
+    distal = #h3on(2, i[chíro]).
+- In a #s[nr2] clause:
+    proximal = #h1on(3, i[chíro]),
+    medial = #h2on(3, i[chírnų]),
+    distal = #h3on(3, i[chírsąn]).
+- In reported speech, the direction is reversed.
+]
+]
+
+#slide[
+== Demonstrative Pronouns: Example
+#item-by-item[
+- Consider a sentence with #s[nr1] as the syntactic tense.
+- The medial demonstrative would be #i[chíro] (i.e. the #s[nr2] form).
+- Assume the sentence is paraphrased using the #s[awk] tense.
+- The medial pronoun would then be #i[chírnų] (i.e. the #s[nr3] form).
+]
+]
+
+#slide[
+== Personal Pronouns
+#item-by-item[
+- Three kinds of personal pronouns.
+- _full personal pronouns_ = demonstrative + ‘Elf’.
+- proximal = 1st person, medial = 2nd person, distal = 3rd person.
+- E.g. #i[chíro xúsųrǫngi] ‘I’ (in a #s[nr2] sentence spoken by a Master Carbonator).
+- E.g. #i[chírtxí isirǫngi] ‘it’ (in a #s[nr3] sentence in reference to Collier).
+- _high-class pronouns_ = demonstrative + #i[rǫngi] ‘cloak’.
+- _low-class pronouns_ are identical to the demonstratives.
+]
+]
+
+#slide[
+== Personal Pronouns: Rules
+#item-by-item[
+- Full pronouns for speaking to a higher-class Elf.
+- Abridged pronouns for speaking to an Elf of equal or lower status.
+- Not used for The Chimney Man or The Grand Carbonator.
+- Pronouns only refer to Elves; SAPs are used with other referents.
+]
+]
+
 
 //
 #pagebreak()
