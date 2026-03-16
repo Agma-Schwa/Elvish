@@ -663,7 +663,7 @@ Upon becoming a Collier or Master Carbonator, an Elf is rewarded with a #w[rǫn
 
 Below the class of Collier, candidates for refurbishment are selected by Colliers. Candidates for the class of Collier are selected by the Master Carbonators, and candidates for the latter class directly by The Grand Carbonator. An Elf cannot become The Grand Carbonator. If The Grand Carbonator retires, a new one is constructed by The Chimney Man.
 
-Refurbishment has no corresponding opposite process; if an Elf does something that causes it to fall below its social class, only decomissioning awaits it.
+Refurbishment has no corresponding opposite process: if an Elf does something that causes it to fall below its social class, only decomissioning awaits it.
 
 == Sleep
 Elves never sleep prior to their retirement. In Elvish, there are indeed two different words for ‘sleeping’; one that refers to the most sacred and noble hibernation of The Chimney Man, and which therefore naturally assigned a work order of 1 and which can indeed refer only to the sleep of The Chimney Man.

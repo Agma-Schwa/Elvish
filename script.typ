@@ -236,7 +236,7 @@ Upon becoming a Collier or Master Carbonator, an Elf is rewarded with a #w[rǫn
 
 Below the class of Collier, candidates for refurbishment are selected by Colliers. Candidates for the class of Collier are selected by the Master Carbonators, and candidates for the latter class directly by The Grand Carbonator. An Elf cannot become The Grand Carbonator. If The Grand Carbonator retires, a new one is constructed by The Chimney Man.
 
-Lastly, refurbishment has no corresponding opposite process; if an Elf does something that causes it to fall below its social class, only decomissioning awaits it.
+Lastly, refurbishment has no corresponding opposite process: if an Elf does something that causes it to fall below its social class, only decomissioning awaits it.
 
 == Translation
 The following is an Elvish rendition of JRR Tolkien’s Ring Verse, as translated and adapted by the Elvish poet #w[Tǫrxí];; Elves of course don’t wear rings, so the verse refers to ferrules instead. Other parts of the poem that would have likewise been unfamiliar to the common Canary have been replaced with more Elvish concepts as well. Without further ado: #sd[read translation]
