@@ -60,7 +60,7 @@ Q = ̨
 
 = Grammar
 == Work Order
-Animacy is vital to determining word order in Elvish. The highest animacy, and thus primacy in a clause, goes to that which is working the hardest. This is 'Work Order.' From highest work order to lowest, the ranks go as follows:
+Animacy is vital to determining word order in Elvish. The highest animacy, and thus primacy in a clause, goes to that which is working the hardest. This is 'Work Order.' From highest work order to lowest, the classes are as follows:
 
 + The Chimney Man (#s[w1]) \
   In any circumstance in which The Chimney Man is referenced, He will always have the highest Work Order, for He is always working the Hardest. Except for the day after Christmas.
@@ -75,7 +75,7 @@ Animacy is vital to determining word order in Elvish. The highest animacy, and t
   The highest social status that a normal Elf can obtain; the council of Master Carbonators rules over Elvish society and reports directly to the Grand Carbonator (see @carbonators).
 
 + Collier (#s[w4]) \
-  Highly experienced Elves that have been working in the Coal industry for at least 100 years; these are typically regional overseers. Only Elves at the rank of Collier or above enjoy the privilege of having their names capitalised in writing, and
+  Highly experienced Elves that have been working in the Coal industry for at least 100 years; these are typically regional overseers. Only Elves at the class of Collier or above enjoy the privilege of having their names capitalised in writing, and
   only they are entitled to wear cloaks (see @cloaks).
 
 + Head Miner (#s[w5]) \
@@ -331,13 +331,13 @@ Which set of personal pronouns is appropriate in what context is dependent on th
 
 - The full pronouns are used to refer to an Elf of higher social class than one’s own.
 
-- The abridged pronouns are used to refer to an Elf at or below one’s own social class. The high-class pronouns are used when the referent is at the rank of Collier or above, and the low-class pronouns otherwise.
+- The abridged pronouns are used to refer to an Elf at or below one’s own social class. The high-class pronouns are used when the referent is at the class of Collier or above, and the low-class pronouns otherwise.
 
 - Personal pronouns are only used to refer to Elves. For any other beings, objects, concepts, etc., SAPs (see @standalone-adjective-phrases) are used instead.
 
 - Additionally, SAPs may be used whenever an abridged pronoun would be appropriate.
 
-The rules for the 1st person pronoun are simpler: In reference to oneself, the full pronouns are used when speaking to someone of higher social status, and the abridged pronouns otherwise. Naturally, Elves at or above the rank of Collier use the high-class pronouns and other Elves the low-class pronouns.
+The rules for the 1st person pronoun are simpler: In reference to oneself, the full pronouns are used when speaking to someone of higher social status, and the abridged pronouns otherwise. Naturally, Elves at or above the class of Collier use the high-class pronouns and other Elves the low-class pronouns.
 
 ==== Disinguishing Personal and Demonstrative Pronouns
 Since personal and demonstrative pronouns can be very similar, as the former simply use the latter, there are rules that can be used to distinguish the two; the most important one of these is that a demonstrative that qualifies the noun always follows the noun. For example, assuming we’re in the REM phase, we have #w[chírnu rǫngi] ‘I’ (high-class pronoun) vs #w[rǫngi chírnu] ‘this cloak’ (literally).
@@ -644,7 +644,7 @@ The social classes of Collier and Master Carbonator comprise the upper classes o
 - Master Carbonators wear crimson cloaks embroidered with black patterns of Coal and are thus commonly referred to as #w[xúsųrǫngi] ‘blackcloaks’.
 - Finally, the Grand Carbonator’s cloak is entirely black and coated with Coal; for this reason, the Grand Carbonator is commonly referred to as #w[Shǫnxąrǫngi] ‘Coal cloak’.
 
-Low-ranking Elves who pretend to have a higher social rank than they actually do are referred to as #w[ishúrǫngi] ‘fake cloaks’; wearing a cloak that corresponds to a higher class than one’s own is generally punished by decommissioning (see @retirement).
+Lower-class Elves who pretend to have a higher social class than they actually do are referred to as #w[ishúrǫngi] ‘fake cloaks’; wearing a cloak that corresponds to a higher class than one’s own is generally punished by decommissioning (see @retirement).
 
 Other Elves do not wear any clothes at all. The common Elf instead keeps itself warm in the freezing temperatures of the Arctic by burning the Coal it consumes inside its ventral furnace.
 
@@ -653,6 +653,17 @@ A central concept in Elvish society is #w[shų́ną] ‘retirement’.
 Elves never stop working; that is, an Elf only ‘retires’ at the moment of its death. In some cases, Elves who have acted out of line or otherwise disrupted the Coal mining process—or worse, slighted The Chimney Man—can be ‘decommissioned’, which entails _actively_ ‘retiring’ an Elf. This is also known as ‘dishonourable retirement’.
 
 Elves that retire honourably are given a #w[Shǫnxąshų́ną] ‘Coal burial’, i.e. they are cremated in such a way as to turn them into Coal, thus contributing to Elvish society even after their demise.
+
+== Refurbishment
+Refurbishment is the act of promoting an Elf from a lower social class into a higher social class; this is a rare occurrance and only awarded to Elves for distinguished acts of service in the mines. For instance, a canary that consistently delivers twice the amount of Coal compared to its co-workers may be promoted to head miner after some time once new tunnels are constructed.
+
+Similarly, a Head Miner that oversees a particularly large Coal mine or even several coal mines may eventually be promoted to a Collier if their area of management grows too large for an Elf of its status.
+
+Upon becoming a Collier or Master Carbonator, an Elf is rewarded with a #w[rǫngi] ‘cloak’, which is subsequently sewn onto it, thus completing the refurbishment process and clearly demarcating them as now part of a higher social class than its former peers.
+
+Below the class of Collier, candidates for refurbishment are selected by Colliers. Candidates for the class of Collier are selected by the Master Carbonators, and candidates for the latter class directly by The Grand Carbonator. An Elf cannot become The Grand Carbonator. If The Grand Carbonator retires, a new one is constructed by The Chimney Man.
+
+Refurbishment has no corresponding opposite process; if an Elf does something that causes it to fall below its social class, only decomissioning awaits it.
 
 == Sleep
 Elves never sleep prior to their retirement. In Elvish, there are indeed two different words for ‘sleeping’; one that refers to the most sacred and noble hibernation of The Chimney Man, and which therefore naturally assigned a work order of 1 and which can indeed refer only to the sleep of The Chimney Man.
@@ -666,7 +677,7 @@ Thus, it should also come as no surprise that The Chimney Man’s hibernating is
 - Elvish tongues are extremely stiff and don’t bend.
 - Elvish eyes are covered in multiple levels of eye lashes to keep the Coal out of their vision. Since the Elvish eye has evolved to thrive in an exceedingly dry and dusty environment, Elves naturally never need to close their eyes and thus lack eyelids.
 - Elves have pointy ears, but they point downwards, so as to not collide with the low ceiling of their mines.
-- Low-ranking Elves (below the rank of Collier) are typically always hunched down so as to fit in lower tunnels.
+- Lower-class Elves (below the class of Collier) are typically always hunched down so as to fit in lower tunnels.
 - Elves have inverted knees, so as to improve crawling in tunnel conditions.
 - Elves are closer to Coal golems than biological creatures.
 - The throat and mouth of an Elf is constantly extremely dry due to being coated in Coal dust, which renders their articulation extremely hoarse, strained, and outright grating.

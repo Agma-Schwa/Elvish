@@ -732,6 +732,20 @@ and thus, the appropriate SAP is #i[cų́r txų́dí].
 ]
 ]
 
+
+#slide[
+== Refurbishment
+#item-by-item[
+- The act of promoting an Elf to a higher social class.
+- E.g. a canary may be refurbished into a head miner.
+- Cloaked classes receive a cloak that is sewn onto the Elf.
+- Candidates are selected by Colliers or the next higher class.
+- The Grand Carbonator is always a new Elf constructed by The Chimney Man.
+- Elves that fall below their social class are immediately decomissioned.
+]
+]
+
+
 #section[Translation]
 #centerslide[#ex(w[Tǫrxí])]
 

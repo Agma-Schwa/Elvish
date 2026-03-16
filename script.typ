@@ -62,7 +62,7 @@ Number 2: Coal. Elves mine Coal, eat Coal, and breathe air laden with Coal dust.
 #sd[TODO: Move some of the more detail descriptions here elsewhere]
 Number 3: Master Carbonator. At the very top of Elvish society stands the council of Master Carbonators. This council consists of a dozen or so Elves who are assigned a work order of 3. The council is ruled over by the Grand Carbonator. It is the sole Elf that is assigned a work order of 2, and who is thus considered equally important to the Elves as Coal itself. The Grand Carbonator is effectively the right-hand Elf of The Chimney Man and reports to Him in person every Christmas Eve.
 
-Number 4: Collier. These are highly experienced Elves that have been working in the Coal industry for at least 100 years and are typically regional overseers. Only Elves at the rank of Collier or above enjoy the privilege of having their names capitalised in writing, and only they are entitled to wear #w[rǫngi] ‘cloaks’ #sd[there is a slide for #i[rǫngi];; it’s after all the work order slides].
+Number 4: Collier. These are highly experienced Elves that have been working in the Coal industry for at least 100 years and are typically regional overseers. Only Elves at the class of Collier or above enjoy the privilege of having their names capitalised in writing, and only they are entitled to wear #w[rǫngi] ‘cloaks’ #sd[there is a slide for #i[rǫngi];; it’s after all the work order slides].
 
 Number 5: Head Miner. These are Elves in charge of a tunnel or Coal mine.
 
@@ -184,7 +184,7 @@ For example, in a sentence in Non-REM Phase 2 tense spoken by a Master Carbonato
 
 In addition to the full pronouns, there are two forms of ‘abridged’ pronouns: The _high-class_ abriged pronouns are formed by combining the demonstratives with the noun #w[rǫngi] ‘cloak’. The _low-class_ abridged pronouns are identical to the bare demonstratives.
 
-There are a few rules that constrain the use of personal pronouns in Elvish: The full pronouns are used when speaking to someone of higher status, the abridged pronouns when speaking to someone of equal or lower status. The high-class pronouns are used only by and in reference to Elves at the rank of Collier or Master Carbonator. The Chimney Man and The Grand Carbonator are never referred to with pronouns. Finally, pronouns are only used to refer to Elves; SAPs are used for other beings, objects, concepts, and so on. SAPs may also be used whenever an abridged pronoun would be appropriate.
+There are a few rules that constrain the use of personal pronouns in Elvish: The full pronouns are used when speaking to someone of higher status, the abridged pronouns when speaking to someone of equal or lower status. The high-class pronouns are used only by and in reference to Elves at the class of Collier or Master Carbonator. The Chimney Man and The Grand Carbonator are never referred to with pronouns. Finally, pronouns are only used to refer to Elves; SAPs are used for other beings, objects, concepts, and so on. SAPs may also be used whenever an abridged pronoun would be appropriate.
 
 == Minor Grammar Notes
 === Evidentiality
@@ -210,7 +210,7 @@ Now that we’ve discussed Elvish grammar at length, let’s talk a bit more abo
 
 The throats and mouths of Elves are likewise covered in dust, making Elvish articulation extremely hoarse and grating. Their tongues are stiff and don’t bend. Elves also have no lips, making their sharp and pointy teeth, which are perpetually stained black by the consumption of Coal, clearly visible; it is for this reason that Elvish lacks labial sounds and rounded vowels.
 
-Elves have inverted knees, which improves crawling in tunnel conditions. Their ears are pointy, but they point downwards to avoid colliding with the low ceiling of their mines; to that end, low-ranking Elves are also almost always hunched down so as to fit in even lower tunnels. Elves are mostly bald, the most hair they have on their bodies is their eye lashes.
+Elves have inverted knees, which improves crawling in tunnel conditions. Their ears are pointy, but they point downwards to avoid colliding with the low ceiling of their mines; to that end, lower-class Elves are also almost always hunched down so as to fit in even lower tunnels. Elves are mostly bald, the most hair they have on their bodies is their eye lashes.
 
 Lastly, Elves have no gender and are all referred to as ‘it’. They do not, and for that matter, cannot, reproduce and are instead all created by The Chimney Man.
 
@@ -221,13 +221,22 @@ The social classes of Collier and Master Carbonator comprise the upper classes o
 - Master Carbonators wear crimson cloaks embroidered with black patterns of Coal and are thus commonly referred to as #w[xúsųrǫngi] ‘blackcloaks’.
 - Finally, the Grand Carbonator’s cloak is entirely black and coated with Coal; for this reason, the Grand Carbonator is commonly referred to as #w[Shǫnxąrǫngi] ‘Coal cloak’.
 
-Other Elves do not wear any clothes at all. The common Elf instead keeps itself warm in the freezing temperatures of the Arctic by burning the Coal it consumes inside its ventral furnace. Some low-ranking Elves may attempt to pretend to have a higher social rank than they actually do; such Elves are referred to as #w[ishúrǫngi] ‘fake cloaks’. Wearing a cloak that corresponds to a higher class than one’s own is generally punished by decommissioning.
+Other Elves do not wear any clothes at all. The common Elf instead keeps itself warm in the freezing temperatures of the Arctic by burning the Coal it consumes inside its ventral furnace. Some lower-class Elves may attempt to pretend to have a higher social class than they actually do; such Elves are referred to as #w[ishúrǫngi] ‘fake cloaks’. Wearing a cloak that corresponds to a higher class than one’s own is generally punished by decommissioning.
 
 == ‘Retirement’
 A central concept in Elvish society is #w[shų́ną] ‘retirement’.
 Elves never stop working; that is, an Elf only ‘retires’ at the moment of its death. In some cases, Elves who have acted out of line or otherwise disrupted the Coal mining process—or worse, slighted The Chimney Man—can be ‘decommissioned’, which entails _actively_ ‘retiring’ an Elf. This is also known as ‘dishonourable retirement’.
 
 Elves that retire honourably are given a #w[Shǫnxąshų́ną] ‘Coal burial’, i.e. they are cremated in such a way as to turn them into Coal, thus contributing to Elvish society even after their demise.
+
+== Refurbishment
+Refurbishment is the act of promoting an Elf from a lower social class into a higher social class; this is a rare occurrance and only awarded to Elves for distinguished acts of service in the mines. For instance, a canary that consistently delivers twice the amount of Coal compared to its co-workers may be promoted to head miner after some time once new tunnels are constructed.
+
+Upon becoming a Collier or Master Carbonator, an Elf is rewarded with a #w[rǫngi] ‘cloak’, which is subsequently sewn onto it, thus completing the refurbishment process and clearly demarcating them as now part of a higher social class than its former peers.
+
+Below the class of Collier, candidates for refurbishment are selected by Colliers. Candidates for the class of Collier are selected by the Master Carbonators, and candidates for the latter class directly by The Grand Carbonator. An Elf cannot become The Grand Carbonator. If The Grand Carbonator retires, a new one is constructed by The Chimney Man.
+
+Lastly, refurbishment has no corresponding opposite process; if an Elf does something that causes it to fall below its social class, only decomissioning awaits it.
 
 == Translation
 The following is an Elvish rendition of JRR Tolkien’s Ring Verse, as translated and adapted by the Elvish poet #w[Tǫrxí];; Elves of course don’t wear rings, so the verse refers to ferrules instead. Other parts of the poem that would have likewise been unfamiliar to the common Canary have been replaced with more Elvish concepts as well. Without further ado: #sd[read translation]
