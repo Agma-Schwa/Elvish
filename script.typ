@@ -189,13 +189,13 @@ There are a few rules that constrain the use of personal pronouns in Elvish: The
 
 == Minor Grammar Notes
 === Evidentiality
-Now that we’ve discussed everything that depends on tense, we can talk about the rest of the grammar; most of these will be fairly short sections, starting with evidentiality. Evidentiality in Elvish is split into four categories: #w[sán], glossed #s[ver] for ‘veridical’, with the meaning (as though) decreed by The Chimney Man (truth); #w[gan], glossed #s[obs] for ‘observable’, with the meaning either directly observable or deduced via reasoning; #w[xįn], glossed #s[com] for ‘communicated’, with the meaning communicated by someone (hearsay); #w[txą́], glossed #s[nor] for ‘North Pole’, with the meaning purported to exist (in the North Pole); and finally #w[tsų́n], glossed #s[dub] for ‘dubious’, with the meaning purported to exist elsewhere.
+Now that we’ve discussed everything that depends on tense, we can talk about the rest of the grammar; most of these will be fairly short sections, starting with evidentiality. Evidentiality in Elvish is split into five categories: #w[sán], glossed #s[ver] for ‘veridical’, with the meaning (as though) decreed by The Chimney Man (truth); #w[gan], glossed #s[obs] for ‘observable’, with the meaning either directly observable or deduced via reasoning; #w[xįn], glossed #s[com] for ‘communicated’, with the meaning communicated by someone (hearsay); #w[txą́], glossed #s[nor] for ‘North Pole’, with the meaning purported to exist (in the North Pole); and finally #w[tsų́n], glossed #s[dub] for ‘dubious’, with the meaning purported to exist elsewhere.
 
 The ‘default’ evidentiality marker is generally #w[gan];; it is commonly used for statements which the speaker considers to be true but which are not self-evident or proven facts. Statements of fact instead use the Chimney Man evidentiality—for example, $2+2=4$—and so do statements that an Elf is absolutely sure about. The meaning of this evidentiality is closer to ‘as true as though The Chimney Man Himself had decreed it’, and a suitable translation may be ‘most surely’. At the same time, it is of course also used to refer to literal statements made by The Chimney Man.
 
 === Aspect
 Aspect marking differs between working verbs and lazy verbs. Working verbs are marked for telicity, i.e. whether the work
-is done, glossed #s[tel] for ‘telic’, or not, glossed #s[atel] for ‘atelic’. Lazy verbs are marked for whether the laziness is continued, glossed #s[cont] for ‘continuous’, or returning, glossed #s[hab] for ‘habitual’. For working verbs, telic is the default, for lazy verbs, continuous is the default.
+is done or not. Lazy verbs are marked for whether the laziness is continued or returning. For working verbs, telic is the default, for lazy verbs, continuous is the default. Aspect markers, if present, directly precede the verb.
 
 === Elision
 When multiple verbs in a row have verb markers in common, those markers are often dropped for any verb after the first. In particular, this often applies to evidentiality markers: if the evidentiality marker of several clauses is the same, all but the first are generally dropped.
@@ -204,7 +204,7 @@ When multiple verbs in a row have verb markers in common, those markers are ofte
 The Elvish copula is the empty root; that is, to express the copula, all verb markers (tense, evidentiality, etc.) are used as they normally would be, except that the verb itself is ‘missing’. If elision is applied, this can lead to a zero copula.
 
 === Numbers
-Elvish numbers are direct calques of Santaa’s numbers. E.g. the word for 7 in Elvish is #w[irtǫtǫtǫn], derived from #w[irgų] ‘to build’ and #w[tǫn] ‘more’. It literally translates to ‘build more more more’, which is a calque of Santaa #santaa[ħȍ̀̽ ħħó̽̏ ħħó̽̏ ħħó̽̏].
+Elvish numbers are direct calques of Santaa’s numbers. If you want to know more about this, go watch the Santaa video, but for example, the word for 7 in Elvish is #w[irtǫtǫtǫn], derived from #w[irgų] ‘to build’ and #w[tǫn] ‘more’. It literally translates to ‘build more more more’, which is a calque of Santaa #santaa[ħȍ̀̽ ħħó̽̏ ħħó̽̏ ħħó̽̏].
 
 == Appearance and Culture
 Now that we’ve discussed Elvish grammar at length, let’s talk a bit more about the Elves themselves. Let me paint you a picture: #sd[_Literally_ show a timelapse of you drawing an Elf while you’re explaining what Elves look like] The body and mental state of an Elf are optimised for the mining of Coal, with all unnecessary aspects of life removed. The complexion of an Elf is a dark grey, because they are always covered in layers of Coal dust. As the Elvish eye is designed to thrive in dry and dusty environments, Elves never need to close their eyes and thus lack eyelids. The only protection around their eyes is formed by multiple layers of eye lashes, which keep the Coal dust out of their vision.
@@ -222,7 +222,7 @@ The social classes of Collier and Master Carbonator comprise the upper classes o
 - Master Carbonators wear crimson cloaks embroidered with black patterns of Coal and are thus commonly referred to as #w[xúsųrǫngi] ‘blackcloaks’.
 - Finally, the Grand Carbonator’s cloak is entirely black and coated with Coal; for this reason, the Grand Carbonator is commonly referred to as #w[Shǫnxąrǫngi] ‘Coal cloak’.
 
-Low-ranking Elves who pretend to have a higher social rank than they actually do are referred to as #w[ishúrǫngi] ‘fake cloaks’; wearing a cloak that corresponds to a higher class than one’s own is generally punished by decommissioning. Other Elves do not wear any clothes at all. The common Elf instead keeps itself warm in the freezing temperatures of the Arctic by burning the Coal it consumes inside its ventral furnace.
+Other Elves do not wear any clothes at all. The common Elf instead keeps itself warm in the freezing temperatures of the Arctic by burning the Coal it consumes inside its ventral furnace. Some low-ranking Elves may attempt to pretend to have a higher social rank than they actually do; such Elves are referred to as #w[ishúrǫngi] ‘fake cloaks’. Wearing a cloak that corresponds to a higher class than one’s own is generally punished by decommissioning.
 
 == ‘Retirement’
 A central concept in Elvish society is #w[shų́ną] ‘retirement’.
@@ -244,7 +244,7 @@ The evidentiality marker #w[gan] qualifies the copula, which has no root. It is 
 
 The complement of the PP headed by #w[ún] ‘for’ is the rest of the clause.
 
-The relative clause #i[dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo] ‘which are destined to retire‘ is fairly complicated on its own. Relative clauses in Elvish _precede_ the noun they modify, which in this case is #w[shardo núgį́] ‘mortal humans’.Notably, the relative pronoun #w[cą] is not the first word in the clause. Rather, because it is the subject of a clause with a lazy verb, it is preceded by the lazy agent marker #w[dun].
+The relative clause #i[dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo] ‘which are destined to retire‘ is fairly complicated on its own. Relative clauses in Elvish _precede_ the noun they modify, which in this case is #w[shardo núgį́] ‘mortal humans’. Notably, the relative pronoun #w[cą] is not the first word in the clause. Rather, because it is the subject of a clause with a lazy verb, it is preceded by the lazy agent marker #w[dun].
 
 The complement of #w[túsą] ‘to be destined’ is yet another clause, viz. #i[shąnų́ dun tų́r shardo] ‘the mortal ones retire’.
 This inner clause is preceded by the lazy theme marker #w[ų́xį́], which marks that the clause is the theme of #w[túsą].

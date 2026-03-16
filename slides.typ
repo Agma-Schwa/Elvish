@@ -29,6 +29,11 @@
     #x
 ]
 
+#let gloss-slide(x, spacing: none) = slide[
+  #set align(horizon)
+  #gloss(x, spacing-override: spacing)
+]
+
 // hNon(slide, x): apply hN() to 'x' only on slide 'slide'.
 #let h1on(slide, x) = context if (in-subslide(slide)) { h1(x) } else { x }
 #let h2on(slide, x) = context if (in-subslide(slide)) { h2(x) } else { x }
@@ -127,32 +132,26 @@
 
 #slide(ex[#w[rǫngi] ‘cloaks’])
 
-#centerslide[
-#gloss(`
+#gloss-slide(`
 Gan nun’a gųshą dun ną́nrų́ chír dą́chą.
 gan nun’a gųshą dun ną́nrų́ chír dą́chą
 {obs} {rem} crouch {nwk} Elf on table
 The Elf crouches on the table.
 `)
-]
 
-#centerslide[
-#gloss(`
+#gloss-slide(`
 Gan nun’a gųshą dun ną́nrų́ chír dą́chą.
 gan nun’a gųshą dun §ną́nrų́ chír dą́chą
 {obs} {rem} crouch {nwk} Elf on table
 The Elf crouches on the table.
 `)
-]
 
-#centerslide[
-#gloss(`
+#gloss-slide(`
 Gan nun’a gųshą dun ną́nrų́ chír dą́chą.
 gan nun’a gųshą dun §ną́nrų́ chír §§dą́chą
 {obs} {rem} crouch {nwk} Elf on table
 The Elf crouches on the table.
 `)
-]
 
 #slide[
 == Work Order Markers
@@ -653,8 +652,252 @@ and thus, the appropriate SAP is #i[cų́r txų́dí]
 ]
 ]
 
+#slide[
+== Evidentiality
+- #i[sán] (#s[ver] ‘veridical’): (as though) decreed by The Chimney Man (truth)
+- #i[gan] (#s[obs] ‘observable’): directly observable or deduced via reasoning
+- #i[xįn] (#s[com] ‘communicated’): communicated by someone (hearsay)
+- #i[txą́] (#s[nor] ‘North Pole’): purported to exist (in the North Pole)
+- #i[tsų́n] (#s[dub] ‘dubious’): purported to exist elsewhere
+]
 
-//
-#pagebreak()
-#pagebreak()
-#let sd(it) = it
+#slide[
+== Aspect
+#item-by-item[
+- Working verbs are marked for _telicity_, i.e. whether the work is done,
+  - Telic is the default.
+  - #i[tú] (#s[atel]): marks that a working verb is atelic.
+
+- Lazy verbs are marked for whether the laziness is continued or returning.
+  - Continuous is the default.
+  - #i[dor] (#s[hab]): marks that a lazy verb is habitual.
+
+- Aspect markers directly precede the verb.
+]
+]
+
+#slide[
+== Elision and (Zero) Copula
+- Repeated verb markers may be elided.
+- The Elvish copula is $emptyset$, i.e. verb _markers_ are present, but there is no root.
+- Combined with elision, this can yield a zero copula.
+]
+
+#slide[
+== Numbers
+- Elvish numbers are translated verbatim from Santaa.
+- E.g. #i[irtǫtǫtǫn] ‘7’ (lit. ‘build more more more’) from Santaa #santaa[ħȍ̀̽ ħħó̽̏ ħħó̽̏ ħħó̽̏].
+]
+
+#section[Appearance and Culture]
+
+#slide[
+== Elvish Upper Class
+#item-by-item[
+- Consists of Colliers and Master Carbonators.
+- Only they may wear #w[rǫngi] ‘cloaks’.
+- #w[isirǫngi] ‘Collier’ (lit. ‘redcloak’).
+- #w[xúsųrǫngi] ‘Master Carbonator’ (lit. ‘blackcloak’).
+- #w[Shǫnxąrǫngi] ‘The Grand Carbonator’ (lit. ‘Coal cloak’).
+- Only upper-class Elves wear clothes.
+- A lower-class Elf relies on its ventral furnace for warmth instead.
+- #w[ishúrǫngi] ‘fake cloaks’ (lit. ‘charcoal#only(8,footnote[In Elvish, the word for ‘charcoal’ is commonly used to mean ‘fake’ or ‘imitation’.]) cloaks’).
+]
+]
+
+#slide[
+== ‘Retirement’
+#item-by-item[
+- An Elf ‘retires’ at the moment of its death.
+- Some Elves may be ‘decommissioned’ ahead of time.
+- #w[Shǫnxąshų́ną] ‘Coal burial’.
+]
+]
+
+#section[Translation]
+#centerslide[#ex(w[Tǫrxí])]
+
+#gloss-set-line-spacing(.7em)
+
+#gloss-slide(`
+Gan nun’a tú tshų́’á tchą́ chírnu rǫngi·
+gan nun’a tú tshų́’á tchą́ chírnu rǫngi
+{obs} {rem} {atel} declare {wrk} this cloak
+This Elf declares:
+`)
+
+#gloss-slide(`
+Ų́rų́ gan ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n·
+ų́rų́ gan ún xúsųrǫngi tsírǫ tų́r xún tchų́’i ta-rųtí ną́n
+{wkd} {obs} for Master~Carbonator under {inv.0} {null} three {poss}-ferrule mine
+Three Ferrules for the Master Carbonators under the mine,
+`)
+
+#gloss-slide(`
+Ų́rų́ gan ún isirǫngi chír cų́r xún txadą́ irtǫtǫtǫn cįxį́tųn’ą́·
+ų́rų́ gan ún isirǫngi chír cų́r xún txadą́ irtǫtǫtǫn cįxį́ tųn’ą́
+{wkd} {obs} for Collier in {inv.-1} {null} {wo+7} seven hall stone
+Seven for the Colliers in their halls of stone,
+`)
+
+#gloss-slide(`
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́
+{wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+Nine for Mortal Men doomed to retire,
+`)
+
+#gloss-slide(`
+Ún Są́ntą́ chír tų́r isi ta-Są́ntą́ ų́rų́ gan txadą́ nangį́ shindí nurchǫ
+ún Są́ntą́ chír tų́r isi ta-Są́ntą́ ų́rų́ gan txadą́ nangį́ shindí nurchǫ
+for The~Chimney~Man on {inv.0} red {poss}-The~Chimney~Man {wkd} {obs} {wo+7} one {wo+10} throne
+One for The Chimney Man on His red throne
+`)
+
+#gloss-slide(`
+Chír chírcą chǫnsǫ dun árxį́ xún txą́cą ánrų́·
+chír chírcą chǫnsǫ dun árxį́ xún txą́cą ánrų́
+at where reside {nwk} {inv.+2} {null} the~North~Pole shadow
+At the North Pole where the Shadows lie.
+`)
+
+#gloss-slide(`
+Ún ta-dorą nangį́ ta-rųtí·
+ún ta-dorą nangį́ ta-rųtí
+for {poss}-rule one {poss}-ferrule
+One Ferrule to rule,
+`)
+
+#gloss-slide(`
+Ún ta-shųnsį́ ų́rų́ txadą́ shų́·
+ún ta-shųnsį́ ų́rų́ txadą́ shų́·
+for {poss}-find {wkd} {wo+7} all
+To find them all
+`)
+
+#gloss-slide(`
+Ún ta-xį́tį nangį́ ta-rųtí·
+ún ta-xį́tį nangį́ ta-rųtí
+for {poss}-bring one {poss}-ferrule
+One Ferrule to bring them,
+`)
+
+#gloss-slide(`
+Ún ta-tsantú chír xurgį
+ún ta-tsantú chír xurgį
+for {poss}-bind in arctic
+To bind them in the Arctic.
+`)
+
+#gloss-slide(`
+Chír chírcą chǫnsǫ dun árxį́ xún txą́cą ánrų́·
+chír chírcą chǫnsǫ dun árxį́ xún txą́cą ánrų́
+at where reside {nwk} {inv.+2} {null} the~North~Pole shadow
+At the North Pole where the Shadows lie.
+`)
+
+#slide[
+== Sentence Analysis
+#gloss(`
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+§ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́
+{wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+Nine for Mortal Men doomed to retire,
+`)
+- #h1(i[ų́rų́]) marks that the entire clause is an object.
+]
+
+#slide[
+== Sentence Analysis
+#gloss(`
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+ų́rų́ §gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́
+{wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+Nine for Mortal Men doomed to retire,
+`)
+- #h1(i[gan]) communicates that the verb is the copula.
+]
+
+#slide[
+== Sentence Analysis
+#gloss(`
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+ų́rų́ gan §txadą́ §cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́
+{wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+Nine for Mortal Men doomed to retire,
+`)
+- #h1(i[txadą́ cuncutǫn]) is the number ‘9’ raised to work order 4.
+]
+
+#slide[
+== Sentence Analysis
+#gloss(`
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+ų́rų́ gan txadą́ cuncutǫn §ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́
+{wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+Nine for Mortal Men doomed to retire,
+`)
+- The complement of #h1(i[ún]) ‘for’ is the rest of the clause.
+]
+
+#slide[
+== Sentence Analysis
+#gloss(`
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+ų́rų́ gan txadą́ cuncutǫn ún §dun §cą §sán §túsą §ų́xį́ §shąnų́ §dun §tų́r §shardo núgį́
+{wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+Nine for Mortal Men doomed to retire,
+`)
+- Most of the rest of the sentence forms a #h1[relative clause].
+]
+
+#slide[
+== Sentence Analysis
+#gloss(`
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r §shardo §núgį́
+{wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+Nine for Mortal Men doomed to retire,
+`)
+- The relative clause modifies #h1(i[shardo núgį́]) ‘mortal humans’.
+]
+
+#slide[
+== Sentence Analysis
+#gloss(`
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+ų́rų́ gan txadą́ cuncutǫn ún §§dun §cą sán §§§túsą ų́xį́ shąnų́ dun tų́r shardo núgį́
+{wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+Nine for Mortal Men doomed to retire,
+`)
+- The #h1[relative pronoun] is preceded by an #h2[agent marker] as the subject of #h3(i[túsą]).
+]
+
+#slide[
+== Sentence Analysis
+#gloss(`
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą §ų́xį́ §shąnų́ §dun §tų́r §§shardo núgį́
+{wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+Nine for Mortal Men doomed to retire,
+`)
+- Another nested clause, introduced by a theme marker.
+]
+
+#slide[
+== Sentence Analysis
+#gloss(`
+Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
+ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun §tų́r §shardo §núgį́
+{wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+Nine for Mortal Men doomed to retire,
+`)
+- #h1(i[tų́r shardo núgį́]) is contracted from #i[tų́r shardo shardo núgį́].
+]
+
+#slide[
+== SAP Contraction
+- Occurs when a SAP is immediately followed by its referent.
+- E.g. #i[tų́r shardo shardo núgį́] $->$ #i[tų́r shardo núgį́].
+- Sequence ‘invoice marker + adjective + noun’ is indicative of contraction.
+]

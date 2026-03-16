@@ -400,11 +400,13 @@ continuous is the default.
 - #w[tú] (#s[atel]): marks that a working verb is atelic
 - #w[dor] (#s[hab]): marks that a lazy verb is habitual
 
+Aspect markers directly precede the verb.
+
 === Moods
 [TODO]
 
 === Evidentiality <evidentiality>
-Evidentiality is split into four categories:
+Evidentiality is split five four categories:
 - #w[sán] (#s[ver] ‘veridical’): (as though) decreed by The Chimney Man (truth)
 - #w[gan] (#s[obs] ‘observable’): either directly observable or deduced via reasoning
 - #w[xįn] (#s[com] ‘communicated’): communicated by someone (hearsay)
@@ -544,7 +546,7 @@ This Elf declares:
 #gloss(`
 Ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́·
 ų́rų́ gan txadą́ cuncutǫn ún dun cą sán túsą ų́xį́ shąnų́ dun tų́r shardo núgį́
-{wkd} {obs} {wo+7} seven for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
+{wkd} {obs} {wo+7} nine for {nwk} {rel} {ver} be.destined {man} retire {nwk} {inv.0} mortal human
 [That there are] nine for Mortal Men [who are] doomed to retire
 `)
 

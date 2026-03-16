@@ -13,7 +13,7 @@
 #let w(s) = { [_#[#s]_ #box[/#ipa(s)/]] }
 #let i(s) = { [_#[#s]_] }
 
-#let santaa(x) = text(size: 11pt, style: "italic", font: "Charis SIL", x)
+#let santaa(x) = text(size: .9em, style: "italic", font: "Charis SIL", x)
 #let preamble(it) = {
     let l(dx: 0pt, dy: 0pt) = box(
         width:0pt,
