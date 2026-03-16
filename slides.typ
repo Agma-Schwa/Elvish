@@ -235,9 +235,13 @@ The Elf crouches on the table.
 
 #slide[
 == Noun Markers Cont’d
+#item-by-item[
+- #i[tchą́ + ų́rų́] $->$ #w[tchą́rų́]: reflexive form used with working verbs.
+- #i[dun + ų́xį́] $->$ #w[dunxį́]: reflexive form used with lazy verbs.
 - #w[ta-] (#s[poss]): Possessive form.
 
   E.g. #w[ta-ną́nrų́] ‘of the Elves’.
+]
 ]
 
 #slide[

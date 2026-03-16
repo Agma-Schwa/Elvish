@@ -83,17 +83,17 @@ For example, take the word for ‘cane’, #w[dį́gá] #sd[slide], which has wo
 
 There are a few things to note here: attempting to raise or lower the work order of a noun below the minimum (#s[w11]) or above the maximum (#s[w1]) is ungrammatical #sd[slide]. Note also the terminology: The ‘lowest’ work order is 11 and the ‘highest’ is 1, thus ‘raising’ occurs from a larger number to a smaller number, and ‘lowering’ from a smaller number to a larger number, e.g. work order 5 can be ‘raised’ to 4 or ‘lowered’ to 6 #sd[slide]. Lowering can have the effect of expressing disdain, denigrating something, or making something seem less important or fake; this is known as ‘derogatory lowering’. Conversely, raising is typically a form of praise.
 
-Another use of the word order markers is in combination with an adjective or number to refer to an object in the context that has that word order. For example, the word for ‘minecart’ in Elvish has work order 6, so a set of 7 minecarts may be referred to as #w[txų́nsha irtǫtǫtǫn], which literally means ‘seven of the thing with work order 6’.
+Another use of the word order markers is in combination with an adjective or number to refer to an object in the context that has that word order. For example, the word for ‘minecart’ in Elvish has work order 6, so a set of 7 minecarts may be referred to as #w[txų́nsha irtǫtǫtǫn], which is literally just the number 7 raised to work order 6.
 
 == Noun Markers
-On the subject of nouns, nouns are also declined for whether or not they _perform_ work. This is _not_ the same as work order! Rather, this marks their position as an agent or patient in any given clause. The verb itself is not inflected for voice or person---this information is contained exclusively in the noun phrase.
+Nouns in Elvish are declined for whether or not they _perform_ work. This is _not_ the same as work order! Rather, this marks their position as an agent or patient in any given clause. The verb itself is not inflected for voice or person---this information is contained exclusively in the noun phrase.
 
 There are four such markers. #w[tchą́] ‘performs work’, glossed #s[wrk] for ‘working’, which is used to mark the agent of a verb that denotes an action that is considered to perform work. The opposite of this is #w[dun] ‘does not perform work’, glossed #s[nwk] for ‘not working’, which marks the agent of a verb that denotes a state or an action that is _not_ considered to perform (worthwile) work.
 
 As there are two agent markers, there are naturally also two theme markers. #w[ų́rų́] ‘has work performed on it’, glossed #s[wkd] for ‘being worked on’, which marks the patient or theme of a verb whose agent assumes the ‘working’ form, as well as #w[ų́xį́] ‘is being manipulated in some fashion’, glossed #s[man] for ‘manipulated’, which marks the patient or theme of a verb whose agent assumes the ‘not working’ form.
 
 This system naturally gives rise to 2 verb classes: ‘working verbs’, whose agent assumes the ‘working’ form and whose theme assumes the ‘being worked on’ form, as well as ‘lazy verbs’, whose agent assumes the ‘not working’ form, and whose theme assumes the ‘manipulated’ form.
-Finally, there are a pair of contractions that denote reflexive forms, one for working verbs and one for lazy verbs.
+Finally, there is a pair of contractions that denote reflexive forms, one for working verbs and one for lazy verbs.
 
 In addition to the agent/theme markers, there is another noun marker, #w[ta-] which denotes a possessive form, e.g. #w[ta-ną́nrų́] ‘of the Elves’.
 
