@@ -68,6 +68,17 @@
     ))
 ]
 
+#set page(background: {
+  place(image("assets/image-2.png", width: 100%, height: 100%))
+  place(box(width: 100%, height: 100%, fill: rgb("#ffffff4f")))
+})
+
+#centerslide[
+  #ex[_ną́ngą́sánshų́_]
+  #v(.2em)
+  /#ipa[ną́ngą́sánshų́]/
+]
+
 #section[Phonology]
 
 #slide[
