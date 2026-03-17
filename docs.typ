@@ -163,7 +163,7 @@ all interlocutors.] For example, a fat Elf with the name #w[txǫncų] might be
 SAPs are capitalised if they refer to a noun that is capitalised.
 
 ==== Invoice <invoice>
-The _invoice_ is a construction used primarily as part of a SAP. An invoice operates in a similar way to adjective-noun agreement, except that it is really tense-noun agreement. That is, each noun is assigned a ‘tense’ based on its initial phoneme (see @table:noun-tense), and the appropriate invoice particle depends on the noun’s inherent tense as well as the syntactic tense of the clause. Tenses are assigned an integer value $v$ between $1$ and $5$.
+The _invoice_ is a construction used primarily as part of a SAP. An invoice operates in a similar way to adjective-noun agreement, except that it is really clause-noun agreement. That is, each noun is assigned a ‘tense’ based on its initial phoneme (see @table:noun-tense), and the appropriate invoice particle depends on the noun’s inherent tense as well as the syntactic tense of the clause. Tenses are assigned an integer value $v$ between $1$ and $5$.
 
 #center-table(
   caption: [Association Between Initial Phonemes and Noun Tense],
