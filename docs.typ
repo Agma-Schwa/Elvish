@@ -252,12 +252,19 @@ mortal men who are doomed to retire
 
 In this phrase, #w[shardo] ‘mortal’ does double duty and is part both of the SAP #w[tų́r shardo] ‘the mortal ones’ as well as the NP #w[shardo núgį́] ‘mortal men’. A sequence of the form ‘#s[invoice.particle adjective noun]’ is usually SAP-contracted.
 
-== Nouns
+=== SAPs and Work Order
+SAPs never have an associated work order; that is, barring other syntactic restrictions, they may be placed
+anywhere, that is, preceding or following other nouns, irrespective of the work order of those nouns or of
+the noun that the SAP ultimately references.
+
+== Nouns <noun-markers>
 Elvish nouns are not marked for number or definiteness. However, besides work order markers (see @nouns-at-work), there are a number of miscellaneous noun markers that are used to express concepts such as possession.
 
 The following is a list of Elvish noun markers:
 
 - #w[ta-] (#s[poss]); this is a possessive marker, e.g. #i[ta-ną́nrų́] ‘of the Elves’.
+- #w[rǫ-] (#s[coll]); collective/plural marker; Elvish doesn't normally mark number, but this particle
+  can be used when number marking is relevant—usually if something is the action of the Elves collectively rather than a single Elf—e.g. #i[rǫ-ną́nrų́] ‘multiple Elves’.
 
 === Nouns at Work <nouns-at-work>
 Nouns are also declined for whether or not they _perform_ work. This is _not_ the same as work order! Rather, this marks their position as an agent or patient in any given clause. The verb itself is not declined for voice---this information is contained exclusively in the noun phrase:
@@ -284,6 +291,9 @@ The noun work markers can also precede the verb, in which case the clause acts a
 
 == Compounds
 Compound nouns can be expressed by juxtaposition; the modifier comes second, just like in Santaa, e.g. #w[ną́nchųn] ‘head miner’ (lit. ‘miner head’) from #w[ną́nrų́] ‘canary’ and #w[chųnxi] ‘head’. The compound is written without a space, e.g. #w[cįxį́tųn’ą́] ‘stone hall’, not #i[\*cįxį́ tųn’ą́].
+
+=== Appositions
+Appositions and titles are treated like modifiers and thus placed second, following the name.
 
 == Pronouns <pronouns>
 === Demonstrative Pronouns
@@ -347,6 +357,8 @@ This is especially important in the context of a zero copula (see @copula). Cons
 === Numbers
 Elvish numbers use the same system as Santaa numbers, except using Elvish words. Cardinals are expressed using the possessive marker, e.g. #w[tchų́’i ta-ną́nrų́] ‘three Elves’ (lit. ‘three of Elves’).
 
+When a word is used as a number, it loses its work order; that is, the presence of a number does not alter word order, and e.g. a number that would ordinarily be a noun with work order 2 may follow or precede a noun with work order 3.
+
 == Verbs
 Verbs are either classified as ‘working’ or ‘lazy’ (see @nouns-at-work). Verbs are not inflected for number, only nouns are. In the absence of work order distinction, the default word order is VOS. Verbs generally do not have an associated work order (unless they are derived from a noun) and are generally placed first; the main exception to this is that nouns with work order 1 are always placed first and precede even the verb.
 
@@ -359,11 +371,11 @@ The Elvish tense system is based on the hibernation cycle of The Chimney Man. Th
     caption: [Syntactic Tenses in Elvish],
     align: left,
     [ *Phase* & *Gloss* & *Time of the Year* & *Particle* ],
-    [ Awake & #s[awk] & Christmas Eve & #w[sąn]],
-    [ REM Sleep & #s[rem] & \~29 December -- 3 May & #w[nun’a]],
-    [ Non-REM Phase 1 & #s[nr1] & \~4 May -- 25 August & #w[txí]],
-    [ Non-REM Phase 2 & #s[nr2] & \~26 August -- 9 November & #w[ronu]],
-    [ Non-REM Phase 3 & #s[nr3] & \~10 November -- 23 December & #w[ronų]],
+    [ Awake & #tenses.at(0).at(0) & Christmas Eve & #w(tenses.at(0).at(1))],
+    [ REM Sleep & #tenses.at(1).at(0) & \~29 December -- 3 May & #w(tenses.at(1).at(1))],
+    [ Non-REM Phase 1 & #tenses.at(2).at(0) & \~4 May -- 25 August & #w(tenses.at(2).at(1))],
+    [ Non-REM Phase 2 & #tenses.at(3).at(0) & \~26 August -- 9 November & #w(tenses.at(3).at(1))],
+    [ Non-REM Phase 3 & #tenses.at(4).at(0) & \~10 November -- 23 December & #w(tenses.at(4).at(1))],
 ) <tab:syntactic-tenses>
 
 At any point in time, the Present Tense in Elvish is whatever sleep phase The Chimney Man is in when the utterance is spoken. This is referred to as the _semantic tense_ of the utterance. For instance, on 2 February, The Chimney Man is in REM sleep, and thus, a sentence whose syntactic tense is the REM Sleep Tense would have the Present Tense as its semantic tense. In terms of terminology, the term ‘syntactic Present Tense’ in any given context refers to whatever syntactic tense happens to be the Present Tense.
@@ -392,6 +404,8 @@ The Elvish copula is $emptyset$, i.e. the empty root; that is, to express the co
 
 If an entire clause is preceded by an agent/theme marker, a zero copula cannot be used, and at least one verb marker (usually the evidentiality marker) is required.
 
+The copula is neither working nor lazy, and as such, its subject is not marked at all.
+
 === Aspect
 Aspect marking differs between working verbs and lazy verbs. Working verbs are marked for telicity, i.e. whether the work
 is done (#s[tel] ‘telic’) or not (#s[atel] ‘atelic’). Lazy verbs are marked for whether the laziness is continued
@@ -417,6 +431,9 @@ The ‘default’ evidentiality marker is generally #w[gan];; it is commonly use
 
 Statements of fact use the Chimney Man evidentiality—for example, $2+2=4$—and so do statements that an Elf is absolutely sure about. The meaning of this evidentiality is closer to ‘as true as though The Chimney Man Himself had decreed it’, and a suitable translation may be ‘most surely’. At the same time, it is of course also used to refer to literal statements made by The Chimney Man.
 
+=== Compound Verbs
+Compound verbs are verbs that consist of a verb proper and some other word, typically a preprosition; the theme of such verbs is generally not marked for case.
+
 === Elision <elision>
 When multiple verbs in a row have verb markers in common, those markers are often dropped for any verb after the first. In particular, this often applies to evidentiality markers: if the evidentiality marker of several clauses is the same, all but the first are generally dropped.
 
@@ -436,7 +453,7 @@ There are also two variants of relative clauses that are headed by different pro
 = Literary Elvish
 There are a few differences between spoken and written Elvish. The most striking difference is a natural consequence of the medium: whereas the time of utterance is obvious in a spoken context (as it is just the present day), the time of utterance of a written text is impossible to know unless expressly conveyed to the reader.
 
-The choice as to what syntacitc tense denotes the Present Tense is strictly speaking arbitrary, but by convention, it is generally that of the date on which the author wrote or started writing the text. A natural consequence of this is that many Elves cease all writing during the Temporal Void.
+The choice as to what syntacitc tense denotes the Present Tense is strictly speaking arbitrary, but by convention, it is generally that of the date on which the author wrote or started writing the text. However, for letters or other texts whose primary purpose is to be sent to someone else, the date at which the text is _sent_ is used instead. A natural consequence of this is that many Elves cease all writing during the Temporal Void.
 
 When it comes to stories, poems, etc. only the written form of these texts have a fixed syntactic tense. When a story is told by an Elf, it will naturally—and indeed subconsciously without requiring active consideration or effort—rephrase the text by adjusting the syntactic tense relative to the time at which the story is told while preserving the text’s semantic tense.
 
@@ -666,7 +683,7 @@ Below the class of Collier, candidates for refurbishment are selected by Collier
 Refurbishment has no corresponding opposite process: if an Elf does something that causes it to fall below its social class, only decomissioning awaits it.
 
 == Sleep
-Elves never sleep prior to their retirement. In Elvish, there are indeed two different words for ‘sleeping’; one that refers to the most sacred and noble hibernation of The Chimney Man, and which therefore naturally assigned a work order of 1 and which can indeed refer only to the sleep of The Chimney Man.
+Elves never sleep prior to their retirement. In Elvish, there are indeed two different words for ‘sleeping’; one, #w[nųrą́], which refers to the most sacred and noble hibernation of The Chimney Man, and which therefore naturally assigned a work order of 1 and which can indeed refer only to the sleep of The Chimney Man.
 
 The other word, conversely, has word order 11 and is associated primarily with the sleep of humans and other lesser beings. Elves consider this form of sleep nothing but a waste of time.
 
@@ -688,7 +705,7 @@ Thus, it should also come as no surprise that The Chimney Man’s hibernating is
 Since Coal is the most important aspect of Elvish society, many idioms and phrases in Elvish revolve around Coal and anything involved in the Coal mining process. For example, whereas in English a seam of Coal may be referred to as a ‘coal vein’ in analogy with the veins of the human body, Elvish does the opposite: the term #w[shų́’i ta-xąro] ‘blood vessel’ literally means ‘tunnel of blood’, where #i[shų́’i] is the term for a tunnel in a Coal mine.
 
 = Dictionary
-Lazy verbs are marked with #i[lz], working verbs with #i[wk].
+Lazy verbs are marked with #i[lz.], working verbs with #i[wk.], compound verbs with #i[cv.]
 #dictionary(
     read("elvish.dict.txt"),
     elvish,

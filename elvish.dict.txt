@@ -26,9 +26,6 @@ Shǫnxąrǫngi|n. w2|from \w{Shǫnxą} and \w{rǫngi}|Grand Carbonator
 ishúrǫngi|n. w11|from \w{ishú} and \w{rǫngi}|Someone who pretends to have a higher social class than they actually do
     \comment Lit. ‘false cloak’; see \ref{cloaks}
 Shǫnxąshų́ną|n. w2|from \w{Shǫnxą} and \w{shų́ną}|Coal burial \comment See \ref{retirement}
-tá-|particle||\i{Possessive marker; this is placed directly before a noun (even in a noun phrase) and is always unstressed}
-    \ex \w{tá-Są́ntą́} ‘of The Chimney Man’
-    \ex \w{ríngú isi tá-dį́gá} ‘handles of red canes’
 tchų́rshu|n. w11||Idiot, moron \comment This is derogatory and thus always has word order 11.
 dishą́|adv.||
     \\ Always \comment In a sentence with positive polarity.
@@ -62,10 +59,12 @@ ną́nrų́|n.|ną́n|
         This is the Generic term for an Elf whose social status is unknown, as well as the
         term for Canaries.
 ną́nchųn|n. w5|from \w{ną́nrų́} ‘canary’ and \w{chųnxi} ‘head’|Head Miner
-nų́nrą́|v. w6|ną́nrų́|
+nų́nrą́|v. wk.|ną́nrų́|
     \\To mine Coal
     \\To be alive
-chír|prep.||At, on, in, near
+    \\\i{cv.} \w{\this chírrų} To discover, uncover, find, encounter by chance \comment Lit. ‘To mine into’
+chír|prep.||At, on, in, near, onto
+chírrų|prep.||Into, towards
 ún|prep.||
     \\ For
     \\ To, towards
@@ -74,7 +73,11 @@ chír|prep.||At, on, in, near
         \ex \w{ún ta-shųnsį́} ‘in order to find’
             \comment Lit. ‘for of [to] find’
 tsírǫ|prep.||Under, beneath, below
-
+ta-|particle||\i{Possessive marker; see \ref{noun-markers}}
+    \ex \w{ta-Są́ntą́} ‘of The Chimney Man’
+    \ex \w{ríngú isi ta-dį́gá} ‘handles of red canes’
+rǫ-|particle||\i{Collective marker; see \ref{noun-markers}}
+tá-|particle||\i{Archaic form of \w{tá-}}
 ishú|n. w11||
     \\ Charcoal
     \\ \i{fig.} Something that is fake or wrong; fraud; impostor
@@ -83,11 +86,79 @@ Shǫnxą|n. w2||Coal
     \comment The most important noun in Elvish, second only to The Chimney Man. This word
     and all words derived from it are always capitalised.
 
+nį́|adj.||Some, a certain
+tshí’ą́|n. w1||\\Christmas \\The number 25
+nųrą́|v. w1||To hibernate \comment Used solely in reference to The Chimney Man’s hibernation.
+ną́rų|n. w1|nųrą́|
+    \\ Hibernation \comment Used solely in reference to The Chimney Man’s hibernation.
+    \\ \i{fig.} Hibernation cycle, year
+        \comment A time period equal in length to a full hibernation cycle of The Chimney Man,
+            which is approximately one year.
+raco|v. wk||
+    \\ To go
+    \\ \w{\this chírrų} + \s{ptcp} To begin
+sargú|v. lz||
+    \\ To show
+    \\ \i{lz. dep.} \w{\this norta} To run dry, be empty
+        \comment This is a deponent verb, i.e. the subject is in the \s{man} form. Lit. ‘To show grey’,
+        alluding to the fact that a mostly black Coal vein gives way to grey stone once exhausted.
+norta|adj. or n.||Grey \comment The colour of stone, never Coal; for Coal, \w{xúsų} ‘black’ is used instead.
+
+cirshú|adj. w1||
+    \\ Awake \comment Used solely in reference to The Chimney Man
+    \\ The number 2.
+
+tandį́|n. w11||
+    \\ Shovelful \comment Elvish unit of mass, approximately 37.12~kg.
+
+rúxą|n. w11||
+    \\ Instance, a singular event
+    \\ \i{Forms multiplier numerals when preceded by a number and} \w{ta-}
+        \comment In this sense, this word has no work order and does not impose any constraints
+            upon the word order ofthe sentence.
+        \ex \w{tchų́’i ta-rúxą} ‘Three times’
+        \ex \w{irgų ta-rúxą ta-dánchi} ‘Four times as many coal veins’
+
+ondo|v. wk.||To hand in, deliver
+    \comment Specifically, this word means ‘to deliver the result of some work (generally Coal)
+        to one’s superiors’ and is used both by low-ranking Elves to describe the process of
+        handing in the Coal one has mined at the end of every day, as well as by high-ranking
+        Elves to report the amount of Coal mined by their subordinates to their superiors on
+        a regular basis.
+
+ąn|prep.||
+    \\ Opposing, on the opposite side of
+    \\ More than \comment When preceded by a number
+
+gįsąn|adv.||\i{Particle that expresses a temporal relationship. This word has 5 forms, each of
+    which corresponds to a tense; its exact meaning depends on the tense as well as the tense
+    of the containing clause.}
+    \\ Now, in this moment, immediately
+        \comment If the tense matches the syntactic Present Tense of the clause.
+    \\ Soon, (soon) after, later
+        \comment If the tense matches the syntactic Future Tense of the clause.
+    \\ In the distant future
+        \comment If the tense matches the syntactic Future-in-the-Future Tense of the clause.
+    \\ Some time ago, before
+        \comment If the tense matches the syntactic Past Tense of the clause.
+    \\ Long ago, once upon a time
+        \comment If the tense matches the syntactic Pluperfect Tense of the clause.
+    |\s{awk} gįsąn, \s{rem} gįnun, \s{nr1} gįtxí, \s{nr2} gįron, \s{nr3} gįrǫn
+
+gįnun, gįtxí, gįron > gįsąn
+rárchį|v. wk.||To sew
+
+tshigu|adj.||Bountiful, rich, plentiful
+dánchi|n. w2||A vein of Coal
+súnnǫ|n.||Elvish given name
 tǫrxí|n.||Elvish given name
 tshų́’á|v. wk.||To declare, make known
 rųtí|n. w4||Ferrule
 tchų́’i|n. w11|\senseref{2} is a calque of \santaa{ò̀̀ħħħ}|\\Plan \\ The number 3.
-xún|adj.||\\ Proper, good \\ \i{Null adjective used in extraposition} \comment See \ref{invoice-extraposition}.
+xún|adj.||
+    \\ Proper, good
+    \\ \i{Null adjective used in extraposition}
+        \comment See \ref{invoice-extraposition}.
 txų́dí|adj.||Fat, big
 cįxį́|n. w11||Hall
 tųn’ą́|n. w11||Stone
@@ -117,13 +188,28 @@ xį́tį|v. wk||To bring, carry
 tsantú|v. wk||To bind
 gųshą|v. lz||To crouch, be crouched
 dą́chą|n. w11||Table
-sántǫ|n. w11||Place
+sántǫ|n. w11||
+    \\ Place
+    \\ \w{chír nį́ \this} There (expletive) \comment Lit. ‘in a certain place’; used as the subject of verbs
+        that don’t have a semantic agent and can stand on its own with a (zero) copula to signify ‘there is’
+    \\ +\w{chír} \textit{and} \s{dem} Here, there
+        \comment Preceded by \w{chír} ‘in’ and a demonstrative pronoun, lit. ‘In this/that place’. The
+        proximal pronoun is used to mean ‘here’, the medial pronoun to mean ‘there (medial)’, and the distal
+        pronoun to mean ‘there (distal)’.
 tchatų|n. w11||Work
 sánshų́|n. w11||Workplace
 ną́ngą́|n. w11||Communication
 ną́ngą́sánshų́|n. w6|from \w{ną́ngą́} and \w{sánshų́}, lit. ‘workplace communication’|The Elvish language
 igą́|n. w11||Poem
 rįdu|adv.||Then, afterwards
+sár|prep.||
+    \\ With
+    \\ For, over the course of \comment Only when followed by a time period
+
+sárgá|v.||
+    \\\i{wk} To hold, hold on to
+    \\\i{lz} To keep, retain
+    \\\i{lz} To keep a secret, hide away
 
 natá|||\i{Work Order raising marker; see \ref{work-order-marking}}
 cį́chą|||\i{Work Order raising marker; see \ref{work-order-marking}}

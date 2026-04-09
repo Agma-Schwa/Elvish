@@ -13,6 +13,14 @@
 #let w(s) = { [_#[#s]_ #box[/#ipa(s)/]] }
 #let i(s) = { [_#[#s]_] }
 
+#let tenses = (
+  (s[awk], [sąn]),
+  (s[rem], [nun’a]),
+  (s[nr1], [txí]),
+  (s[nr2], [ronu]),
+  (s[nr3], [ronų]),
+)
+
 #let santaa(x) = text(size: .9em, style: "italic", font: "Charis SIL", x)
 #let preamble(it) = {
     let l(dx: 0pt, dy: 0pt) = box(
