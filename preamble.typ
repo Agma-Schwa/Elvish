@@ -1,13 +1,18 @@
-#import "base/src/lib.typ" : *
+#import "../../typst-base/src/lib.typ" : *
 
-#let elvish = plugin("plugin/target/wasm32-unknown-unknown/release/elvish.wasm")
+#let santaa(x) = text(size: .9em, style: "italic", font: ("Charis", "Charis SIL"), x)
+#let elvish = instantiate-dictionary-plugin(
+    read("elvish.dict.txt"),
+    always_include_ipa: true,
+    custom-macro-handler: (macro, render) => {
+        if macro.name == "santaa" [Santaa #santaa(render(macro.args.at(0)))]
+        else { panic("Unsupported macro " + macro.name) }
+    }
+)
+
 #let ipa(s) = {
     if s == none { "<NONE>" }
-    else {
-        render-dictionary-node(
-            json(elvish.ipa_impl(bytes(if type(s) == str { s } else { s.text })))
-        )
-    }
+    else { (elvish.to-ipa)(s) }
 }
 
 #let w(s) = { [_#[#s]_ #box[/#ipa(s)/]] }
@@ -21,7 +26,6 @@
   (s[nr3], [ronų]),
 )
 
-#let santaa(x) = text(size: .9em, style: "italic", font: "Charis SIL", x)
 #let preamble(it) = {
     let l(dx: 0pt, dy: 0pt) = box(
         width:0pt,

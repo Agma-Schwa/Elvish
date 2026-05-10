@@ -324,7 +324,7 @@ In reported speech, the direction is reversed, i.e. instead of medial being the 
 
 Note that it is the only the syntactic tense of the sentence that matters; neither the time of utterance, nor the time at which the utterance is paraphrased, if at all, are relevant here! For example, consider a sentence uttered during the REM Sleep Phase, in which the Non-REM Phase 1 Tense is the syntactic Future Tense. In such a sentence, the medial demonstrative pronoun would be #w[chíro], i.e. the Non-REM Phase 2 form; if this sentence is then paraphrased during the Non-REM Phase 3, the syntactic Future Tense would naturally be the Awake Tense, and the medial pronoun would be the tense _before_ that (recall that the direction is reversed in reported speech); thus, the correct form would be #w[chírnų], i.e. the Non-REM Phase 3 form.
 
-=== Personal Pronouns
+=== Personal Pronouns <personal-pronouns>
 There are three sets of constructions in Elvish that are jointly referred to as ‘personal pronouns’. While semantically equivalent, their usage is highly dependent on social status, and they are not interchangeable.
 
 ==== Full Personal Pronouns
@@ -347,7 +347,12 @@ Which set of personal pronouns is appropriate in what context is dependent on th
 
 - Additionally, SAPs may be used whenever an abridged pronoun would be appropriate.
 
+- The _current_ status of the referent at the time of utterance is what matters.#footnote[E.g. when talking about an event that happened to a Collier at a time when it was still a Head Miner, one would never use the low-class personal pronouns.]
+
+- Decomissioned Elves are _always_ referred to with the low-class pronouns, irrespective of their status before decomissioning.#footnote[This is decomissioning is a punishment for Elves who are considered to have let down Elf society, and by proxy, The Chimney Man, as a whole.]
+
 The rules for the 1st person pronoun are simpler: In reference to oneself, the full pronouns are used when speaking to someone of higher social status, and the abridged pronouns otherwise. Naturally, Elves at or above the class of Collier use the high-class pronouns and other Elves the low-class pronouns.
+
 
 ==== Disinguishing Personal and Demonstrative Pronouns
 Since personal and demonstrative pronouns can be very similar, as the former simply use the latter, there are rules that can be used to distinguish the two; the most important one of these is that a demonstrative that qualifies the noun always follows the noun. For example, assuming we’re in the REM phase, we have #w[chírnu rǫngi] ‘I’ (high-class pronoun) vs #w[rǫngi chírnu] ‘this cloak’ (literally).
@@ -706,11 +711,4 @@ Since Coal is the most important aspect of Elvish society, many idioms and phras
 
 = Dictionary
 Lazy verbs are marked with #i[lz.], working verbs with #i[wk.], compound verbs with #i[cv.]
-#dictionary(
-    read("elvish.dict.txt"),
-    elvish,
-    custom-macro-handler: (macro, render) => {
-        if macro.name == "santaa" [Santaa #santaa(render(macro.args.at(0)))]
-        else { panic("Unsupported macro " + macro.name) }
-    }
-)
+#(elvish.typeset-dictionary)()

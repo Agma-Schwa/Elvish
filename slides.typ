@@ -1,5 +1,5 @@
 #import "preamble.typ" : *
-#import "polylux/src/polylux.typ" : * // Latest release doesn't have in-subslide() yet...
+#import "../../third-party/polylux/src/polylux.typ" : * // Latest release doesn't have in-subslide() yet...
 #import "@preview/cetz:0.4.2"
 #show : slides
 #show : preamble
